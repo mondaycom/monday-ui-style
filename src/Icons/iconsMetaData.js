@@ -490,14 +490,6 @@ export const iconsMetaData = [
   },
 
   {
-    name: "Inbox",
-    file: "Inbox.svg",
-    description: "Inbox",
-    tags: "Inbox, Incoming",
-    category: [PLATFORM],
-  },
-
-  {
     name: "Info",
     file: "Info.svg",
     description: "Info",
