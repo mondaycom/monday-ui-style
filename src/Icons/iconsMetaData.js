@@ -490,14 +490,6 @@ export const iconsMetaData = [
   },
 
   {
-    name: "Inbox",
-    file: "Inbox.svg",
-    description: "Inbox",
-    tags: "Inbox, Incoming",
-    category: [PLATFORM],
-  },
-
-  {
     name: "Info",
     file: "Info.svg",
     description: "Info",
@@ -631,19 +623,6 @@ export const iconsMetaData = [
     description: "Moon",
     tags: "Moon, Dark Mode",
     category: [PLATFORM],
-  },
-
-  {
-    name: "MoreBelow",
-    file: "MoreBelow.svg",
-    description: "Boxed curved arrow",
-    tags: "arrow",
-  },
-  {
-    name: "MoreBelowFilled",
-    file: "MoreBelowFilled.svg",
-    description: "filled box with a curved arrow",
-    tags: "arrow",
   },
 
   {
