@@ -169,7 +169,7 @@ export const iconsMetaData = [
     name: "My Work",
     file: "MyWork.svg",
     description: "My Work Icon",
-    tags: "My Work, Check, Done, V, List, CheckList",
+    tags: "My Work, Check, Done, CheckList",
     category: [BASIC],
   },
 
