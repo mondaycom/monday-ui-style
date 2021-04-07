@@ -164,11 +164,12 @@ export const iconsMetaData = [
     tags: "Design, Checkbox, Check",
     category: [BASIC],
   },
+
   {
-    name: "CheckList",
-    file: "CheckList.svg",
-    description: "CheckList",
-    tags: "Check, Done, V, List, CheckList, My Work",
+    name: "My Work",
+    file: "MyWork.svg",
+    description: "My Work Icon",
+    tags: "My Work, Check, Done, V, List, CheckList",
     category: [BASIC],
   },
 
