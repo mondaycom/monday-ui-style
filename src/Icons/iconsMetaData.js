@@ -5,6 +5,13 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "ArrowDownPointedCorners",
+      file: "ArrowDownPointedCorners.svg",
+      description: "arrow down with pointed corners",
+      tags: "arrow, down, pointed corners, sharp"
+  },
+
+  {
     name: "Versioning",
     file: "Versioning.svg",
     description: "Versioning",
