@@ -13,17 +13,17 @@ export const iconsMetaData = [
   },
 
   {
-      name: "Globe",
-      file: "Globe.svg",
-      description: "Globe",
-      tags: "Globe,earth,world,country"
+      name: "Country",
+      file: "Country.svg",
+      description: "Country",
+      tags: "globe,earth,world,country"
   },
 
   {
-      name: "Radio",
-      file: "Radio.svg",
-      description: "RadioButton",
-      tags: "Radio,Radio button,select,single"
+      name: "RadioButton",
+      file: "RadioButton.svg",
+      description: "Radio Button",
+      tags: "radio,radio button,select,single"
   },
 
   {
@@ -202,10 +202,10 @@ export const iconsMetaData = [
   },
 
   {
-    name: "Checkbox",
-    file: "Checkbox.svg",
-    description: "Checkbox",
-    tags: "Design, Checkbox, Check",
+    name: "CheckBox",
+    file: "CheckBox.svg",
+    description: "Check Box",
+    tags: "design, checkbox, check, multi, select",
     category: [BASIC],
   },
   {
