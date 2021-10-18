@@ -5,89 +5,89 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
-      name: "Layout",
-      file: "Layout.svg",
-      description: "Layout",
-      tags: "Layout, Grid"
+    name: "Layout",
+    file: "Layout.svg",
+    description: "Layout",
+    tags: "Layout, Grid",
   },
 
   {
-      name: "DocTemplate",
-      file: "DocTemplate.svg",
-      description: "Template Doc",
-      tags: "Template, Doc"
+    name: "DocTemplate",
+    file: "DocTemplate.svg",
+    description: "Template Doc",
+    tags: "Template, Doc",
   },
 
   {
-      name: "ConvertToItem",
-      file: "ConvertToItem.svg",
-      description: "ConvertToItem",
-      tags: "convert,item"
+    name: "ConvertToItem",
+    file: "ConvertToItem.svg",
+    description: "ConvertToItem",
+    tags: "convert,item",
   },
 
   {
-      name: "TextCopy",
-      file: "TextCopy.svg",
-      description: "Copy Text",
-      tags: "copy,text,t"
+    name: "TextCopy",
+    file: "TextCopy.svg",
+    description: "Copy Text",
+    tags: "copy,text,t",
   },
   {
-      name: "Open",
-      file: "Open.svg",
-      description: "Open",
-      tags: "open"
+    name: "Open",
+    file: "Open.svg",
+    description: "Open",
+    tags: "open",
   },
   {
-      name: "Expand",
-      file: "Expand.svg",
-      description: "Expand",
-      tags: "expand"
+    name: "Expand",
+    file: "Expand.svg",
+    description: "Expand",
+    tags: "expand",
   },
   {
-      name: "ConvertToSubitem",
-      file: "ConvertToSubitem.svg",
-      description: "Convert To Subitem",
-      tags: "convert, subitem"
+    name: "ConvertToSubitem",
+    file: "ConvertToSubitem.svg",
+    description: "Convert To Subitem",
+    tags: "convert, subitem",
   },
   {
-      name: "Clear",
-      file: "Clear.svg",
-      description: "Clear",
-      tags: "clear"
+    name: "Clear",
+    file: "Clear.svg",
+    description: "Clear",
+    tags: "clear",
   },
   {
-      name: "TextColorIndicator",
-      file: "TextColorIndicator.svg",
-      description: "",
-      tags: "text, A, font"
-  },
-
-  {
-      name: "Bug",
-      file: "Bug.svg",
-      description: "Bug",
-      tags: "bug"
+    name: "TextColorIndicator",
+    file: "TextColorIndicator.svg",
+    description: "",
+    tags: "text, A, font",
   },
 
   {
-      name: "Battery",
-      file: "Battery.svg",
-      description: "Battery",
-      tags: "battery"
+    name: "Bug",
+    file: "Bug.svg",
+    description: "Bug",
+    tags: "bug",
   },
 
   {
-      name: "Status",
-      file: "Status.svg",
-      description: "Status icon",
-      tags: "status, done, status category"
+    name: "Battery",
+    file: "Battery.svg",
+    description: "Battery",
+    tags: "battery",
   },
 
   {
-      name: "Subitems",
-      file: "Subitems.svg",
-      description: "Subitems icon",
-      tags: "subitems, subitems category"
+    name: "Status",
+    file: "Status.svg",
+    description: "Status icon",
+    tags: "status, done, status category",
+  },
+
+  {
+    name: "Subitems",
+    file: "Subitems.svg",
+    description: "Subitems icon",
+    tags: "subitems, subitems category",
   },
 
   {
@@ -112,93 +112,93 @@ export const iconsMetaData = [
   },
 
   {
-      name: "Recurring",
-      file: "Recurring.svg",
-      description: "Recurring icon",
-      tags: "recurring, time, timebased, every, automation, cron"
+    name: "Recurring",
+    file: "Recurring.svg",
+    description: "Recurring icon",
+    tags: "recurring, time, timebased, every, automation, cron",
   },
 
   {
-      name: "Featured",
-      file: "Featured.svg",
-      description: "Featured category icon",
-      tags: "featured, category, highlights, automation"
+    name: "Featured",
+    file: "Featured.svg",
+    description: "Featured category icon",
+    tags: "featured, category, highlights, automation",
   },
 
   {
-      name: "DueDate",
-      file: "DueDate.svg",
-      description: "DueDate icon",
-      tags: "duedate, date, deadline, automation, timebased, cron"
+    name: "DueDate",
+    file: "DueDate.svg",
+    description: "DueDate icon",
+    tags: "duedate, date, deadline, automation, timebased, cron",
   },
 
   {
-      name: "Dependency",
-      file: "Dependency.svg",
-      description: "Dependencies icon",
-      tags: "dependency, category, dependencies, ensure, adjust, automations"
+    name: "Dependency",
+    file: "Dependency.svg",
+    description: "Dependencies icon",
+    tags: "dependency, category, dependencies, ensure, adjust, automations",
   },
 
   {
-      name: "Custom",
-      file: "Custom.svg",
-      description: "Custom categoty icon",
-      tags: "custom, recipe, automations, dynamic, builder"
+    name: "Custom",
+    file: "Custom.svg",
+    description: "Custom categoty icon",
+    tags: "custom, recipe, automations, dynamic, builder",
   },
 
   {
-      name: "Basic",
-      file: "Basic.svg",
-      description: "Basic category icon",
-      tags: "basic, category, automations"
+    name: "Basic",
+    file: "Basic.svg",
+    description: "Basic category icon",
+    tags: "basic, category, automations",
   },
 
   {
-      name: "Work",
-      file: "Work.svg",
-      description: "work",
-      tags: "work",
-      ignore: true
+    name: "Work",
+    file: "Work.svg",
+    description: "work",
+    tags: "work",
+    ignore: true,
   },
 
   {
-      name: "MoreBelowFilled",
-      file: "MoreBelowFilled.svg",
-      description: "More below filled",
-      tags: "more,below,filled",
-      ignore: true
+    name: "MoreBelowFilled",
+    file: "MoreBelowFilled.svg",
+    description: "More below filled",
+    tags: "more,below,filled",
+    ignore: true,
   },
 
   {
-      name: "MoreBelow",
-      file: "MoreBelow.svg",
-      description: "more below",
-      tags: "more,below",
-      ignore: true
+    name: "MoreBelow",
+    file: "MoreBelow.svg",
+    description: "more below",
+    tags: "more,below",
+    ignore: true,
   },
 
   {
-      name: "CollapseRound",
-      file: "CollapseRound.svg",
-      description: "Collapse round",
-      tags: "collapse,round",
-      ignore: true
+    name: "CollapseRound",
+    file: "CollapseRound.svg",
+    description: "Collapse round",
+    tags: "collapse,round",
+    ignore: true,
   },
 
   {
-      name: "CloseRound",
-      file: "CloseRound.svg",
-      description: "Close round",
-      tags: "close,round",
-      ignore: true
+    name: "CloseRound",
+    file: "CloseRound.svg",
+    description: "Close round",
+    tags: "close,round",
+    ignore: true,
   },
 
   {
-      name: "Bulllet",
-      file: "Bulllet.svg",
-      description: "Bullet",
-      tags: "bullet",
-      ignore: true
+    name: "Bulllet",
+    file: "Bulllet.svg",
+    description: "Bullet",
+    tags: "bullet",
+    ignore: true,
   },
 
   {
@@ -529,6 +529,13 @@ export const iconsMetaData = [
     category: [PLATFORM],
   },
   {
+    name: "DisabledUser",
+    file: "DisabledUser.svg",
+    description: "Disabled User",
+    tags: "Disabled user, Remove user, Person",
+    category: [PLATFORM],
+  },
+  {
     name: "Divider",
     file: "Divider.svg",
     description: "Divider",
@@ -737,11 +744,11 @@ export const iconsMetaData = [
     category: [PLATFORM],
   },
   {
-        name: "Gallery",
-        file: "Gallery.svg",
-        description: "Gallery",
-        tags: "Gallery, Files, Image gallery",
-        category: [PLATFORM],
+    name: "Gallery",
+    file: "Gallery.svg",
+    description: "Gallery",
+    tags: "Gallery, Files, Image gallery",
+    category: [PLATFORM],
   },
   {
     name: "GIF",
@@ -1024,9 +1031,9 @@ export const iconsMetaData = [
     file: "Mute.svg",
     description: "Mute",
     tags: "Mute",
-    category: [PLATFORM]
+    category: [PLATFORM],
   },
-    
+
   {
     name: "MyWeek",
     file: "MyWeek.svg",
@@ -1118,7 +1125,7 @@ export const iconsMetaData = [
     tags: "Paste, Design",
     category: [PLATFORM],
   },
-    
+
   {
     name: "Pause",
     file: "Pause.svg",
@@ -1293,7 +1300,7 @@ export const iconsMetaData = [
     tags: "Sound, Audio, Speaker",
     category: [PLATFORM],
   },
-  
+
   {
     name: "StrikethroughS",
     file: "StrikethroughS.svg",
@@ -1309,7 +1316,7 @@ export const iconsMetaData = [
     tags: "Strike Through, Text, Design",
     category: [PLATFORM],
   },
-  
+
   {
     name: "Sun",
     file: "Sun.svg",
