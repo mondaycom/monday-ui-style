@@ -5,6 +5,13 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "ItemHeightTriple",
+      file: "ItemHeightTriple.svg",
+      description: "Item height triple",
+      tags: "height,item,line,triple"
+  },
+
+  {
       name: "NavigationDoubleChevronLeft",
       file: "NavigationDoubleChevronLeft.svg",
       description: "Navigation double chevron left",
