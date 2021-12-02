@@ -10,6 +10,13 @@ export const iconsMetaData = [
       description: "Item height triple",
       tags: "height,item,line,triple"
   },
+  {
+      name: "TextMedium",
+      file: "TextMedium.svg",
+      description: "Text Medium",
+      tags: "Medium,Text,Design,Font,Text Medium",
+      category: [BASIC],
+  },
 
   {
       name: "NavigationDoubleChevronLeft",
