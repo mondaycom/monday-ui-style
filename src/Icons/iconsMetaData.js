@@ -571,6 +571,13 @@ export const iconsMetaData = [
     category: [PLATFORM],
   },
   {
+    name: "EnabledUser",
+    file: "EnabledUser.svg",
+    description: "Enabled User",
+    tags: "Enabled User, User",
+    category: [PLATFORM],
+  },
+  {
     name: "Divider",
     file: "Divider.svg",
     description: "Divider",
@@ -1559,6 +1566,13 @@ export const iconsMetaData = [
       file: "UserDomain.svg",
       description: "User domain",
       tags: "user, domain, email"
+  },
+
+  {
+      name: "EmailDomain",
+      file: "EmailDomain.svg",
+      description: "Email domain",
+      tags: "domain, email"
   },
 
   {
