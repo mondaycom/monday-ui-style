@@ -5,6 +5,155 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "Switcher",
+      file: "Switcher.svg",
+      description: "Switching between products",
+      tags: ""
+  },
+
+  {
+      name: "Description",
+      file: "Description.svg",
+      description: "Description",
+      tags: "description"
+  },
+
+  {
+      name: "LearnMore",
+      file: "LearnMore.svg",
+      description: "Learn More",
+      tags: "LearnMore,Learn More,Question"
+  },
+
+  {
+      name: "ItemHeightTriple",
+      file: "ItemHeightTriple.svg",
+      description: "Item height triple",
+      tags: "height,item,line,triple"
+  },
+  {
+      name: "TextMedium",
+      file: "TextMedium.svg",
+      description: "Text Medium",
+      tags: "Medium,Text,Design,Font,Text Medium",
+      category: [BASIC],
+  },
+
+  {
+      name: "NavigationDoubleChevronLeft",
+      file: "NavigationDoubleChevronLeft.svg",
+      description: "Navigation double chevron left",
+      tags: "nagivation,double,chevron,left,history"
+  },
+
+  {
+      name: "Night",
+      file: "Night.svg",
+      description: "Night",
+      tags: "night, stars, dark"
+  },
+
+  {
+      name: "Mirror",
+      file: "Mirror.svg",
+      description: "mirror",
+      tags: "mirror,connect"
+  },
+
+  {
+      name: "Minimize",
+      file: "Minimize.svg",
+      description: "minimize",
+      tags: "minimize,close,collapse"
+  },
+
+  {
+      name: "Layout",
+      file: "Layout.svg",
+      description: "Layout",
+      tags: "Layout, Grid"
+  },
+
+  {
+      name: "DocTemplate",
+      file: "DocTemplate.svg",
+      description: "Template Doc",
+      tags: "Template, Doc"
+  },
+
+  {
+      name: "ConvertToItem",
+      file: "ConvertToItem.svg",
+      description: "ConvertToItem",
+      tags: "convert,item"
+  },
+
+  {
+      name: "TextCopy",
+      file: "TextCopy.svg",
+      description: "Copy Text",
+      tags: "copy,text,t"
+  },
+  {
+      name: "Open",
+      file: "Open.svg",
+      description: "Open",
+      tags: "open"
+  },
+  {
+      name: "Expand",
+      file: "Expand.svg",
+      description: "Expand",
+      tags: "expand"
+  },
+  {
+      name: "ConvertToSubitem",
+      file: "ConvertToSubitem.svg",
+      description: "Convert To Subitem",
+      tags: "convert, subitem"
+  },
+  {
+      name: "Clear",
+      file: "Clear.svg",
+      description: "Clear",
+      tags: "clear"
+  },
+  {
+      name: "TextColorIndicator",
+      file: "TextColorIndicator.svg",
+      description: "",
+      tags: "text, A, font"
+  },
+
+  {
+      name: "Bug",
+      file: "Bug.svg",
+      description: "Bug",
+      tags: "bug"
+  },
+
+  {
+      name: "Battery",
+      file: "Battery.svg",
+      description: "Battery",
+      tags: "battery"
+  },
+
+  {
+      name: "Status",
+      file: "Status.svg",
+      description: "Status icon",
+      tags: "status, done, status category"
+  },
+
+  {
+      name: "Subitems",
+      file: "Subitems.svg",
+      description: "Subitems icon",
+      tags: "subitems, subitems category"
+  },
+
+  {
     name: "Gantt",
     file: "Gantt.svg",
     description: "Gantt icon",
@@ -170,7 +319,6 @@ export const iconsMetaData = [
     tags: "Add, Plus",
     category: [BASIC],
   },
-
   {
     name: "AddSmall",
     file: "AddSmall.svg",
@@ -178,7 +326,6 @@ export const iconsMetaData = [
     tags: "Add, Plus",
     category: [BASIC],
   },
-
   {
     name: "AddUpdate",
     file: "AddUpdate.svg",
@@ -186,7 +333,6 @@ export const iconsMetaData = [
     tags: "Add, Plus, Update",
     category: [PLATFORM],
   },
-
   {
     name: "Alert",
     file: "Alert.svg",
@@ -194,7 +340,6 @@ export const iconsMetaData = [
     tags: "Alert, Warning, Danger",
     category: [BASIC],
   },
-
   {
     name: "Announcement",
     file: "Announcement.svg",
@@ -216,7 +361,6 @@ export const iconsMetaData = [
     tags: "Archive, Box",
     category: [PLATFORM],
   },
-
   {
     name: "Attach",
     file: "Attach.svg",
@@ -224,7 +368,6 @@ export const iconsMetaData = [
     tags: "Attach, Clip, Add Files",
     category: [PLATFORM],
   },
-
   {
     name: "BlockQuote",
     file: "BlockQuote.svg",
@@ -232,7 +375,6 @@ export const iconsMetaData = [
     tags: "Blockquote, Block, Quote, Text, Design",
     category: [PLATFORM],
   },
-
   {
     name: "Board",
     file: "Board.svg",
@@ -440,6 +582,13 @@ export const iconsMetaData = [
     file: "Delete.svg",
     description: "Delete",
     tags: "Delete, Remove, Trash, Bin",
+    category: [PLATFORM],
+  },
+  {
+    name: "DisabledUser",
+    file: "DisabledUser.svg",
+    description: "Disabled User",
+    tags: "Disabled User, Remove User",
     category: [PLATFORM],
   },
   {
@@ -651,6 +800,13 @@ export const iconsMetaData = [
     category: [PLATFORM],
   },
   {
+        name: "Gallery",
+        file: "Gallery.svg",
+        description: "Gallery",
+        tags: "Gallery, Files, Image gallery",
+        category: [PLATFORM],
+  },
+  {
     name: "GIF",
     file: "Gif.svg",
     description: "Gif",
@@ -801,6 +957,14 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Lines",
+    file: "Lines.svg",
+    description: "Lines",
+    tags: "Lines, Rows",
+    category: [PLATFORM],
+  },
+
+  {
     name: "Link",
     file: "Link.svg",
     description: "Link",
@@ -919,6 +1083,14 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Mute",
+    file: "Mute.svg",
+    description: "Mute",
+    tags: "Mute",
+    category: [PLATFORM]
+  },
+
+  {
     name: "MyWeek",
     file: "MyWeek.svg",
     description: "My week",
@@ -1011,6 +1183,14 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Pause",
+    file: "Pause.svg",
+    description: "Pause",
+    tags: "Pause, Hold",
+    category: [PLATFORM],
+  },
+
+  {
     name: "Person",
     file: "Person.svg",
     description: "Person",
@@ -1023,6 +1203,14 @@ export const iconsMetaData = [
     file: "Pin.svg",
     description: "Pin",
     tags: "Pin",
+    category: [PLATFORM],
+  },
+
+  {
+    name: "Play",
+    file: "Play.svg",
+    description: "Play",
+    tags: "Play, Start",
     category: [PLATFORM],
   },
 
@@ -1078,7 +1266,7 @@ export const iconsMetaData = [
     name: "Retry",
     file: "Retry.svg",
     description: "Retry",
-    tags: "Retry, Reload",
+    tags: "Retry, Reload, Refresh",
     category: [PLATFORM],
   },
 
@@ -1087,6 +1275,14 @@ export const iconsMetaData = [
     file: "Robot.svg",
     description: "Robot",
     tags: "Robot, Automations",
+    category: [PLATFORM],
+  },
+
+  {
+    name: "Rotate",
+    file: "Rotate.svg",
+    description: "Rotate",
+    tags: "Rotate, Clockwise retry, Clockwise reload, Clockwise refresh",
     category: [PLATFORM],
   },
 
@@ -1162,6 +1358,14 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Sound",
+    file: "Sound.svg",
+    description: "Sound",
+    tags: "Sound, Audio, Speaker",
+    category: [PLATFORM],
+  },
+
+  {
     name: "StrikethroughS",
     file: "StrikethroughS.svg",
     description: "Strike Through",
@@ -1176,6 +1380,7 @@ export const iconsMetaData = [
     tags: "Strike Through, Text, Design",
     category: [PLATFORM],
   },
+
   {
     name: "Sun",
     file: "Sun.svg",
@@ -1353,7 +1558,42 @@ export const iconsMetaData = [
     name: "Workspace",
     file: "Workspace.svg",
     description: "Workspace",
-    tags: "Workspace",
+    tags: "Workspace, Grid",
     category: [PLATFORM],
   },
+
+  {
+      name: "Deactivate",
+      file: "Deactivate.svg",
+      description: "Deactivate",
+      tags: "deactivate, active"
+  },
+
+  {
+      name: "AddToTeam",
+      file: "AddToTeam.svg",
+      description: "Add to team",
+      tags: "user, users, team, add"
+  },
+
+  {
+      name: "PersonRound",
+      file: "PersonRound.svg",
+      description: "Person round",
+      tags: "person, user"
+  },
+
+  {
+      name: "UserDomain",
+      file: "UserDomain.svg",
+      description: "User domain",
+      tags: "user, domain, email"
+  },
+
+  {
+      name: "UserStatus",
+      file: "UserStatus.svg",
+      description: "User status",
+      tags: "user, status"
+  }
 ];
