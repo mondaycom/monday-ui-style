@@ -35,6 +35,6 @@
   --font-subtext: var(--font-weight-normal) var(--font-size-1)/var(--font-line-height-1) var(--font-family);
 
   // Font smoothing
-  --webkit-font-smoothing: antialiased;
-  --moz-font-smoothing: grayscale;
+  --font-smoothing-webkit: antialiased;
+  --font-smoothing-moz: grayscale;
 }
