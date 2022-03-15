@@ -5,38 +5,50 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
-      name: "Timeline",
-      file: "Timeline.svg",
-      description: "Timeline",
-      tags: "Timeline"
+    name: "SlidePanel",
+    file: "SlidePanel.svg",
+    description: "Slide Panel",
+    tags: "",
+  },
+  {
+    name: "Modal",
+    file: "Modal.svg",
+    description: "Modal",
+    tags: "",
+  },
+  {
+    name: "Timeline",
+    file: "Timeline.svg",
+    description: "Timeline",
+    tags: "Timeline",
   },
 
   {
-      name: "Tags",
-      file: "Tags.svg",
-      description: "Tags",
-      tags: "Hash Tag Mention"
+    name: "Tags",
+    file: "Tags.svg",
+    description: "Tags",
+    tags: "Hash Tag Mention",
   },
 
   {
-      name: "Dropdown",
-      file: "Dropdown.svg",
-      description: "Dropdown",
-      tags: "Dropdown, column"
+    name: "Dropdown",
+    file: "Dropdown.svg",
+    description: "Dropdown",
+    tags: "Dropdown, column",
   },
 
   {
-      name: "Country",
-      file: "Country.svg",
-      description: "Country, Flag",
-      tags: "Country,flag"
+    name: "Country",
+    file: "Country.svg",
+    description: "Country, Flag",
+    tags: "Country,flag",
   },
 
   {
-      name: "MondayDoc",
-      file: "MondayDoc.svg",
-      description: "Monday Doc",
-      tags: "Doc, Document"
+    name: "MondayDoc",
+    file: "MondayDoc.svg",
+    description: "Monday Doc",
+    tags: "Doc, Document",
   },
 
   {
