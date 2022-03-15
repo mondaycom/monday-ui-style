@@ -1,0 +1,12 @@
+//
+$core-shadow-size: (
+        small: $shadow-size-small,
+        medium: $shadow-size-medium,
+        large: $shadow-size-large,
+        mediun: var(--box-shadow-medium)
+);
+
+$core-shadow-opacity: (
+        opacity: $shadow-opacity,
+        lg-opacity: $shadow-lg-opacity,
+);

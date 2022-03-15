@@ -1,0 +1,56 @@
+//
+@import "core/tokens";
+@import "core/maps";
+
+:root {
+  // Creating Core Font Variables
+  // - general font definitions
+  @each $key, $value in $core-fonts {
+    --font-#{$key}: #{$value};
+  }
+
+  // - font weights
+  @each $key, $value in $core-font-weight {
+    --font-weight-#{$key}: #{$value};
+  }
+
+  // - font size scale
+  @each $key, $value in $core-font-size-scale {
+    --font-size-#{$key}: #{$value};
+  }
+
+  // -line-height scale
+  @each $key, $value in $core-line-height-scale {
+    --font-line-height-#{$key}: #{$value};
+  }
+
+  // Creating Core Typography font-sizes
+  @each $key, $value in $core-typography-font-sizes {
+    --font-size-#{$key}: #{$value};
+  }
+
+  // Creating Core Typography line heights
+  @each $key, $value in $core-typography-line-height-sizes {
+    --font-line-height-#{$key}: #{$value};
+  }
+
+  // Creating Core Typography font settings
+  @each $key, $value in $core-typography-fonts {
+    --font-#{$key}: #{$value};
+  }
+
+  // Creating Core Spacing variables
+  @each $key, $value in $core-spacing {
+    --spacing-#{$key}: #{$value};
+  }
+
+  // Creating Core Radius variables
+  @each $key, $value in $core-radius {
+    --border-radius-#{$key}: #{$value};
+  }
+
+  // Creating Core Motion variables
+  @each $key, $value in $core-motion {
+    --#{$key}: #{$value};
+  }
+}

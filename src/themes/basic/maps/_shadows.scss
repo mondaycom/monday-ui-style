@@ -1,0 +1,7 @@
+//
+$theme-basic-shadows: (
+        small: $shadow-size-small rgba($shadow-color, $shadow-opacity),
+        medium: $shadow-size-medium rgba($shadow-color, $shadow-opacity),
+        large: $shadow-size-large rgba($shadow-color, $shadow-lg-opacity),
+        mediun: 0px 6px 20px rgba(0, 0, 0, 0.2),
+);

@@ -1,0 +1,29 @@
+//
+
+@import "basic/theme-basic-tokens";
+@import "basic/theme-basic-maps";
+
+:root,
+.light-app-theme,
+.default-app-theme {
+  // Color variables
+  // - Creating Base colors variables
+  @each $key, $value in $theme-basic-colors {
+    --color-#{$key}: #{$value};
+  }
+
+  // - Creating Content colors variables
+  @each $key, $value in $theme-basic-content-colors {
+    --color-#{$key}: #{$value};
+  }
+
+  // - Creating Keys Semantic variables
+  @each $key, $value in $theme-basic-keys {
+    --#{$key}: #{$value};
+  }
+
+  // - Creating Box Shadow variables
+  @each $key, $value in $theme-basic-shadows {
+    --box-shadow-#{$key}: #{$value};
+  }
+}
