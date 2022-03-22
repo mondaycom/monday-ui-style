@@ -1,0 +1,11 @@
+//
+$core-settings: map-collect(
+                $core-font-size-scale,
+                $core-line-height-scale,
+                $core-motion,
+                $core-radius,
+                $core-spacing,
+                $core-typography-font-sizes,
+                $core-typography-line-height-sizes,
+                $core-typography-fonts
+);

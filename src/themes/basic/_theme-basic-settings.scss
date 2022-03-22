@@ -1,0 +1,8 @@
+//
+
+$theme-basic-settings: map-collect(
+                $theme-basic-colors,
+                $theme-basic-legacy-colors,
+                $theme-basic-content-colors,
+                $theme-basic-keys
+);

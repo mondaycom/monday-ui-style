@@ -65,5 +65,5 @@ $link-on-secondary-color: var(--color-link_color);
 $shadow-color: #000000;
 $shadow-small: $shadow-size-small rgba($shadow-color, $shadow-opacity);
 $shadow-medium: $shadow-size-medium rgba($shadow-color, $shadow-opacity);
-$shadow-large: $shadow-size-large rgba($shadow-color, $shadow-lg-opacity);
+$shadow-large: $shadow-size-large rgba($shadow-color, $shadow-large-opacity);
 $shadow-mediun: $shadow-medium;

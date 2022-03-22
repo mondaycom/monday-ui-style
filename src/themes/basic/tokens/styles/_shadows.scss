@@ -1,9 +1,8 @@
 $box-shadow-color: #000000;
 
-
-$box-shadow-small: 0 4px 8px -1px rgba($box-shadow-color, $shadow-opacity);
-$box-shadow-medium: 0px 6px 20px -2px rgba($box-shadow-color, $shadow-opacity);
-$box-shadow-large: 0px 15px 50px -10px rgba($box-shadow-color, $shadow-lg-opacity);
+$box-shadow-small: $shadow-size-small rgba($box-shadow-color, $shadow-opacity);
+$box-shadow-medium: $shadow-size-medium rgba($box-shadow-color, $shadow-opacity);
+$box-shadow-large: $shadow-size-large rgba($box-shadow-color, $shadow-large-opacity);
 
 // legacy
 $box-shadow-mediun: $box-shadow-medium;
