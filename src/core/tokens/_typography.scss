@@ -1,31 +1,39 @@
-// Font sizes (numeric units)
+// CORE TOKENS: FONTS
+// - This partial Defines Global motion tokens
+
+// REGISTRATION TOKENS
+// - Font sizes (numeric units)
 $font-reg-size-14: 14px;
 $font-reg-size-16: 16px;
 $font-reg-size-18: 18px;
 $font-reg-size-24: 24px;
 $font-reg-size-32: 32px;
 
-// Line heights (numeric units)
+// - Line heights (numeric units)
 $font-reg-line-height-18: 18px;
 $font-reg-line-height-24: 24px;
 $font-reg-line-height-32: 32px;
 $font-reg-line-height-52: 52px;
 
+// GLOBAL FONT TOKENS
 $font-size-base: $font-reg-size-16;
 
-// Font weights
+// - Font weights
 $font-weight-very-light: 200;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
 
-// Font family
+// - Font family
 $font-family: "Roboto", "Rubik", "Noto Kufi Arabic", "Noto Sans JP", sans-serif;
 
-// Font smoothing
+// - Font smoothing
 $font-smoothing-webkit: antialiased;
 $font-smoothing-moz: grayscale;
 
+
+// FONTS SCALES
+// - Font Size scale
 $font-size-10: $font-reg-size-14;
 $font-size-20: $font-reg-size-14;
 $font-size-30: $font-size-base;
@@ -33,7 +41,7 @@ $font-size-40: $font-reg-size-18;
 $font-size-50: $font-reg-size-24;
 $font-size-60: $font-reg-size-32;
 
-// Line heights (numeric units)
+// - LINE HEIGHT SCALE
 $font-line-height-10: $font-reg-line-height-18;
 $font-line-height-20: $font-reg-line-height-24;
 $font-line-height-30: $font-reg-line-height-24;
@@ -41,8 +49,8 @@ $font-line-height-40: $font-reg-line-height-24;
 $font-line-height-50: $font-reg-line-height-32;
 $font-line-height-60: $font-reg-line-height-52;
 
-
-// Font sizes (meaningful units)
+// TYPOGRAPHY TOKENS
+// - Font sizes (meaningful units)
 $font-size-h1: var(--font-size-60);
 $font-size-h2: var(--font-size-50);
 $font-size-h3: var(--font-size-50);
@@ -52,7 +60,7 @@ $font-size-general-label: var(--font-size-20);
 $font-size-paragraph: var(--font-size-30);
 $font-size-subtext: var(--font-size-10);
 
-// Line heights (meaningful units)
+// - Line heights (meaningful units)
 $font-line-height-h1: var(--font-line-height-60);
 $font-line-height-h2: var(--font-line-height-50);
 $font-line-height-h3: var(--font-line-height-50);
@@ -62,7 +70,7 @@ $font-line-height-general-label: var(--font-line-height-20);
 $font-line-height-paragraph: var(--font-line-height-30);
 $font-line-height-subtext: var(--font-line-height-10);
 
-// Fonts
+// - Font definition shorthands per semantics atom definitions
 $font-h1: var(--font-weight-bold) var(--font-size-h1)/var(--font-line-height-h1) var(--font-family);
 $font-h2: var(--font-weight-bold) var(--font-size-h2)/var(--font-line-height-h2) var(--font-family);
 $font-h3: var(--font-weight-light) var(--font-size-h3)/var(--font-line-height-h3) var(--font-family);

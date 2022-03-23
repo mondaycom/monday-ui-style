@@ -1,3 +1,10 @@
+// ＣＯＲＥ ＭＡＰＳ： ＴＹＰＯＧＲＡＰＨＹ
+
+// This partial defines typography related maps.
+// - Maps include Font scope tokens.
+// - Maps are collected into the $core-settings map and are interpolated into custom properties.
+
+
 $core-typography-font-sizes: (
         font-size-h1: $font-size-h1,
         font-size-h2: $font-size-h2,

@@ -1,4 +1,6 @@
-//
+// CORE SETTINGS: This partial Defines a Unified settings map for the Core Scope.
+// - Map collect function is used in order to merge multiple maps.
+
 $core-settings: map-collect(
                 $core-font-size-scale,
                 $core-line-height-scale,
@@ -7,5 +9,5 @@ $core-settings: map-collect(
                 $core-spacing,
                 $core-typography-font-sizes,
                 $core-typography-line-height-sizes,
-                $core-typography-fonts
+                $core-typography-fonts,
 );

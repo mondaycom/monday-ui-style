@@ -1,3 +1,7 @@
+// CORE MOTION MAP: This partial defines a border radius related map.
+// - Map includes border radius scope tokens.
+// - Map is collected into the $core-settings map and is interpolated into custom properties.
+
 $core-radius: (
         border-small: $border-radius-small,
         border-medium: $border-radius-medium,

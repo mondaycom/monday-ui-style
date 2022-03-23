@@ -1,4 +1,6 @@
-//
+// CORE: This partial loads Core scope related Custom properties
+// - Core properties are Global and Generic and goes under :root
+
 @import "core/tokens";
 @import "core/maps";
 @import "core/settings";

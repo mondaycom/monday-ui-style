@@ -1,4 +1,6 @@
-//
+// CORE SPACING MAP: This partial defines a Spacing related map.
+// - Map include spacing scope tokens.
+// - Map is collected into the $core-settings map and is interpolated into custom properties.
 
 $core-spacing: (
         spacing-xs: $spacing-xs,

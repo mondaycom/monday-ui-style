@@ -1,4 +1,6 @@
-//
+// BASIC THEME CONTENT COLOR MAP: This partial defines the basic theme's content color map.
+// - Map include content color scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
 $theme-basic-content-colors: (
         color-grass_green: $color-grass_green,

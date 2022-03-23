@@ -1,4 +1,6 @@
-//
+// BASIC THEME COLOR MAP: This partial defines the basic theme's registration color map.
+// - Map include Registration color scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
 $theme-basic-colors: (
         color-asphalt: $color-asphalt,

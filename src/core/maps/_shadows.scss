@@ -1,5 +1,8 @@
-//
-$core-shadow-size: (
+// CORE SHADOW MAPs: This partial defines shadow related maps.
+// - Maps include shadow scope tokens.
+// - These maps are currently not interpolated into custom properties.
+
+$core-shadow: (
         small: $shadow-size-small,
         medium: $shadow-size-medium,
         large: $shadow-size-large,

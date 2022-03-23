@@ -1,4 +1,10 @@
-//
+// FUNCTIONS: This partial loads global scope functions.
+
+// - Map Collect
+// @arguments: multiple coma separated $maps.
+// @return: a single map with merged values.
+// How to use: we use map collect to merge maps from different scopes.
+// - We assume there will be no key duplication since scopes are separated.
 
 @function map-collect($maps...) {
   $collection: ();
