@@ -3,9 +3,8 @@
 // - Map Collect
 // @arguments: multiple coma separated $maps.
 // @return: a single map with merged values.
-// How to use: we use map collect to merge maps from different scopes.
+// Use: we use "map-collect" to merge maps from different scopes.
 // - We assume there will be no key duplication since scopes are separated.
-
 @function map-collect($maps...) {
   $collection: ();
 
@@ -13,4 +12,13 @@
     $collection: map-merge($collection, $map);
   }
   @return $collection;
+}
+
+// Extract Rgb
+// @arguments $color (can be hardcoded or $color)
+// @return: comma separated RGB values
+// Use: We use "extract-rgb" when we want to return a comma separated list of rgb values from a color.
+// - We use it in some of our token assignments and their custom-properties output.
+@function extract-rgb($color) {
+  @return red($color), green($color), blue($color);
 }

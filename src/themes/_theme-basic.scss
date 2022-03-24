@@ -1,13 +1,12 @@
-// THEM BASIC: This partial loads Theme Basic scope related Custom properties
+// BASIC THEME: This partial loads BASIC THEME scope related Custom properties
 // - Properties are Theme Specific and goes under a Theme Specific Class based Selectors.
 
 @import "basic/theme-basic-tokens";
 @import "basic/theme-basic-maps";
 @import "basic/theme-basic-settings";
 
+:root,
 .light-app-theme,
 .default-app-theme {
-  @each $key, $value in $theme-basic-settings {
-    --#{$key}: #{$value};
-  }
+  @include generate-custom-properties($theme-basic-settings);
 }

@@ -6,9 +6,5 @@
 @import "core/settings";
 
 :root {
-  // Creating Core Font Variables
-  // - general font definitions
-  @each $key, $value in $core-settings {
-    --#{$key}: #{$value};
-  }
+  @include generate-custom-properties($core-settings);
 }

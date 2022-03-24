@@ -8,5 +8,6 @@
 // - CSS Output is custom properties definitions for global :root and themes scopes.
 
 @import "functions";
+@import "mixins";
 @import "core";
 @import "themes";

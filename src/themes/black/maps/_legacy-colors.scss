@@ -1,0 +1,8 @@
+// BLACK THEME LEGACY COLOR MAP: This partial defines the black theme's legacy color map.
+// - Map include legacy color scope tokens.
+// - Its main Purpose is to cleanup non "VIBE" tokens from the Registration map ($theme-black-colors).
+// - Map is collected into the $theme-black-settings map and is interpolated into custom properties.
+
+$theme-black-legacy-colors:(
+  // Placeholder
+);

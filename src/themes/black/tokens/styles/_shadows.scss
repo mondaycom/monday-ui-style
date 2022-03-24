@@ -1,0 +1,11 @@
+// BLACK THEME TOKENS: SHADOWS
+// - This partial defines Black Theme's shadow tokens
+
+$theme-black-box-shadow-color: #000000;
+
+$theme-black-box-shadow-small: $shadow-size-small rgba($theme-black-box-shadow-color, $shadow-opacity);
+$theme-black-box-shadow-medium: $shadow-size-medium rgba($theme-black-box-shadow-color, $shadow-opacity);
+$theme-black-box-shadow-large: $shadow-size-large rgba($theme-black-box-shadow-color, $shadow-large-opacity);
+
+// legacy
+$theme-black-box-shadow-mediun: $theme-black-box-shadow-medium;
