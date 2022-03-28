@@ -2,9 +2,7 @@
 // - Each map contains a token scope
 // - Maps are assigned with 'tokens' from the 'tokens' Scope
 
-@import "maps/base";
-@import "maps/content";
-@import "maps/legacy-colors";
-@import "maps/legacy-keys";
-@import "maps/keys";
-@import "maps/shadows";
+@import "maps/theme-dark-base";
+@import "maps/theme-dark-content";
+@import "maps/theme-dark-keys";
+@import "maps/theme-dark-shadows";

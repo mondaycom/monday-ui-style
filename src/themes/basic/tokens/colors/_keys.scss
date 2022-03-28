@@ -4,8 +4,7 @@
 // - Theme keys should hold registration values (colors, content colors, other keys)
 //   - In some case there are unique hex values assignments
 //   - They should be transformed into Registration colors.
-//     - We add some annotation to their scope when found.
-//     - E.g: #d0d4e4 (natural light border)
+//    - We replaced them with nearest registration or key colors.
 // - When several key has the same value and have a connection
 // - We either use $token or var(--token) depending on connection logic and value type.
 
@@ -44,7 +43,7 @@ $shareable-color: var(--color-purple);
 // borders
 $ui-border-color: var(--color-wolf_gray);
 $ui-border-on-secondary-color: var(--color-wolf_gray);
-$layout-border-color: #d0d4e4; // todo: should be a registration token (base color token)
+$layout-border-color:var(--color-ui_grey);
 $layout-border-on-secondary-color: $layout-border-color;
 
 $placeholder-color: var(--color-asphalt);
@@ -74,7 +73,7 @@ $secondary-text-on-secondary-color: var(--color-asphalt);
 $link-color: var(--color-link_color);
 $link-on-secondary-color: var(--color-link_color);
 
-$shadow-color: $color-black;
+$shadow-color: $color-mud_black;
 $shadow-small: $shadow-size-small rgba($shadow-color, $shadow-opacity);
 $shadow-medium: $shadow-size-medium rgba($shadow-color, $shadow-opacity);
 $shadow-large: $shadow-size-large rgba($shadow-color, $shadow-large-opacity);

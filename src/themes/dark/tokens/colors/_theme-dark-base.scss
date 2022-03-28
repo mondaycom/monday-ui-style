@@ -1,0 +1,35 @@
+//  DARK THEME TOKENS: BASE COLORS
+// - This partial defines Dark Theme's base color tokens
+
+$theme-dark-color-blue-light-cool: #69a7ef;
+$theme-dark-color-blue-atlantic: #133774;
+
+// Grays 
+$theme-dark-color-gray-snow: #d5d8df;
+$theme-dark-color-gray-fog: #797e93;
+$theme-dark-color-silver: #4b4e69;
+$theme-dark-color-space-gray: #676879;
+$theme-dark-color-gray-dark-midnight: #181b34;
+$theme-dark-color-gray-dark-graphite: #30324e;
+
+// Semantics
+$theme-dark-color-success-highlight: #26503e;
+$theme-dark-color-error-highlight: #642830;
+
+// Semantics assignments
+$theme-dark-color-highlight_blue: $theme-dark-color-blue-atlantic;
+$theme-dark-color-highlight_blue-rgb: extract-rgb($theme-dark-color-highlight-blue);
+
+$theme-dark-color-link_color: $theme-dark-color-blue-light-cool;
+
+// Gray Key assignments
+$theme-dark-color-snow_white: $theme-dark-color-gray-snow;
+$theme-dark-color-snow_white-rgb: extract-rgb($theme-dark-color-snow_white);
+$theme-dark-color-snow_white-with-opacity: rgba($theme-dark-color-snow_white, 0.4);
+$theme-dark-color-ui_grey: $theme-dark-color-silver;
+$theme-dark-color-wolf_gray: $theme-dark-color-gray-dark-graphite;
+$theme-dark-color-wolf_gray-with-opacity: rgba($theme-dark-color-wolf_gray, 0.1);
+$theme-dark-color-mud_black: $theme-dark-color-gray-dark-midnight;
+$theme-dark-color-riverstone_gray: $theme-dark-color-gray-fog;
+$theme-dark-color-asphalt: $theme-dark-color-space-gray;
+$theme-dark-color-asphalt-with-opacity: rgba($theme-dark-color-asphalt, 0.1);

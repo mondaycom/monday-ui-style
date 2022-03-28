@@ -1,0 +1,19 @@
+// BASIC THEME COLOR MAP: This partial defines the basic theme's registration color map.
+// - Map include Registration color scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+// - We only include keys that are assigned different value then basic theme's
+
+$theme-dark-colors: (
+        color-hightlight_blue: $theme-dark-color-highlight-blue,
+        color-hightlight_blue-rgb: $theme-dark-color-highlight_blue-rgb,
+        color-snow_white: $theme-dark-color-gray-snow,
+        color-snow_white-rgb: $theme-dark-color-snow_white-rgb,
+        color-riverstone_gray: $theme-dark-color-riverstone_gray,
+        color-ui_grey: $theme-dark-color-ui_grey,
+        color-wolf_gray: $theme-dark-color-wolf_gray,
+        color-asphalt: $theme-dark-color-asphalt,
+        color-mud_black: $theme-dark-color-mud_black,
+        color-success-highlight: $theme-dark-color-success-highlight,
+        color-error-highlight:$theme-dark-color-error-highlight,
+        color-link_color: $theme-dark-color-link_color,
+);

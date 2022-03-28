@@ -1,6 +1,13 @@
 //  BASIC THEME  TOKENS: CONTENT COLORS
 // - This partial defines Basic Theme's content color tokens
 
+// Sort order by design definitions.
+
+// Teal
+$color-content-teal: #175a63;
+$color-content-teal-hover: #12484f;
+$color-content-teal-selected: #8bacb1;
+
 // green grass
 $color-content-grass_green: #037f4c;
 $color-content-grass_green-hover: #116846;
@@ -74,6 +81,11 @@ $color-content-bubble: #faa1f1;
 $color-content-bubble-hover: #be80ba;
 $color-content-bubble-selected: #fcd0f8;
 
+// Orchid
+$color-content-orchid: #d974b0;
+$color-content-orchid-hover: #ae5d8d;
+$color-content-orchid-selected: #ecbad7;
+
 // Purple
 $color-content-purple: #a25ddc;
 $color-content-purple-hover: #8050ab;
@@ -83,6 +95,11 @@ $color-content-purple-selected: #d0aeed;
 $color-content-dark_purple: #784bd1;
 $color-content-dark_purple-hover: #6344a3;
 $color-content-dark_purple-selected: #bba5e8;
+
+// Lavender
+$color-content-lavender: #bda8f9;
+$color-content-lavender-hover: #9786c7;
+$color-content-lavender-selected: #ded4fc;
 
 // Berry
 $color-content-berry: #7e3b8a;
@@ -99,15 +116,40 @@ $color-content-indigo: #5559df;
 $color-content-indigo-hover: #4b4ead;
 $color-content-indigo-selected: #aaacef;
 
+// Lilac
+$color-content-lilac: #9d99b9;
+$color-content-lilac-hover: #7e7a94;
+$color-content-lilac-selected: #ceccdc;
+
+// Steel
+$color-content-steel: #a9bee8;
+$color-content-steel-hover: #8798ba;
+$color-content-steel-selected: #d4dff4;
+
 // Navy
 $color-content-navy: #225091;
 $color-content-navy-hover: #274776;
 $color-content-navy-selected: #90a7c8;
 
+// Royal
+$color-content-royal: #2b76e5;
+$color-content-royal-hover: #225eb7;
+$color-content-royal-selected: #95bbf2;
+
 // Light Blue
 $color-content-bright-blue: #579bfc;
 $color-content-bright-blue-hover: #4c7cc1;
 $color-content-bright-blue-selected: #abcdfd;
+
+// Chili Blue
+$color-content-chili-blue: #66ccff;
+$color-content-chili-blue-hover: #569ec3;
+$color-content-chili-blue-selected: #b2e5ff;
+
+// Sky
+$color-content-sky: #a1e3f6;
+$color-content-sky-hover: #81b6c5;
+$color-content-sky-selected: #d0f1fa;
 
 // Dark blue
 $color-content-dark-blue: #0086c0;
@@ -118,11 +160,6 @@ $color-content-dark-blue-selected: #80c2df;
 $color-content-aquamarine: #4eccc6;
 $color-content-aquamarine-hover: #469e9b;
 $color-content-aquamarine-selected: #a6e5e2;
-
-// Chili Blue
-$color-content-chili-blue: #66ccff;
-$color-content-chili-blue-hover: #569ec3;
-$color-content-chili-blue-selected: #b2e5ff;
 
 // River
 $color-content-river: #68a1bd;
@@ -149,57 +186,22 @@ $color-content-blackish: #333333;
 $color-content-blackish-hover: #222222;
 $color-content-blackish-selected: #999999;
 
+// Pecan
+$color-content-pecan: #563e3e;
+$color-content-pecan-hover: #453232;
+$color-content-pecan-selected: #ab9f9f;
+
 // Brown
 $color-content-brown: #7f5347;
 $color-content-brown-hover: #684943;
 $color-content-brown-selected: #bfa9a3;
 
-// Orchid
-$color-content-orchid: #D974B0;
-$color-content-orchid-hover: #AE5D8D;
-$color-content-orchid-selected: #ECBAD7;
+// Coffee
+$color-content-coffee: #bd816e;
+$color-content-coffee-hover: #976758;
+$color-content-coffee-selected: #dec0b7;
 
 // Tan
-$color-content-tan: #AD967A;
-$color-content-tan-hover: #8A7862;
-$color-content-tan-selected: #D6CABC;
-
-// Sky
-$color-content-sky: #A1E3F6;
-$color-content-sky-hover: #81B6C5;
-$color-content-sky-selected: #D0F1FA;
-
-// Coffee
-$color-content-coffee: #BD816E;
-$color-content-coffee-hover: #976758;
-$color-content-coffee-selected: #DEC0B7;
-
-// Royal
-$color-content-royal: #2B76E5;
-$color-content-royal-hover: #225EB7;
-$color-content-royal-selected: #95BBF2;
-
-// Teal
-$color-content-teal: #175A63;
-$color-content-teal-hover: #12484F;
-$color-content-teal-selected: #8BACB1;
-
-// Lavender
-$color-content-lavender: #BDA8F9;
-$color-content-lavender-hover: #9786C7;
-$color-content-lavender-selected: #DED4FC;
-
-// Steel
-$color-content-steel: #A9BEE8;
-$color-content-steel-hover: #8798BA;
-$color-content-steel-selected: #D4DFF4;
-
-// Lilac
-$color-content-lilac: #9D99B9;
-$color-content-lilac-hover: #7E7A94;
-$color-content-lilac-selected: #CECCDC;
-
-// Pecan
-$color-content-pecan: #563E3E;
-$color-content-pecan-hover: #453232;
-$color-content-pecan-selected: #AB9F9F;
+$color-content-tan: #ad967a;
+$color-content-tan-hover: #8a7862;
+$color-content-tan-selected: #d6cabc;

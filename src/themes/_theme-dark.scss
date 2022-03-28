@@ -1,12 +1,12 @@
 // BLACK THEME: This partial loads BLACK THEME scope related Custom properties
 // - Properties are Theme Specific and goes under a Theme Specific Class based Selectors.
 
-@import "black/theme-black-tokens";
-@import "black/theme-black-maps";
-@import "black/theme-black-settings";
+@import "dark/theme-dark-tokens";
+@import "dark/theme-dark-maps";
+@import "dark/theme-dark-settings";
 
-.black-app-theme {
-  @each $key, $value in $theme-black-settings {
+.dark-app-theme {
+  @each $key, $value in $theme-dark-settings {
     --#{$key}: #{$value};
   }
 }
