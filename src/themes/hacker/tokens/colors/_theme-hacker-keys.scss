@@ -1,0 +1,74 @@
+//  HACKER THEME  TOKENS: SEMANTIC KEYS COLORS
+// - This partial defines Basic Theme's Semantic Keys color tokens
+
+// - Theme keys should hold registration values (colors, content colors, other keys)
+//   - In some case there are unique hex values assignments
+//   - They should be transformed into Registration colors.
+//     - We add some annotation to their scope when found.
+// - When several key has the same value and have a connection
+// - We either use $theme-hacker token or var(--token) depending on connection logic and value type.
+
+// primary coloring
+$theme-hacker-primary-color: $theme-hacker-color-pink-plastic;
+$theme-hacker-primary-on-secondary-color: $theme-hacker-color-pink-plastic;
+$theme-hacker-primary-hover-color: darken($theme-hacker-color-pink-plastic, $theme-hacker-hover-darken-percentage);
+$theme-hacker-primary-hover-on-secondary-color: darken($theme-hacker-color-pink-plastic, $theme-hacker-hover-darken-percentage);
+$theme-hacker-primary-selected-color: $theme-hacker-color-purple-vivid-viola;
+$theme-hacker-primary-selected-color-rgb: extract-rgb($theme-hacker-color-purple-vivid-viola);
+$theme-hacker-primary-selected-on-secondary-color: $theme-hacker-color-purple-vivid-viola;
+$theme-hacker-primary-text-color: $theme-dark-color-gray-snow;
+$theme-hacker-primary-text-on-secondary-color: $theme-dark-color-gray-snow;
+
+$theme-hacker-primary-background-color: $theme-hacker-color-blue-dark-night-sky;
+$theme-hacker-primary-background-color-rgb: extract-rgb($theme-hacker-color-blue-dark-night-sky);
+
+$theme-hacker-primary-background-hover-color: $theme-dark-color-silver;
+$theme-hacker-primary-background-hover-on-secondary-color: $theme-dark-color-silver;
+$theme-hacker-grey-background-color: $theme-hacker-color-blue-dark-night-sky;
+
+$theme-hacker-inverted-color-background: var(--color-snow_white);
+$theme-hacker-text-color-on-inverted: var(--color-mud_black);
+$theme-hacker-modal-background-color: $theme-hacker-color-blue-dark-night-sky;
+
+// states
+$theme-hacker-positive-color: var(--color-success);
+$theme-hacker-positive-color-hover: var(--color-success-hover);
+$theme-hacker-positive-color-selected: var(--color-success-highlight);
+$theme-hacker-negative-color: var(--color-error);
+$theme-hacker-negative-color-hover: var(--color-error-hover);
+$theme-hacker-negative-color-selected: var(--color-error-highlight);
+$theme-hacker-private-color: var(--color-private);
+$theme-hacker-shareable-color: $theme-dark-color-purple-lightish;
+
+// borders
+$theme-hacker-ui-border-color: var(--color-riverstone_gray);
+$theme-hacker-ui-border-on-secondary-color: var(--color-riverstone_gray);
+$theme-hacker-layout-border-color: $theme-hacker-color-gray-manhattan;
+$theme-hacker-layout-border-on-secondary-color: $theme-hacker-color-gray-manhattan;
+
+$theme-hacker-placeholder-color: var(--color-wolf_gray);
+$theme-hacker-placeholder-color-with-opacity: var(--color-wolf_gray-with-opacity);
+$theme-hacker-placeholder-on-secondary-color: var(--color-wolf_gray);
+$theme-hacker-icon-color: var(--color-wolf_gray);
+$theme-hacker-icon-on-secondary-color: var(--color-wolf_gray);
+
+// disabled
+$theme-hacker-disabled-background-color: $theme-hacker-color-gray-shadow-mountain;
+$theme-hacker-disabled-background-on-secondary-color: $theme-hacker-color-gray-shadow-mountain;
+$theme-hacker-disabled-text-color: rgba($color-wolf_gray, 0.75); // Todo: revise, using hard coded interpoltation
+$theme-hacker-disabled-text-on-secondary-color: rgba($color-wolf_gray, 0.75);  // Todo: revise, using hard coded interpoltation
+
+$theme-hacker-dark-background-color: $theme-hacker-color-gray-parisian-night;
+$theme-hacker-dark-background-on-secondary-color: $theme-hacker-color-gray-shadow-mountain;
+$theme-hacker-secondary-background-color: $theme-dark-color-gray-dark-graphite;
+$theme-hacker-secondary-background-color-rgb: extract-rgb($theme-dark-color-gray-dark-graphite);
+
+//deprecated - use secondary-background-color
+$theme-hacker-dialog-background-color: $theme-dark-color-gray-dark-graphite;
+
+$theme-hacker-label-background-color: $theme-dark-color-blue-buster;
+$theme-hacker-label-background-on-secondary-color: $theme-dark-color-blue-buster;
+$theme-hacker-secondary-text-color: var(--color-jaco_gray);
+$theme-hacker-secondary-text-on-secondary-color: var(--color-jaco_gray);
+$theme-hacker-link-color: var(--color-link_color);
+$theme-hacker-link-on-secondary-color: var(--color-link_color);

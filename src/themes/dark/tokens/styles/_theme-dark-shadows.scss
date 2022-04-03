@@ -1,11 +1,12 @@
-// THEME BASIC TOKENS: SHADOWS
+// DARK THEME TOKENS: SHADOWS
 // - This partial defines Basic Theme's shadow tokens
 
-$theme-dark-box-shadow-color: $color-black;
+$theme-dark-shadow-color: $theme-dark-color-gray-dark-rift;
+$theme-dark-shadow-opacity: 0.5;
 
-$theme-dark-box-shadow-small: $shadow-size-small rgba($theme-dark-box-shadow-color, $shadow-opacity);
-$theme-dark-box-shadow-medium: $shadow-size-medium rgba($theme-dark-box-shadow-color, $shadow-opacity);
-$theme-dark-box-shadow-large: $shadow-size-large rgba($theme-dark-box-shadow-color, $shadow-large-opacity);
+$theme-dark-box-shadow-small: $shadow-size-small rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
+$theme-dark-box-shadow-medium: $shadow-size-medium rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
+$theme-dark-box-shadow-large: $shadow-size-large rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
 
 // legacy
-$theme-dark-box-shadow-mediun: $theme-dark-box-shadow-medium;
+$theme-dark-box-shadow-mediun: var(--box-shadow-medium);

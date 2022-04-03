@@ -2,7 +2,7 @@
 // - This partial defines Basic Theme's base color tokens
 
 $color-basic_blue: #0073ea;
-$color-dark_blue: #0060B9;
+$color-dark_blue: #0060b9;
 $color-link_color: #1f76c2;
 $color-highlight_blue: #cce5ff;
 $color-highlight_blue-rgb: extract-rgb($color-highlight_blue);
@@ -27,6 +27,7 @@ $color-asphalt-with-opacity: rgba($color-asphalt, 0.1);
 $color-success: #258750;
 $color-success-hover: #007038;
 $color-success-highlight: #bbdbc9;
+
 // - Error, used as negative key alias
 $color-error: #d83a52;
 $color-error-hover: #b63546;

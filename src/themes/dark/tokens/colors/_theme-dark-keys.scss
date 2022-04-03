@@ -1,11 +1,10 @@
-//  BASIC THEME  TOKENS: SEMANTIC KEYS COLORS
+//  DARK THEME  TOKENS: SEMANTIC KEYS COLORS
 // - This partial defines Basic Theme's Semantic Keys color tokens
 
 // - Theme keys should hold registration values (colors, content colors, other keys)
 //   - In some case there are unique hex values assignments
 //   - They should be transformed into Registration colors.
 //     - We add some annotation to their scope when found.
-//     - E.g: #d0d4e4 (natural light border)
 // - When several key has the same value and have a connection
 // - We either use $theme-dark token or var(--token) depending on connection logic and value type.
 
@@ -15,7 +14,7 @@ $theme-dark-primary-on-secondary-color: var(--color-basic_blue);
 $theme-dark-primary-hover-color: var(--color-dark_blue);
 $theme-dark-primary-hover-on-secondary-color: var(--color-dark_blue);
 $theme-dark-primary-selected-color: var(--color-highlight_blue);
-$theme-dark-primary-selected-color-rgb: var(--color-hightlight_blue-rgb);
+$theme-dark-primary-selected-color-rgb: var(--color-highlight_blue-rgb);
 $theme-dark-primary-selected-on-secondary-color: var(--color-highlight_blue);
 $theme-dark-primary-text-color: var(--color-snow_white);
 $theme-dark-primary-text-on-secondary-color: var(--color-snow_white);
@@ -27,7 +26,7 @@ $theme-dark-primary-background-hover-color: var(--color-ui_grey);
 $theme-dark-primary-background-hover-on-secondary-color: var(--color-ui_grey);
 $theme-dark-grey-background-color: var(--color-mud_black);
 
-$theme-dark-inverted-color-background: var(--color-snow_white);
+$theme-dark-inverted-color-background: $color-snow_white; // Todo: white is not part of dark pallet, $theme-dark-color-gray-snow is replacing it.
 $theme-dark-text-color-on-inverted: var(--color-mud_black);
 $theme-dark-modal-background-color: var(--color-mud_black);
 
@@ -39,7 +38,7 @@ $theme-dark-negative-color: var(--color-error);
 $theme-dark-negative-color-hover: var(--color-error-hover);
 $theme-dark-negative-color-selected: var(--color-error-highlight);
 $theme-dark-private-color: var(--color-private);
-$theme-dark-shareable-color: var(--color-purple);
+$theme-dark-shareable-color: $theme-dark-color-purple-lightish;
 
 // borders
 $theme-dark-ui-border-color: var(--color-riverstone_gray);
@@ -59,7 +58,7 @@ $theme-dark-disabled-background-on-secondary-color: var(--color-ui_grey);
 $theme-dark-disabled-text-color: rgba($color-wolf_gray, 0.75); // TODO: not part of system
 $theme-dark-disabled-text-on-secondary-color: rgba($color-wolf_gray, 0.75); // TODO: not part of system
 
-$theme-dark-dark-background-color: #393b53; //TODO: not part of system
+$theme-dark-dark-background-color: $theme-dark-color-blue-carbon;
 $theme-dark-dark-background-on-secondary-color: var(--color-ui_grey);
 $theme-dark-secondary-background-color: var(--color-wolf_gray);
 $theme-dark-secondary-background-color-rgb: extract-rgb($theme-dark-color-wolf_gray);
@@ -67,15 +66,9 @@ $theme-dark-secondary-background-color-rgb: extract-rgb($theme-dark-color-wolf_g
 //deprecated - use secondary-background-color
 $theme-dark-dialog-background-color: var(--color-wolf_gray);
 
-$theme-dark-label-background-color: #404b69;
-$theme-dark-label-background-on-secondary-color: #404b69;
+$theme-dark-label-background-color: $theme-dark-color-blue-buster;
+$theme-dark-label-background-on-secondary-color: $theme-dark-color-blue-buster;
 $theme-dark-secondary-text-color: var(--color-jaco_gray);
 $theme-dark-secondary-text-on-secondary-color: var(--color-jaco_gray);
 $theme-dark-link-color: var(--color-link_color);
 $theme-dark-link-on-secondary-color: var(--color-link_color);
-
-$theme-dark-shadow-color: $theme-dark-color-mud_black;
-$theme-dark-shadow-small: $shadow-size-small rgba($theme-dark-shadow-color, $shadow-opacity);
-$theme-dark-shadow-medium: $shadow-size-medium rgba($theme-dark-shadow-color, $shadow-opacity);
-$theme-dark-shadow-large: $shadow-size-large rgba($theme-dark-shadow-color, $shadow-large-opacity);
-$theme-dark-shadow-mediun: $theme-dark-shadow-medium;

@@ -1,0 +1,19 @@
+// BLACK THEME COLOR MAP: This partial defines the black theme's registration color map.
+// - Map include Registration color scope tokens.
+// - Map is collected into the $theme-black-settings map and is interpolated into custom properties.
+// - We only include keys that are assigned different value then basic theme's
+
+$theme-black-colors: (
+        color-highlight_blue: $theme-black-color-highlight-blue,
+        color-highlight_blue-rgb: $theme-black-color-highlight_blue-rgb,
+        color-snow_white: $theme-black-color-snow_white,
+        color-snow_white-rgb: $theme-black-color-snow_white-rgb,
+        color-riverstone_gray: $theme-black-color-riverstone_gray,
+        color-ui_grey: $theme-black-color-ui_grey,
+        color-wolf_gray: $theme-black-color-wolf_gray,
+        color-asphalt: $theme-black-color-asphalt,
+        color-mud_black: $theme-black-color-mud_black,
+        color-success-highlight: $theme-black-color-success-highlight,
+        color-error-highlight:$theme-black-color-error-highlight,
+        color-link_color: $theme-black-color-link_color,
+);

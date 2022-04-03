@@ -1,0 +1,13 @@
+// HACKER THEME COLOR MAP: This partial defines the hacker theme's registration color map.
+// - Map include Registration color scope tokens.
+// - Map is collected into the $theme-hacker-settings map and is interpolated into custom properties.
+// - We only include keys that are assigned different value then basic theme's
+
+$theme-hacker-colors: (
+        color-riverstone_gray: $theme-hacker-color-riverstone_gray,
+        color-success: $theme-hacker-color-success,
+        color-success-highlight:$theme-dark-color-success-highlight,
+        color-error: $theme-hacker-color-error,
+        color-error-highlight: $theme-hacker-color-error-highlight,
+        color-link_color: $theme-hacker-color-link_color,
+);

@@ -1,11 +1,11 @@
-// BASIC THEME COLOR MAP: This partial defines the basic theme's registration color map.
+// DARK THEME COLOR MAP: This partial defines the dark theme's registration color map.
 // - Map include Registration color scope tokens.
-// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+// - Map is collected into the $theme-dark-settings map and is interpolated into custom properties.
 // - We only include keys that are assigned different value then basic theme's
 
 $theme-dark-colors: (
-        color-hightlight_blue: $theme-dark-color-highlight-blue,
-        color-hightlight_blue-rgb: $theme-dark-color-highlight_blue-rgb,
+        color-highlight_blue: $theme-dark-color-highlight-blue,
+        color-highlight_blue-rgb: $theme-dark-color-highlight_blue-rgb,
         color-snow_white: $theme-dark-color-gray-snow,
         color-snow_white-rgb: $theme-dark-color-snow_white-rgb,
         color-riverstone_gray: $theme-dark-color-riverstone_gray,

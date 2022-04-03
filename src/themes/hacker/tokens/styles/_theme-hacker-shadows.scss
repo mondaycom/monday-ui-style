@@ -1,0 +1,12 @@
+// HACKER THEME TOKENS: SHADOWS
+// - This partial defines Hacker Theme's shadow tokens
+
+$theme-hacker-shadow-color: $color-black;
+$theme-hacker-shadow-opacity: 0.5;
+
+$theme-hacker-box-shadow-small: $shadow-size-small rgba($theme-hacker-shadow-color, $theme-hacker-shadow-opacity);
+$theme-hacker-box-shadow-medium: $shadow-size-medium rgba($theme-hacker-shadow-color, $theme-hacker-shadow-opacity);
+$theme-hacker-box-shadow-large: $shadow-size-large rgba($theme-hacker-shadow-color, $theme-hacker-shadow-opacity);
+
+// legacy
+$theme-hacker-box-shadow-mediun: var(--box-shadow-medium);

@@ -1,0 +1,10 @@
+// HACKER THEME SHADOW MAP: This partial defines the hacker theme's shadow color map.
+// - Map include shadow scope tokens.
+// - Map is collected into the $theme-hacker-settings map and is interpolated into custom properties.
+
+$theme-hacker-shadows: (
+        box-shadow-small: $theme-hacker-box-shadow-small,
+        box-shadow-medium: $theme-hacker-box-shadow-medium,
+        box-shadow-large: $theme-hacker-box-shadow-large,
+        box-shadow-mediun: $theme-hacker-box-shadow-mediun,
+);

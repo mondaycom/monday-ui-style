@@ -1,0 +1,207 @@
+//  BLACK THEME  TOKENS: CONTENT COLORS
+// - This partial defines Black Theme's content color tokens
+
+// Sort order by design definitions.
+
+// Teal
+$theme-black-color-content-teal: $theme-dark-color-content-teal;
+$theme-black-color-content-teal-hover: $theme-dark-color-content-teal-hover;
+$theme-black-color-content-teal-selected: #274549;
+
+// green grass
+$theme-black-color-content-grass_green: $theme-dark-color-content-grass_green;
+$theme-black-color-content-grass_green-hover: $color-content-grass_green-hover;
+$theme-black-color-content-grass_green-selected: #0a482e;
+
+// done green
+$theme-black-color-content-done-green: $theme-dark-color-content-done-green;
+$theme-black-color-content-done-green-hover: $color-content-done-green-hover;
+$theme-black-color-content-done-green-selected: #096c43;
+$theme-black-color-content-done-green-selected-with-opacity: rgba($theme-black-color-content-done-green-selected, 0.6);
+
+// Bright Green
+$theme-black-color-content-bright-green: $theme-dark-color-content-bright-green;
+$theme-black-color-content-bright-green-hover: $color-content-bright-green-hover;
+$theme-black-color-content-bright-green-selected: #56721b;
+
+// Saladish
+$theme-black-color-content-saladish: $theme-dark-color-content-saladish;
+$theme-black-color-content-saladish-hover: $color-content-saladish-hover;
+$theme-black-color-content-saladish-selected: #6d6329;
+
+// Egg Yolk
+$theme-black-color-content-egg_yolk: $theme-dark-color-content-egg_yolk;
+$theme-black-color-content-egg_yolk-hover: $color-content-egg_yolk-hover;
+$theme-black-color-content-egg_yolk-selected: #886e09;
+$theme-black-color-content-egg_yolk-rgb: extract-rgb($theme-black-color-content-egg_yolk);
+
+// Working on it
+$theme-black-color-content-working_orange: $theme-dark-color-content-working_orange;
+$theme-black-color-content-working_orange-hover: $theme-dark-color-content-working_orange-hover;
+$theme-black-color-content-working_orange-selected: #875e27;
+
+// Dark orange
+$theme-black-color-content-dark-orange: $theme-dark-color-content-dark-orange;
+$theme-black-color-content-dark-orange-hover: $color-content-dark-orange-hover;
+$theme-black-color-content-dark-orange-selected: #883a1f;
+
+// Peach Color
+$theme-black-color-content-peach: $theme-dark-color-content-peach;
+$theme-black-color-content-peach-hover: $color-content-peach-hover;
+$theme-black-color-content-peach-selected: #885f5f;
+
+// Sunset Color
+$theme-black-color-content-sunset: $theme-dark-color-content-sunset;
+$theme-black-color-content-sunset-hover: $color-content-sunset-hover;
+$theme-black-color-content-sunset-selected: #884343;
+$theme-black-color-content-sunset-selected-with-opacity: rgba($theme-black-color-content-sunset-selected, 0.6);
+
+// Stuck red
+$theme-black-color-content-stuck-red: $theme-dark-color-content-stuck-red;
+$theme-black-color-content-stuck-red-hover: $color-content-stuck-red-hover;
+$theme-black-color-content-stuck-red-selected: #792a36;
+
+// Dark red
+$theme-black-color-content-dark-red: $theme-dark-color-content-dark-red;
+$theme-black-color-content-dark-red-hover: $color-content-dark-red-hover;
+$theme-black-color-content-dark-red-selected: #662232;
+
+// Sofia
+$theme-black-color-content-sofia_pink: $theme-dark-color-content-sofia_pink;
+$theme-black-color-content-sofia_pink-hover: $color-content-sofia_pink-hover;
+$theme-black-color-content-sofia_pink-selected: #88134d;
+
+// Lipstick color
+$theme-black-color-content-lipstick: $theme-dark-color-content-lipstick;
+$theme-black-color-content-lipstick-hover: $color-content-lipstick-hover;
+$theme-black-color-content-lipstick-selected: #88356a;
+
+// Bubble
+$theme-black-color-content-bubble: $theme-dark-color-content-bubble;
+$theme-black-color-content-bubble-hover: $color-content-bubble-hover;
+$theme-black-color-content-bubble-selected: #855981;
+
+// Orchid
+$theme-black-color-content-orchid: $theme-dark-color-content-orchid;
+$theme-black-color-content-orchid-hover: $theme-dark-color-content-orchid-hover;
+$theme-black-color-content-orchid-selected: #7e516c;
+
+// Purple
+$theme-black-color-content-purple: #b57de3;
+$theme-black-color-content-purple-hover: $color-content-purple-hover;
+$theme-black-color-content-purple-selected: #593776;
+
+// Dark purple
+$theme-black-color-content-dark_purple: $theme-dark-color-content-dark_purple;
+$theme-black-color-content-dark_purple-hover: $color-content-dark_purple-hover;
+$theme-black-color-content-dark_purple-selected: #442e71;
+
+// Lavender
+$theme-black-color-content-lavender: $theme-dark-color-content-lavender;
+$theme-black-color-content-lavender-hover: $theme-dark-color-content-lavender-hover;
+$theme-black-color-content-lavender-selected: #71688c;
+
+// Berry
+$theme-black-color-content-berry: #9862a1;
+$theme-black-color-content-berry-hover: $color-content-berry-hover;
+$theme-black-color-content-berry-selected: #47264d;
+
+// Dark indigo
+$theme-black-color-content-dark_indigo: #6645a9;
+$theme-black-color-content-dark_indigo-hover: $color-content-dark_indigo-hover;
+$theme-black-color-content-dark_indigo-selected: #291452;
+
+// Indigo
+$theme-black-color-content-indigo: $theme-dark-color-content-indigo;
+$theme-black-color-content-indigo-hover: $color-content-indigo-hover;
+$theme-black-color-content-indigo-selected: #333578;
+
+// Lilac
+$theme-black-color-content-lilac: #687185;
+$theme-black-color-content-lilac-hover: $theme-dark-color-content-lilac-hover;
+$theme-black-color-content-lilac-selected: #63616f;
+
+// Steel
+$theme-black-color-content-steel: $theme-dark-color-content-steel;
+$theme-black-color-content-steel-hover: $theme-dark-color-content-steel-hover;
+$theme-black-color-content-steel-selected: #687185;
+
+// Navy
+$theme-black-color-content-navy: $theme-dark-color-content-navy;
+$theme-black-color-content-navy-hover: $color-content-navy-hover;
+$theme-black-color-content-navy-selected: #193151;
+
+// Royal
+$theme-black-color-content-royal: $theme-dark-color-content-royal;
+$theme-black-color-content-royal-hover: $theme-dark-color-content-royal-hover;
+$theme-black-color-content-royal-selected: #305183;
+
+// Light Blue
+$theme-black-color-content-bright-blue: $theme-dark-color-content-bright-blue;
+$theme-black-color-content-bright-blue-hover: $color-content-bright-blue-hover;
+$theme-black-color-content-bright-blue-selected: #345686;
+
+// Chili Blue
+$theme-black-color-content-chili-blue: $theme-dark-color-content-chili-blue;
+$theme-black-color-content-chili-blue-hover: $color-content-chili-blue-hover;
+$theme-black-color-content-chili-blue-selected: #3b6e88;
+
+// Sky
+$theme-black-color-content-sky: $theme-dark-color-content-sky;
+$theme-black-color-content-sky-hover: $theme-dark-color-content-sky-hover;
+$theme-black-color-content-sky-selected: #65828b;
+
+// Dark blue
+$theme-black-color-content-dark-blue: $theme-dark-color-content-dark-blue;
+$theme-black-color-content-dark-blue-hover: $color-content-dark-blue-hover;
+$theme-black-color-content-dark-blue-selected: #094b69;
+
+// Aquamarine
+$theme-black-color-content-aquamarine: $theme-dark-color-content-aquamarine;
+$theme-black-color-content-aquamarine-hover: $color-content-aquamarine-hover;
+$theme-black-color-content-aquamarine-selected: #2f6e6b;
+
+// River
+$theme-black-color-content-river: $theme-dark-color-content-river;
+$theme-black-color-content-river-hover: $color-content-river-hover;
+$theme-black-color-content-river-selected: #3c5967;
+
+// winter
+$theme-black-color-content-winter: $theme-dark-color-content-winter;
+$theme-black-color-content-winter-hover: $color-content-winter-hover;
+$theme-black-color-content-winter-selected: #555f67;
+
+// Explosive
+$theme-black-color-content-explosive: $theme-dark-color-content-explosive;
+$theme-black-color-content-explosive-hover: $color-content-explosive-hover;
+$theme-black-color-content-explosive-selected: #6a6a6a;
+
+// American Grey
+$theme-black-color-content-american_gray: $theme-dark-color-content-american_gray;
+$theme-black-color-content-american_gray-hover: $color-content-american_gray-hover;
+$theme-black-color-content-american_gray-selected: #494949;
+
+// Blackish
+$theme-black-color-content-blackish: $theme-dark-color-content-blackish;
+$theme-black-color-content-blackish-hover: $color-content-blackish-hover;
+$theme-black-color-content-blackish-selected: $theme-black-color-mud_black;
+
+// Pecan
+$theme-black-color-content-pecan: $theme-dark-color-content-pecan;
+$theme-black-color-content-pecan-hover: $theme-dark-color-content-pecan-hover;
+$theme-black-color-content-pecan-selected: #433939;
+
+// Brown
+$theme-black-color-content-brown: $theme-dark-color-content-brown;
+$theme-black-color-content-brown-hover: $color-content-brown-hover;
+$theme-black-color-content-brown-selected: #48322c;
+
+// Coffee
+$theme-black-color-content-coffee: $theme-dark-color-content-coffee;
+$theme-black-color-content-coffee-hover: $theme-dark-color-content-coffee-hover;
+$theme-black-color-content-coffee-selected: #71564e;
+
+// Tan
+$theme-black-color-content-tan: $theme-dark-color-content-tan;
+$theme-black-color-content-tan-hover: $theme-dark-color-content-tan-hover;
+$theme-black-color-content-tan-selected: #6a6053;

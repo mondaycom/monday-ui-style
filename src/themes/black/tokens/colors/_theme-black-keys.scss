@@ -1,0 +1,73 @@
+//  BLACK THEME  TOKENS: SEMANTIC KEYS COLORS
+// - This partial defines Black Theme's Semantic Keys color tokens
+
+// - Theme keys should hold registration values (colors, content colors, other keys)
+//   - In some case there are unique hex values assignments
+//   - They should be transformed into Registration colors.
+//     - We add some annotation to their scope when found.
+// - When several key has the same value and have a connection
+// - We either use $theme-dark token or var(--token) depending on connection logic and value type.
+
+// primary coloring
+$theme-black-primary-color: var(--color-basic_blue);
+$theme-black-primary-on-secondary-color: var(--color-basic_blue);
+$theme-black-primary-hover-color: var(--color-dark_blue);
+$theme-black-primary-hover-on-secondary-color: var(--color-dark_blue);
+$theme-black-primary-selected-color: var(--color-highlight_blue);
+$theme-black-primary-selected-color-rgb: var(--color-highlight_blue-rgb);
+$theme-black-primary-selected-on-secondary-color: var(--color-highlight_blue);
+$theme-black-primary-text-color: $theme-black-color-gray-light-supper-silver;
+$theme-black-primary-text-on-secondary-color: $theme-black-color-gray-light-supper-silver;
+
+$theme-black-primary-background-color: var(--color-mud_black);
+$theme-black-primary-background-color-rgb: extract-rgb($theme-black-color-mud_black);
+
+$theme-black-primary-background-hover-color: var(--color-ui_grey);
+$theme-black-primary-background-hover-on-secondary-color: var(--color-ui_grey);
+$theme-black-grey-background-color: var(--color-mud_black);
+
+$theme-black-inverted-color-background: $theme-black-color-gray-light-supper-silver;
+$theme-black-text-color-on-inverted: var(--color-mud_black);
+
+// states
+$theme-black-positive-color: var(--color-success);
+$theme-black-positive-color-hover: var(--color-success-hover);
+$theme-black-positive-color-selected: var(--color-success-highlight);
+$theme-black-negative-color: var(--color-error);
+$theme-black-negative-color-hover: var(--color-error-hover);
+$theme-black-negative-color-selected: var(--color-error-highlight);
+$theme-black-private-color: var(--color-private);
+$theme-black-shareable-color: $theme-dark-color-purple-lightish;
+
+// borders
+$theme-black-ui-border-color: var(--color-riverstone_gray);
+$theme-black-ui-border-on-secondary-color: var(--color-riverstone_gray);
+$theme-black-layout-border-color: var(--color-ui_grey);
+$theme-black-layout-border-on-secondary-color: var(--color-ui_grey);
+
+$theme-black-placeholder-color: var(--color-asphalt);
+$theme-black-placeholder-color-with-opacity: $theme-black-color-asphalt-with-opacity;
+$theme-black-placeholder-on-secondary-color: var(--color-asphalt);
+$theme-black-icon-color: var(--color-asphalt);
+$theme-black-icon-on-secondary-color: var(--color-asphalt);
+
+// disabled
+$theme-black-disabled-background-color: var(--color-ui_grey);
+$theme-black-disabled-background-on-secondary-color: var(--color-ui_grey);
+$theme-black-disabled-text-color: var(--color-asphalt);
+$theme-black-disabled-text-on-secondary-color: var(--color-asphalt);
+
+$theme-black-dark-background-color: var(--color-wolf_gray);
+$theme-black-dark-background-on-secondary-color: $theme-dark-color-ui_grey;
+$theme-black-secondary-background-color: var(--color-wolf_gray);
+$theme-black-secondary-background-color-rgb: extract-rgb($theme-black-color-wolf_gray);
+
+//deprecated - use secondary-background-color
+$theme-black-dialog-background-color: var(--color-wolf_gray);
+
+$theme-black-label-background-color: $theme-dark-color-blue-buster;
+$theme-black-label-background-on-secondary-color: $theme-dark-color-blue-buster;
+$theme-black-secondary-text-color: var(--color-asphalt);
+$theme-black-secondary-text-on-secondary-color: var(--color-jaco_gray);
+$theme-black-link-color: var(--color-link_color);
+$theme-black-link-on-secondary-color: var(--color-link_color);

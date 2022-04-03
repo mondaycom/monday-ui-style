@@ -1,6 +1,6 @@
-// BASIC THEME COLOR KEYS MAP: This partial defines the basic theme's keys color map.
+// DARK THEME COLOR KEYS MAP: This partial defines the dark theme's keys color map.
 // - Map include semantic color keys scope tokens.
-// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+// - Map is collected into the $theme-dark-settings map and is interpolated into custom properties.
 
 $theme-dark-keys: (
         primary-color: $theme-dark-primary-color,

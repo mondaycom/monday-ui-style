@@ -43,7 +43,7 @@ $shareable-color: var(--color-purple);
 // borders
 $ui-border-color: var(--color-wolf_gray);
 $ui-border-on-secondary-color: var(--color-wolf_gray);
-$layout-border-color:var(--color-ui_grey);
+$layout-border-color: #d0d4e4; // Todo: TBD, should be - var(--color-ui_grey)
 $layout-border-on-secondary-color: $layout-border-color;
 
 $placeholder-color: var(--color-asphalt);
@@ -72,9 +72,3 @@ $secondary-text-color: var(--color-asphalt);
 $secondary-text-on-secondary-color: var(--color-asphalt);
 $link-color: var(--color-link_color);
 $link-on-secondary-color: var(--color-link_color);
-
-$shadow-color: $color-mud_black;
-$shadow-small: $shadow-size-small rgba($shadow-color, $shadow-opacity);
-$shadow-medium: $shadow-size-medium rgba($shadow-color, $shadow-opacity);
-$shadow-large: $shadow-size-large rgba($shadow-color, $shadow-large-opacity);
-$shadow-mediun: $shadow-medium;

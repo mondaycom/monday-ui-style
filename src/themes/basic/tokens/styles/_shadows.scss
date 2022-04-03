@@ -1,11 +1,11 @@
-// THEME BASIC TOKENS: SHADOWS
+// BASIC THEME TOKENS: SHADOWS
 // - This partial defines Basic Theme's shadow tokens
 
-$box-shadow-color: $color-black;
+$shadow-color: $color-black;
 
-$box-shadow-small: $shadow-size-small rgba($box-shadow-color, $shadow-opacity);
-$box-shadow-medium: $shadow-size-medium rgba($box-shadow-color, $shadow-opacity);
-$box-shadow-large: $shadow-size-large rgba($box-shadow-color, $shadow-large-opacity);
+$box-shadow-small: $shadow-size-small rgba($shadow-color, $shadow-opacity);
+$box-shadow-medium: $shadow-size-medium rgba($shadow-color, $shadow-opacity);
+$box-shadow-large: $shadow-size-large rgba($shadow-color, $shadow-large-opacity);
 
 // legacy
-$box-shadow-mediun: $box-shadow-medium;
+$box-shadow-mediun: var(--box-shadow-medium);

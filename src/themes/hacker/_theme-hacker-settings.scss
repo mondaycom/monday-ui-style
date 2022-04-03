@@ -1,0 +1,9 @@
+// DARK THEME SETTINGS: This partial Defines a Unified settings map for the DARK THEME Scope.
+// - Map collect function is used in order to merge multiple maps.
+
+$theme-hacker-settings: map-collect(
+                $theme-hacker-colors,
+                $theme-hacker-content-colors,
+                $theme-hacker-keys,
+                $theme-hacker-shadows,
+);

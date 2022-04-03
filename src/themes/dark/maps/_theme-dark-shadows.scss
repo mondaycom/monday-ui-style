@@ -1,0 +1,10 @@
+// DARK THEME SHADOW MAP: This partial defines the dark theme's shadow color map.
+// - Map include shadow scope tokens.
+// - Map is collected into the $theme-dark-settings map and is interpolated into custom properties.
+
+$theme-dark-shadows: (
+        box-shadow-small: $theme-dark-box-shadow-small,
+        box-shadow-medium: $theme-dark-box-shadow-medium,
+        box-shadow-large: $theme-dark-box-shadow-large,
+        box-shadow-mediun: $theme-dark-box-shadow-mediun,
+);

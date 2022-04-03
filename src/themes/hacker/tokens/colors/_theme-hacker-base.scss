@@ -1,0 +1,35 @@
+//  HACKER THEME TOKENS: BASE COLORS
+// - This partial defines Hacker Theme's base color tokens
+// - Using https://colornamer.robertcooper.me/ for color names
+//   - If the name is too long we use or https://www.color-name.com/
+
+// Interpolation tokens
+$theme-hacker-hover-darken-percentage: 6%;
+
+// Registration colors
+$theme-hacker-color-purple-light-liliac: #bd93f9;
+$theme-hacker-color-pink-plastic: #fe78c6;
+$theme-hacker-color-purple-vivid-viola: #9f4077;
+$theme-hacker-color-blue-dark-night-sky: #282a36;
+
+// Grays
+$theme-hacker-color-gray-manhattan: #414458;
+$theme-hacker-color-gray-shadow-mountain: #595959;
+$theme-hacker-color-gray-parisian-night: #303241;
+
+// Semantics
+$theme-hacker-color-success: #50fa7b;
+$theme-hacker-color-success-highlight: $theme-dark-color-success-highlight;
+$theme-hacker-color-error: #ff5555;
+$theme-hacker-color-error-highlight: $theme-dark-color-error-highlight;
+
+// Semantics assignments
+$theme-hacker-color-link_color: $theme-hacker-color-purple-light-liliac;
+
+// Gray Key assignments
+$theme-hacker-color-riverstone_gray: $theme-dark-color-riverstone_gray;
+
+//$theme-hacker-color-mud_black: $theme-hacker-color-gray-dark-midnight;
+//$theme-hacker-color-riverstone_gray: $theme-dark-color-gray-fog;
+//$theme-hacker-color-asphalt: $theme-hacker-color-space-gray;
+//$theme-hacker-color-asphalt-with-opacity: rgba($theme-hacker-color-asphalt, 0.1);

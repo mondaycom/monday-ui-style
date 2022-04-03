@@ -1,10 +1,18 @@
 //  DARK THEME TOKENS: BASE COLORS
 // - This partial defines Dark Theme's base color tokens
+// - Using https://colornamer.robertcooper.me/ for color names
+//   - If the name is too long we use or https://www.color-name.com/
 
 $theme-dark-color-blue-light-cool: #69a7ef;
 $theme-dark-color-blue-atlantic: #133774;
 
-// Grays 
+$theme-dark-color-blue-carbon: #393b53; // TODO: not part of system
+$theme-dark-color-blue-buster: #404b69; // TODO: not part of system
+$theme-dark-color-gray-dark-rift: #090b19; // shadow color
+
+$theme-dark-color-purple-lightish: #a358df;
+
+// Grays
 $theme-dark-color-gray-snow: #d5d8df;
 $theme-dark-color-gray-fog: #797e93;
 $theme-dark-color-silver: #4b4e69;
