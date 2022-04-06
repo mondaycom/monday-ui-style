@@ -44,7 +44,7 @@ module.exports = stylelint.createPlugin(ruleName, function ruleFunction(primaryO
 
         const varReplacementsForValue = valuesToVars[node.value];
 
-        if (!varReplacementsForValue?.length) {
+        if (!varReplacementsForValue || !varReplacementsForValue.length) {
           return;
         }
         const hasSingleReplacement = varReplacementsForValue.length === 1;

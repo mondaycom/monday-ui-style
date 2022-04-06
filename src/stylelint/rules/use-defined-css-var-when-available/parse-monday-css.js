@@ -24,7 +24,7 @@ function parseMondayUiCss(css = readCssFromDefaultPath()) {
   const referenceTokensToCanonicalValue = {}; // maps between reference token names to canonical values. e.g. if "--font-size-h5: var(--font-size-30)" and "--font-size-30: 16px", then {"--font-size-h5": "16px"}
 
   ast.walkDecls(/^--/, (decl) => {
-    if (decl.parent?.selector !== ":root") {
+    if (!decl.parent || decl.parent.selector !== ":root") {
       return; // we only care about truly global variables
     }
     const { prop, value } = decl;
