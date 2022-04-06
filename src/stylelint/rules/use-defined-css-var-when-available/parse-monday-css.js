@@ -53,12 +53,16 @@ function parseMondayUiCss(css = readCssFromDefaultPath()) {
     }
   });
 
-  return {
-    varsToCanonicalValue,
-    referenceTokens,
-    canonicalValuesToVars,
-    referenceTokensToCanonicalValue,
-  };
+  const allVarsToCanonicalValue = {}; //maps between all vars (reference or not) to the canonical value
+
+  Object.keys(varsToCanonicalValue).forEach((varName) => {
+    allVarsToCanonicalValue[varName] = varsToCanonicalValue[varName];
+  });
+  Object.keys(referenceTokensToCanonicalValue).forEach((varName) => {
+    allVarsToCanonicalValue[varName] = referenceTokensToCanonicalValue[varName];
+  });
+
+  return { allVarsToCanonicalValue };
 }
 
 /**
@@ -77,7 +81,7 @@ function parseMondayUiCss(css = readCssFromDefaultPath()) {
   }
  */
 function getPropsToAllowedCssVars() {
-  const { referenceTokensToCanonicalValue, varsToCanonicalValue } = parseMondayUiCss();
+  const { allVarsToCanonicalValue } = parseMondayUiCss();
   const propsToReplacement = {};
   Object.keys(PROPS_TO_ALLOWED_VARS).forEach((prop) => {
     const matchingVars = PROPS_TO_ALLOWED_VARS[prop];
@@ -86,7 +90,7 @@ function getPropsToAllowedCssVars() {
     }
     propsToReplacement[prop] = {};
     matchingVars.forEach((matchingVar) => {
-      const varCanonicalValue = referenceTokensToCanonicalValue[matchingVar] || varsToCanonicalValue[matchingVar];
+      const varCanonicalValue = allVarsToCanonicalValue[matchingVar];
       if (!varCanonicalValue) {
         return;
       }

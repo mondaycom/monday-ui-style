@@ -30,17 +30,6 @@ const FONT_SIZES = [
   "--font-size-subtext",
 ];
 
-const FONTS = [
-  "--font-h1",
-  "--font-h2",
-  "--font-h3",
-  "--font-h4",
-  "--font-h5",
-  "--font-general-label",
-  "--font-paragraph",
-  "--font-subtext",
-];
-
 const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
 
 const FONT_LINE_HEIGHTS = [
@@ -110,7 +99,7 @@ const BORDER_RADIUSES_PROPS = [
 
 const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "animation-timing-function"];
 
-function mapPropsToAllowedVars(allowedVars, propNames) {
+function mapPropsToAllowedVars(propNames, allowedVars) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
 
@@ -124,14 +113,13 @@ function mapPropsToAllowedVars(allowedVars, propNames) {
 // This means that if --border-radius-small or --border-radius-medium can be used while linting a rule with the property "border-radius", we will show an error
 
 const PROPS_TO_ALLOWED_VARS = {
-  ...mapPropsToAllowedVars(SPACINGS, SPACING_PROPS),
-  ...mapPropsToAllowedVars(BORDER_RADIUSES, BORDER_RADIUSES_PROPS),
-  ...mapPropsToAllowedVars(FONT_LINE_HEIGHTS, "line-height"),
-  ...mapPropsToAllowedVars(FONT_WEIGHTS, "font-weight"),
-  ...mapPropsToAllowedVars(FONTS, "font"),
-  ...mapPropsToAllowedVars(FONT_SIZES, "font-size"),
-  ...mapPropsToAllowedVars(BOX_SHADOWS, "box-shadow"),
-  ...mapPropsToAllowedVars("--expand-animation-timing", TIMING_FUNCTION_PROPS),
+  ...mapPropsToAllowedVars(SPACING_PROPS, SPACINGS),
+  ...mapPropsToAllowedVars(BORDER_RADIUSES_PROPS, BORDER_RADIUSES),
+  ...mapPropsToAllowedVars("line-height", FONT_LINE_HEIGHTS),
+  ...mapPropsToAllowedVars("font-weight", FONT_WEIGHTS),
+  ...mapPropsToAllowedVars("font-size", FONT_SIZES),
+  ...mapPropsToAllowedVars("box-shadow", BOX_SHADOWS),
+  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, "--expand-animation-timing"),
 
   "font-family": ["--font-family"],
   "-webkit-font-smoothing": ["--font-smoothing-webkit"],
