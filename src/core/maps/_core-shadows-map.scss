@@ -3,7 +3,7 @@
 // - Maps include shadow scope tokens.
 // - These maps are currently not interpolated into custom properties.
 
-$core-shadow-map: (
+$core-shadow-size-map: (
         small: $shadow-size-small,
         medium: $shadow-size-medium,
         large: $shadow-size-large,
