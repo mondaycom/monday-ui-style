@@ -1,5 +1,5 @@
-const { parseMondayUiCss } = require("./parse-monday-css");
-const { PROPS_TO_ALLOWED_VARS } = require("./props-to-allowed-vars");
+const { parseMondayUiCss } = require("../parse-monday-css");
+const { PROPS_TO_ALLOWED_VARS } = require("../props-to-allowed-vars");
 
 const ALLOWED_CSS_VARS_WITHOUT_MAPPINGS = ["--font-line-height-30", "--font-line-height-20", "--font-size-10"];
 
