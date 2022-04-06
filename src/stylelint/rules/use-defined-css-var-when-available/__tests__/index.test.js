@@ -91,7 +91,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
       config,
     });
 
-    expect(warnings).toHaveLength(1);
+    expect(warnings).toHaveLength(2);
     const [firstWarning] = warnings;
 
     expect(firstWarning.text).toBe(
