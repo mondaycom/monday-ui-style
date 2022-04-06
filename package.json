@@ -33,6 +33,10 @@
     "src/",
     "dist/"
   ],
+  "exports": {
+    ".": "./dist/index.css",
+    "./stylelint-config": "./src/stylelint/external-config.js"
+  },
   "bugs": {
     "url": "https://github.com/mondaycom/monday-ui-style/issues"
   },
@@ -43,5 +47,10 @@
     "node-sass": "^4.14.1",
     "plop": "^2.7.4",
     "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "postcss": "8.4.4",
+    "postcss-value-parser": "4.1.0",
+    "stylelint": "14.1.0"
   }
 }
