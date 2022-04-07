@@ -11,7 +11,7 @@ function getReferencedPropFromVar(value) {
 }
 
 function readCssFromDefaultPath() {
-  const stylesCssPath = path.resolve(__dirname, "../../../../dist/index.min.css");
+  const stylesCssPath = path.resolve(__dirname, "../../../dist/index.min.css");
   return fs.readFileSync(stylesCssPath).toString();
 }
 

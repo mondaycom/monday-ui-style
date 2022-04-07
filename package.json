@@ -34,10 +34,6 @@
     "src/",
     "dist/"
   ],
-  "exports": {
-    ".": "./dist/index.css",
-    "./stylelint-config": "./src/stylelint/external-config.js"
-  },
   "bugs": {
     "url": "https://github.com/mondaycom/monday-ui-style/issues"
   },
