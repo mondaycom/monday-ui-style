@@ -103,9 +103,7 @@ function mapPropsToAllowedVars(propNames, allowedVars) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
 
-  const result = {};
-  propNames.forEach((propName) => (result[propName] = allowedVars));
-  return result;
+  return propNames.reduce((result, propName) => ({ ...result, [propName]: allowedVars }), {});
 }
 
 // List the CSS props we want to lint, and map each one to the values we would prefer to use.

@@ -4,8 +4,8 @@ const { getPropsToAllowedCssVars } = require("./parse-monday-css");
 
 const { report, ruleMessages, validateOptions } = stylelint.utils;
 
-const ruleName = "monday-ui-style/use-defined-css-var-when-available";
-const messages = ruleMessages(ruleName, {
+const RULE_NAME = "monday-ui-style/use-defined-css-var-when-available";
+const messages = ruleMessages(RULE_NAME, {
   expected: (original, expected) => {
     const asArray = Array.isArray(expected) ? expected : [expected];
     const multipleValues = asArray.length > 1;
@@ -14,11 +14,11 @@ const messages = ruleMessages(ruleName, {
   },
 });
 
-module.exports = stylelint.createPlugin(ruleName, function ruleFunction(primaryOption, secondaryOptionObject, context) {
+module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOptionObject, context) => {
   const propsToAllowedCssVars = getPropsToAllowedCssVars();
 
   return function lint(postcssRoot, postcssResult) {
-    const validOptions = validateOptions(postcssResult, ruleName, {
+    const validOptions = validateOptions(postcssResult, RULE_NAME, {
       // No options for now...
     });
 
@@ -65,7 +65,7 @@ module.exports = stylelint.createPlugin(ruleName, function ruleFunction(primaryO
         } else {
           // We are in “report only” mode
           report({
-            ruleName,
+            ruleName: RULE_NAME,
             result: postcssResult,
             message: messages.expected(node.value, varReplacementsForValue), // Build the reported message
             node: decl, // Specify the reported node
@@ -77,5 +77,5 @@ module.exports = stylelint.createPlugin(ruleName, function ruleFunction(primaryO
   };
 });
 
-module.exports.ruleName = ruleName;
+module.exports.ruleName = RULE_NAME;
 module.exports.messages = messages;
