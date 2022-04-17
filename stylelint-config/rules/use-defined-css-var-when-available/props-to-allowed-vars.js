@@ -75,11 +75,6 @@ const SPACING_PROPS = [
   "margin-block-end",
   "margin-block-start",
 
-  "top",
-  "left",
-  "bottom",
-  "right",
-
   "inset",
   "inset-end",
   "inset-start",
