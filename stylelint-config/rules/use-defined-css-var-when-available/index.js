@@ -26,8 +26,9 @@ module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOpti
       optional: true,
     });
 
+    primaryOption = primaryOption || true;
     const shouldNotLint =
-      !validOptions || CONFIGS_THAT_MEAN_IGNORE_FILE.includes(primaryOption?.toString().toLowerCase());
+      !validOptions || CONFIGS_THAT_MEAN_IGNORE_FILE.includes(primaryOption.toString().toLowerCase());
     if (shouldNotLint) {
       return;
     }
