@@ -53,6 +53,6 @@
   "dependencies": {
     "postcss": "8.4.4",
     "postcss-scss": "^4.0.3",
-    "postcss-value-parser": "4.1.0"
+    "postcss-value-parser": "4.2.0"
   }
 }
