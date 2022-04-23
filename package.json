@@ -1,6 +1,6 @@
 {
   "name": "monday-ui-style",
-  "version": "0.1.93",
+  "version": "0.1.99",
   "description": "Monday UI CSS Foundations",
   "main": "dist/index.css",
   "scripts": {
@@ -33,7 +33,8 @@
   "license": "MIT",
   "files": [
     "src/",
-    "dist/"
+    "dist/",
+    "stylelint-config/"
   ],
   "bugs": {
     "url": "https://github.com/mondaycom/monday-ui-style/issues"
