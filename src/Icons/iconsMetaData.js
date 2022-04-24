@@ -5,6 +5,13 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "RestrictedColumns",
+      file: "RestrictedColumns.svg",
+      description: "restriced columns icon",
+      tags: "permissions,columns.board"
+  },
+
+  {
       name: "Timeline",
       file: "Timeline.svg",
       description: "Timeline",
