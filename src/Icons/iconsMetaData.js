@@ -8,7 +8,7 @@ export const iconsMetaData = [
       name: "RestrictedColumns",
       file: "RestrictedColumns.svg",
       description: "restriced columns icon",
-      tags: "permissions,columns.board"
+      tags: "permissions, columns, board"
   },
 
   {
