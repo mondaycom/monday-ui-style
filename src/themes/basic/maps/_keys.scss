@@ -1,0 +1,34 @@
+// BASIC THEME COLOR KEYS MAP: This partial defines the basic theme's keys color map.
+// - Map include semantic color keys scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+
+$theme-basic-keys: (
+        primary-color: $primary-color,
+        primary-on-secondary-color: $primary-on-secondary-color,
+        primary-hover-color: $primary-hover-color,
+        primary-selected-color: $primary-selected-color,
+        primary-text-color: $primary-text-color,
+        text-color-on-primary: $text-color-on-primary,
+        text-color-on-inverted: $text-color-on-inverted,
+        secondary-text-color: $secondary-text-color,
+        placeholder-color: $placeholder-color,
+        icon-color: $icon-color,
+        link-color: $link-color,
+        primary-background-color: $primary-background-color,
+        primary-background-hover-color: $primary-background-hover-color,
+        secondary-background-color:$secondary-background-color,
+        grey-background-color:$grey-background-color,
+        inverted-color-background: $inverted-color-background,
+        disabled-background-color: $disabled-background-color,
+        disabled-text-color: $disabled-text-color,
+        positive-color: $positive-color,
+        positive-color-hover: $positive-color-hover,
+        positive-color-selected: $positive-color-selected,
+        negative-color: $negative-color,
+        negative-color-hover: $negative-color-hover,
+        negative-color-selected: $negative-color-selected,
+        private-color: $private-color,
+        shareable-color: $shareable-color,
+        ui-border-color: $ui-border-color,
+        layout-border-color: $layout-border-color,
+);

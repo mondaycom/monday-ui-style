@@ -1,0 +1,10 @@
+// BASIC THEME SHADOW MAP: This partial defines the basic theme's shadow color map.
+// - Map include shadow scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+
+$theme-basic-shadows: (
+        box-shadow-small: $box-shadow-small,
+        box-shadow-medium: $box-shadow-medium,
+        box-shadow-large: $box-shadow-large,
+        box-shadow-mediun: $box-shadow-mediun,
+);
