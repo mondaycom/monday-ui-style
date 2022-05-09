@@ -48,6 +48,10 @@ const FONT_LINE_HEIGHTS = [
   "--font-line-height-subtext",
 ];
 
+const ANIMATION_TIMING = ["--animation-timing-enter", "--animation-timing-exit", "--animation-timing-transition", "--animation-timing-emphasize", "--expand-animation-timing"];
+
+const ANIMATION_DURATION = ["--animation-productive-short", "--animation-productive-medium", "--animation-productive-medium", "--animation-productive-long", "--animation-expressive-short", "--animation-expressive-medium", "--animation-expressive-long"];
+
 const SPACING_PROPS = [
   "padding",
   "padding-top",
@@ -92,6 +96,8 @@ const BORDER_RADIUSES_PROPS = [
 
 const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "animation-timing-function"];
 
+const DURATION_FUNCTION_PROPS = ["transition", "transition-duration", "animation", "animation-duration"];
+
 function mapPropsToAllowedVars(propNames, allowedVars) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
@@ -109,7 +115,8 @@ const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars("line-height", FONT_LINE_HEIGHTS),
   ...mapPropsToAllowedVars("font-weight", FONT_WEIGHTS),
   ...mapPropsToAllowedVars("font-size", FONT_SIZES),
-  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, "--expand-animation-timing"),
+  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING),
+  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_TIMING),
 
   "font-family": ["--font-family"],
   "-webkit-font-smoothing": ["--font-smoothing-webkit"],
