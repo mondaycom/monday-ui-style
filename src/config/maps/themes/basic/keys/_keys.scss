@@ -1,4 +1,6 @@
-// BASIC THEME COLOR KEYS MAP: This partial defines the basic theme's keys color map.
+// BASIC THEME KEYS
+
+// ## BASIC THEME COLOR KEYS MAP: This partial defines the basic theme's keys color map.
 // - Map include semantic color keys scope tokens.
 // - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
@@ -31,4 +33,15 @@ $theme-basic-keys: (
         shareable-color: $shareable-color,
         ui-border-color: $ui-border-color,
         layout-border-color: $layout-border-color,
+);
+
+// ## BASIC THEME SHADOW MAP: This partial defines the basic theme's shadow color map.
+// - Map include shadow scope tokens.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
+
+$theme-basic-shadow-keys: (
+        box-shadow-small: $box-shadow-small,
+        box-shadow-medium: $box-shadow-medium,
+        box-shadow-large: $box-shadow-large,
+        box-shadow-mediun: $box-shadow-mediun,
 );

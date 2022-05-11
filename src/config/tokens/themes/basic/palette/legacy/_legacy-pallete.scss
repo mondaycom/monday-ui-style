@@ -7,12 +7,6 @@
 // - We define a token as a registration key when it has an alias name that indicates a certain role.
 // - This way we eliminate duplication for hard coded value declaration.
 
-// Base Layer non Figma values
-$color-snow_white-rgb: extract-rgb($color-snow_white);
-$color-snow_white-with-opacity: rgba($color-snow_white, 0.4);
-$color-wolf_gray-with-opacity: rgba($color-wolf_gray, 0.1);
-$color-asphalt-with-opacity: rgba($color-asphalt, 0.1);
-$color-highlight_blue-rgb: extract-rgb($color-highlight_blue);
 
 // Registrations
 // #1c1f3b is used twice without distinct connection or registration link
@@ -39,7 +33,6 @@ $color-aqua: #00d1d1;
 $color-live_blue: #009aff;
 $color-jeans: #597bfc;
 $color-burned_eggplant: #181d37;
-$color-bazooka: #f65f7c;
 $color-light-pink: #ff5ac4;
 $color-dark-pink: #ff158a;
 $color-dark_red: #bb3354;
@@ -100,3 +93,21 @@ $color-surface: #292f4c;
 $color-scrollbar_gray: #b2b2b2;
 $color-timeline_grid_blue: #454662;
 $color-timeline_blue: #1c1f3b;
+
+// Semantics old aliases,that are not needed
+// - Success, used as positive key alias
+$color-success: $color-basic_green;
+$color-success-hover: $color-dark_green;
+$color-success-highlight: $color-pastel_green;
+
+// - Error, used as negative key alias
+$color-error: $color-basic_red;
+$color-error-hover: $color-blood_red;
+$color-error-highlight: $color-pastel_red;
+
+// Base Layer non UI Vibe values
+$color-snow_white-rgb: extract-rgb($color-snow_white);
+$color-snow_white-with-opacity: rgba($color-snow_white, 0.4);
+$color-wolf_gray-with-opacity: rgba($color-wolf_gray, 0.1);
+$color-asphalt-with-opacity: rgba($color-asphalt, 0.1);
+$color-highlight_blue-rgb: extract-rgb($color-highlight_blue);

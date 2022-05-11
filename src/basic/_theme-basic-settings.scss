@@ -3,8 +3,6 @@
 
 $theme-basic-settings: map-collect(
                 $theme-basic-colors,
-                $theme-basic-legacy-colors,
-                $theme-basic-legacy-keys,
                 $theme-basic-keys,
                 $theme-basic-shadows,
 );

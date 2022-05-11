@@ -4,7 +4,7 @@
 // - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 // - Keys sort order is according to legacy tokens sort order.
 
-$theme-basic-legacy-colors:(
+$theme-basic-legacy-palette:(
         color-dark_marble: $color-dark_marble,
         color-marble: $color-marble,
         color-gainsboro: $color-gainsboro,

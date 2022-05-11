@@ -1,0 +1,16 @@
+// DARK THEME: This partial loads DARK THEME scope related Custom properties
+// - TODO: Dark Theme experience Guidelines should be shortly described here
+// - Properties are Theme Specific and goes under a Theme Specific Class based Selectors.
+
+@import "dark/theme-dark-tokens";
+@import "dark/theme-dark-maps";
+@import "dark/theme-dark-settings";
+
+.dark-app-theme {
+  @each $key, $value in $theme-dark-settings {
+    --#{$key}: #{$value};
+  }
+}
+
+// Imported still hardcoded content colors
+@import "dark/theme-dark-content-colors";
