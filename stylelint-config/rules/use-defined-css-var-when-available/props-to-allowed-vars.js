@@ -118,7 +118,7 @@ const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars("font-weight", FONT_WEIGHTS),
   ...mapPropsToAllowedVars("font-size", FONT_SIZES),
   ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING),
-  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION),
+  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_TIMING),
 
   "font-family": ["--font-family"],
   "-webkit-font-smoothing": ["--font-smoothing-webkit"],
