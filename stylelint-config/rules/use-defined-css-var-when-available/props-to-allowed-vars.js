@@ -98,6 +98,8 @@ const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "
 
 const DURATION_FUNCTION_PROPS = ["transition", "transition-duration", "animation", "animation-duration"];
 
+const OPACITY_PROPS =["opacity"];
+
 function mapPropsToAllowedVars(propNames, allowedVars) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
