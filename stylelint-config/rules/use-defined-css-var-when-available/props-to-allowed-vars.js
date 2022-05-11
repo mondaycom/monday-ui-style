@@ -48,9 +48,9 @@ const FONT_LINE_HEIGHTS = [
   "--font-line-height-subtext",
 ];
 
-const ANIMATION_TIMING = ["--animation-timing-enter", "--animation-timing-exit", "--animation-timing-transition", "--animation-timing-emphasize", "--expand-animation-timing"];
+const ANIMATION_TIMINGS = ["--animation-timing-enter", "--animation-timing-exit", "--animation-timing-transition", "--animation-timing-emphasize", "--expand-animation-timing"];
 
-const ANIMATION_DURATION = ["--animation-productive-short", "--animation-productive-medium", "--animation-productive-medium", "--animation-productive-long", "--animation-expressive-short", "--animation-expressive-medium", "--animation-expressive-long"];
+const ANIMATION_DURATIONS = ["--animation-productive-short", "--animation-productive-medium", "--animation-productive-medium", "--animation-productive-long", "--animation-expressive-short", "--animation-expressive-medium", "--animation-expressive-long"];
 
 const SPACING_PROPS = [
   "padding",
