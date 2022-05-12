@@ -101,7 +101,7 @@ function getPropsToAllowedCssVars() {
         allowedVars: [],
       };
       propsToReplacementConfig[prop][varCanonicalValue].allowedVars.push(varName);
-      if (recommended?.includes(varName)) {
+      if (recommended && recommended.includes(varName)) {
         propsToReplacementConfig[prop][varCanonicalValue].recommended = varName;
       }
     });

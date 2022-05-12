@@ -29,7 +29,7 @@ module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOpti
         optional: true,
       },
       {
-        actual: secondaryOptionObject?.useRecommendedFixes,
+        actual: secondaryOptionObject && secondaryOptionObject.useRecommendedFixes,
         possible: [true, "true", false, "false"],
         optional: true,
       }
@@ -65,7 +65,7 @@ module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOpti
         }
         const hasSingleReplacement = varReplacementsForValue.length === 1;
 
-        const useRecommendedFixes = secondaryOptionObject?.useRecommendedFixes;
+        const useRecommendedFixes = secondaryOptionObject && secondaryOptionObject.useRecommendedFixes;
 
         if (isAutoFixing) {
           // We are in “fix” mode
