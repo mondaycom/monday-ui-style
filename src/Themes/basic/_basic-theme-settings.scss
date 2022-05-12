@@ -2,7 +2,7 @@
 // - Map collect function is used in order to merge multiple maps.
 
 $theme-basic-settings: map-collect(
-                $theme-basic-colors,
+                $theme-basic-palette,
                 $theme-basic-keys,
-                $theme-basic-shadows,
+                $theme-basic-shadow-keys,
 );

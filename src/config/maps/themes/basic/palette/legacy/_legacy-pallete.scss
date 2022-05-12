@@ -4,7 +4,7 @@
 // - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 // - Keys sort order is according to legacy tokens sort order.
 
-$theme-basic-legacy-palette:(
+$theme-basic-legacy-palette: (
         color-dark_marble: $color-dark_marble,
         color-marble: $color-marble,
         color-gainsboro: $color-gainsboro,
@@ -74,4 +74,8 @@ $theme-basic-legacy-palette:(
         color-scrollbar_gray: $color-scrollbar_gray,
         color-timeline_grid_blue: $color-timeline_grid_blue,
         color-timeline_blue: $color-timeline_blue,
+        color-highlight_blue-rgb: $color-highlight_blue-rgb,
+        color-snow_white-with-opacity: $color-snow_white-with-opacity,
+        color-wolf_gray-with-opacity: $color-wolf_gray-with-opacity,
+        color-asphalt-with-opacity: $color-asphalt-with-opacity,
 );

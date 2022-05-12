@@ -3,11 +3,13 @@
 // - We also use the ":root" selector, so Basic theme can cascade to other themes.
 //   - This way when a custom property is not defined in another theme, its definition i inherited from the ":root"
 
+@import "basic/basic-theme-settings";
+@import "basic/basic-theme-legacy-settings";
 
 :root,
 .light-app-theme,
 .default-app-theme {
-  @include generate-custom-properties($theme-basic-legacy-setting);
+  @include generate-custom-properties($theme-basic-settings);
 
   /*
 
@@ -18,7 +20,7 @@
 
   */
 
-  @include generate-custom-properties($theme-basic-legacy-setting);
+  @include generate-custom-properties($theme-basic-legacy-settings);
 }
 
 // Imported still hardcoded content colors
