@@ -1,6 +1,6 @@
 // BASIC THEME COLOR MAP: This partial defines the basic theme's registration color map.
 // - Map include Registration color scope tokens.
-// - Map is collected into the $config-basic-settings map and is interpolated into custom properties.
+// - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
 $theme-basic-palette: (
         color-highlight_blue: $color-highlight_blue,
@@ -21,4 +21,5 @@ $theme-basic-palette: (
         color-error-hover: $color-error-hover,
         color-error-highlight: $color-error-highlight,
         color-link_color: $color-link_color,
+        color-surface: $color-surface,
 );

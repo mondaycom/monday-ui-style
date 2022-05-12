@@ -29,12 +29,12 @@ $primary-background-color: var(--color-snow_white);
 $primary-background-hover-color: var(--color-ui_grey);
 $secondary-background-color: var(--color-snow_white);
 $grey-background-color: var(--color-riverstone_gray);
-// - dark /black themes
+// - contrast hook
 $inverted-color-background: var(--color-mud_black);
 
 // System Semantics (state, status)
-$disabled-text-color: var(--color-asphalt);
-$disabled-background-color: var(--color-ui_grey);
+$disabled-text-color: $color-ui_grey-muted;
+$disabled-background-color: $color-asphalt-muted;
 
 $positive-color: var(--color-success);
 $positive-color-hover: var(--color-success-hover);
