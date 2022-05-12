@@ -16,9 +16,9 @@
 // # Not in Vibe UI definitions
 $theme-dark-primary-on-secondary-color: var(--color-basic_blue);
 $theme-dark-primary-hover-on-secondary-color: var(--color-dark_blue);
-$theme-dark-primary-selected-color-rgb: var(--color-highlight_blue-rgb);
-$theme-dark-primary-selected-on-secondary-color: var(--color-highlight_blue);
-$theme-dark-primary-text-on-secondary-color: var(--color-snow_white);
+$theme-dark-primary-selected-color-rgb: extract-rgb($color-ocean_blue);
+$theme-dark-primary-selected-on-secondary-color: $color-ocean_blue;
+$theme-dark-primary-text-on-secondary-color: $color-snow;
 
 $theme-dark-primary-background-color-rgb: extract-rgb($color-midnight);
 $theme-dark-primary-background-hover-on-secondary-color: $color-silver;
@@ -29,22 +29,22 @@ $theme-dark-link-on-secondary-color: $color-arctic_blue;
 
 $theme-dark-modal-background-color: $color-midnight;
 $theme-dark-dark-background-color: $color-carbon_blue;
-$theme-dark-dark-background-on-secondary-color: var(--color-ui_grey);
+$theme-dark-dark-background-on-secondary-color: $color-silver;
 $theme-dark-dialog-background-color: $color-graphite;
 
 $theme-dark-label-background-color: $color-buster_blue; // todo: fix, not part of Vibe colors
 $theme-dark-label-background-on-secondary-color: $color-buster_blue; // todo: fix, not part of Vibe colors
 
-$theme-dark-icon-on-secondary-color: $color-wolf_gray; // todo: fix, theme basic natural color
+$theme-dark-icon-on-secondary-color: var(--color-wolf_gray);; // todo: fix, theme basic natural color
 $theme-dark-placeholder-color-with-opacity: $color-wolf_gray-with-opacity; // todo: fix, theme basic natural color
-$theme-dark-placeholder-on-secondary-color: $color-wolf_gray; // todo: fix, theme basic natural color
+$theme-dark-placeholder-on-secondary-color: var(--color-wolf_gray);; // todo: fix, theme basic natural color
 
 // States
 $theme-dark-ui-border-on-secondary-color: $color-fog;
 $theme-dark-layout-border-on-secondary-color: $color-silver;
 
-$theme-dark-disabled-background-on-secondary-color: $color-silver;
-$theme-dark-disabled-text-on-secondary-color: rgba($color-wolf_gray, 0.75); // TODO: not part of system
+$theme-dark-disabled-background-on-secondary-color: $theme-dark-disabled-text-color;
+$theme-dark-disabled-text-on-secondary-color: $theme-dark-disabled-text-color;
 
 // legacy shadow
 $box-shadow-mediun: var(--box-shadow-medium);

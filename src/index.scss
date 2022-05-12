@@ -14,9 +14,3 @@
 
 @import "core";
 @import "themes";
-@import "colors";
-@import "content-colors";
-
-@debug $color-forest_green;
-@debug $theme-dark-positive-color-selected;
-@debug map-get($theme-dark-keys, positive-color-selected);

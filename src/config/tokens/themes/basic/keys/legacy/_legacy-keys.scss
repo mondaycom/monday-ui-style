@@ -44,7 +44,7 @@ $placeholder-color-with-opacity: var(--color-asphalt-with-opacity);
 $placeholder-on-secondary-color: var(--color-asphalt);
 
 // States
-$disabled-background-on-secondary-color: var(--color-ui_grey);
+$disabled-background-on-secondary-color: $disabled-background-color;;
 $disabled-text-on-secondary-color: $disabled-text-color;
 
 // borders

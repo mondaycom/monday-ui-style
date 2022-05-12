@@ -11,15 +11,15 @@
 // Text colors
 $theme-dark-primary-color: var(--primary-color);
 $theme-dark-primary-hover-color: var(--primary-hover-color);
-$theme-dark-primary-selected-color: $primary-selected-color;
+$theme-dark-primary-selected-color: $color-ocean_blue;
 $theme-dark-primary-text-color: $color-snow;
 
-$theme-dark-text-color-on-primary: $color-mud_black; // todo: fix, value from basic theme
-$theme-dark-text-color-on-inverted: $color-midnight;
+$theme-dark-text-color-on-primary: var(--color-mud_black); // todo: fix, value from basic theme
+$theme-dark-text-color-on-inverted:  var(--color-mud_black); // todo: fix, value from basic theme
 
 $theme-dark-secondary-text-color: var(--color-jaco_gray); // todo: fix, value from basic legacy palette
-$theme-dark-placeholder-color: $color-wolf_gray; // todo: fix, value from basic theme
-$theme-dark-icon-color: $color-wolf_gray; // todo: fix, value from basic theme
+$theme-dark-placeholder-color: var(--color-wolf_gray); // todo: fix, value from basic theme
+$theme-dark-icon-color: var(--color-wolf_gray); // todo: fix, value from basic theme
 
 $theme-dark-link-color: $color-arctic_blue;
 
@@ -46,8 +46,8 @@ $theme-dark-shareable-color: var(--shareable-color);
 
 // UI elements
 // - Borders
-$theme-dark-ui-border-color: var(--color-riverstone_gray);
-$theme-dark-layout-border-color: var(--color-ui_grey);
+$theme-dark-ui-border-color: $color-fog;
+$theme-dark-layout-border-color: $color-silver;
 
 // DARK THEME TOKENS: SHADOWS
 
