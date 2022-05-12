@@ -46,6 +46,14 @@ $private-color: var(--color-bazooka);
 $shareable-color: var(--color-purple);
 
 // UI elements
-// - borders
+// - Borders
 $ui-border-color: var(--color-wolf_gray);
 $layout-border-color: #d0d4e4; // Todo: TBD, should be - var(--color-ui_grey)
+
+// - Shadows
+
+$shadow-color: $color-black;
+
+$box-shadow-small: $shadow-size-small rgba($shadow-color, $shadow-small-opacity);
+$box-shadow-medium: $shadow-size-medium rgba($shadow-color, $shadow-medium-opacity);
+$box-shadow-large: $shadow-size-large rgba($shadow-color, $shadow-large-opacity);
