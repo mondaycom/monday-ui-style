@@ -117,7 +117,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     expect(firstWarning.column).toBe(14);
   });
 
-  it("does not perform fixes when there are multiple var replacements, when not specifying the useRecommendedFixes flag", async () => {
+  it("perform fixes when there are multiple var replacements, when specifying the useRecommendedFixes flag", async () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
       config: configWithUseRecommendation,
@@ -135,7 +135,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     expect(contentAfterFix).toEqual(expectedOutputAfterFix);
   });
 
-  it("perform fixes when there are multiple var replacements, when specifying the useRecommendedFixes flag", async () => {
+  it("does not perform fixes when there are multiple var replacements, when not specifying the useRecommendedFixes flag", async () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
       config,
