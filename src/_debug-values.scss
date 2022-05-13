@@ -1,0 +1,22 @@
+// DEBUG
+
+@import "debug/debug-value-maps";
+@import "debug/debug-mixins";
+
+@if $debug-values {
+  @include debug-compare-values(
+          $prod: $debug-basic-theme-values-map,
+          $dev: $debug-output-basic-theme,
+          $white-list: $debug-basic-theme-white-list
+  );
+  @include debug-compare-values(
+          $prod: $debug-dark-theme-values-map,
+          $dev: $debug-output-dark-theme,
+          $white-list: $debug-dark-theme-white-list,
+          $scope: "dark");
+  @include debug-compare-values(
+          $prod: $debug-black-theme-values-map,
+          $dev: $debug-output-black-theme,
+          $white-list: $debug-black-theme-white-list,
+          $scope: "black");
+}

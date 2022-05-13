@@ -1,0 +1,35 @@
+// DEBUG: MIXINS
+
+// # Debug compare values
+// This Mixin enable map value compate
+// @arguments: $prod, $dev,$white-list,$scope(optional)
+// - Logic:
+// -- if both maps has a key check key value.
+// --- if value is the same, prompt  ✅  pass with $key name.
+// --- if value is not the same and is whit listed prompt white list message
+// --- else if prompt ❌ fail with $key name and values
+// -- if $prod has key, prompt missing output message
+//
+@mixin debug-compare-values($prod, $dev,$white-list,$scope:basic) {
+  @debug "⚪ ⚪ ⚪  #{to-upper-case($scope)} THEME ⚪ ⚪ ⚪  ";
+  $i: 0;
+  $fail: 0;
+  @each $key, $value in $prod {
+    $i: $i+1;
+
+    @if map-has-key($prod, $key) and map-has-key($dev,$key) {
+      @if #{$value} == #{map-get($dev,$key)} {
+        @debug "[#{$i}] ✅ PASS --#{$key} ";
+      } @else if map-has-key($white-list, $key) {
+        @debug "❕❕ WHITE LIST: --#{$key} #{map-get($white-list,$key)} ❕❕";
+      } @else {
+        @debug "[#{$i}] ❌ FAIL, --#{$key},#{map-get($prod,$key)} , ⭕ #{map-get($dev,$key)} ";
+        $fail:$fail + 1;
+      }
+    }
+    @if map-has-key($prod, $key) and not map-has-key($dev,$key) {
+      @debug "[#{$i}] fix me, --#{$key} missing from new output";
+    }
+  }
+  @debug "❌ ❌ ❌ FAILED TESTS FOR #{to-upper-case($scope) THEME} ARE:#{$fail}";
+}
