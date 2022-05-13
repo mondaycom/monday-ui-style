@@ -1,6 +1,4 @@
-:root,
-.light-app-theme,
-.default-app-theme {
+@mixin define-theme-content-colors() {
   // green grass
   --color-grass_green: #037f4c;
   --color-grass_green-hover: #116846;

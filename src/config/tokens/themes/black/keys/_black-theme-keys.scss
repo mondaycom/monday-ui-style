@@ -1,0 +1,85 @@
+//  BLACK THEME  TOKENS: SEMANTIC KEYS COLORS
+// - This partial defines Black Theme's Semantic Keys color tokens
+
+// - Theme keys should hold registration values (colors, content colors, other keys)
+//   - In some case there are unique hex values assignments
+//   - They should be transformed into Registration colors.
+//     - We add some annotation to their scope when found.
+// - When several key has the same value and have a connection
+// - We either use $theme-dark token or var(--token) depending on connection logic and value type.
+
+// primary coloring
+$theme-black-primary-color: var(--color-basic_blue);
+$theme-black-primary-on-secondary-color: var(--color-basic_blue);
+$theme-black-primary-hover-color: var(--color-dark_blue);
+$theme-black-primary-hover-on-secondary-color: var(--color-dark_blue);
+$theme-black-primary-selected-color: var(--color-highlight_blue);
+$theme-black-primary-selected-color-rgb: var(--color-highlight_blue-rgb);
+$theme-black-primary-selected-on-secondary-color: var(--color-highlight_blue);
+$theme-black-primary-text-color: $color-smog;
+$theme-black-primary-text-on-secondary-color: $color-smog;
+
+$theme-black-primary-background-color: $color-vanta;
+$theme-black-primary-background-color-rgb: extract-rgb($color-vanta);
+
+$theme-black-primary-background-hover-color: $color-dust;
+$theme-black-primary-background-hover-on-secondary-color: $color-dust;
+$theme-black-grey-background-color: $color-vanta;
+
+$theme-black-inverted-color-background: $color-smog;
+$theme-black-text-color-on-inverted: $color-vanta;
+
+// states
+$theme-black-positive-color: var(--color-success);
+$theme-black-positive-color-hover: var(--color-success-hover);
+$theme-black-positive-color-selected: var(--color-success-highlight);
+$theme-black-negative-color: var(--color-error);
+$theme-black-negative-color-hover: var(--color-error-hover);
+$theme-black-negative-color-selected: var(--color-error-highlight);
+$theme-black-private-color: var(--private-color);
+$theme-black-shareable-color: var(--shareable-color);
+
+// borders
+$theme-black-ui-border-color: $color-smoke;
+$theme-black-ui-border-on-secondary-color: $color-smoke;
+$theme-black-layout-border-color: $color-dust;
+$theme-black-layout-border-on-secondary-color: $color-dust;
+
+$theme-black-placeholder-color: $color-mouse;
+$theme-black-placeholder-color-with-opacity: rgba($color-mouse, 0.1);
+$theme-black-placeholder-on-secondary-color: $color-mouse;
+$theme-black-icon-color: $color-mouse;
+$theme-black-icon-on-secondary-color: $color-mouse;
+
+// disabled
+$theme-black-disabled-background-color: $color-mouse-muted;
+$theme-black-disabled-background-on-secondary-color: $color-mouse-muted;
+$theme-black-disabled-text-color: $color-dust-muted;
+$theme-black-disabled-text-on-secondary-color: $color-dust-muted;
+
+$theme-black-dark-background-color: $color-night;
+$theme-black-dark-background-on-secondary-color: $color-silver;
+$theme-black-secondary-background-color: $color-night;
+$theme-black-secondary-background-color-rgb: extract-rgb($color-night);
+
+//deprecated - use secondary-background-color
+$theme-black-dialog-background-color: $color-night;
+
+$theme-black-label-background-color: $color-buster_blue;
+$theme-black-label-background-on-secondary-color: $color-buster_blue;
+$theme-black-secondary-text-color: $color-mouse;
+$theme-black-secondary-text-on-secondary-color: var(--color-jaco_gray);
+$theme-black-link-color: var(--color-link_color);
+$theme-black-link-on-secondary-color: var(--color-link_color);
+
+// BLACK THEME TOKENS: SHADOWS
+// - This partial defines Basic Theme's shadow tokens
+
+$theme-black-box-shadow-color: $color-black;
+
+$theme-black-box-shadow-small: $shadow-size-small $theme-black-box-shadow-color;
+$theme-black-box-shadow-medium: $shadow-size-medium $theme-black-box-shadow-color;
+$theme-black-box-shadow-large: $shadow-size-large $theme-black-box-shadow-color;
+
+// legacy
+$theme-black-box-shadow-mediun: var(--box-shadow-medium);

@@ -1,0 +1,10 @@
+// BLACK THEME LEGACY KEYS MAP: This partial defines the black theme's legacy keys color map.
+// - Map include legacy keys scope tokens.
+// - Its main Purpose is to separate legacy tokens to registration tokens and key tokens.
+// - This map is for Key Tokens.
+//   - Legacy Key tokens are aliases of registration tokens or content color tokens with a semantic meaning.
+// - Map is collected into the $theme-dark-settings map and is interpolated into custom properties.
+
+$theme-black-legacy-keys: (
+
+);

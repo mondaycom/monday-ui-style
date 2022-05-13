@@ -5,11 +5,13 @@
 
 @import "basic/basic-theme-settings";
 @import "basic/basic-theme-legacy-settings";
+@import "basic/content-colors";
 
 :root,
 .light-app-theme,
 .default-app-theme {
   @include generate-custom-properties($theme-basic-settings);
+  @include define-theme-content-colors();
 
   /*
 
@@ -23,5 +25,3 @@
   @include generate-custom-properties($theme-basic-legacy-settings);
 }
 
-// Imported still hardcoded content colors
-@import "basic/content-colors";
