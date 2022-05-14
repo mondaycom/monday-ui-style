@@ -9,15 +9,13 @@
 // - We either use $theme-dark token or var(--token) depending on connection logic and value type.
 
 // primary coloring
-$theme-black-primary-color: var(--color-basic_blue);
-$theme-black-primary-on-secondary-color: var(--color-basic_blue);
-$theme-black-primary-hover-color: var(--color-dark_blue);
-$theme-black-primary-hover-on-secondary-color: var(--color-dark_blue);
-$theme-black-primary-selected-color: var(--color-highlight_blue);
-$theme-black-primary-selected-color-rgb: var(--color-highlight_blue-rgb);
-$theme-black-primary-selected-on-secondary-color: var(--color-highlight_blue);
+$theme-black-primary-color: $primary-color;
+$theme-black-primary-hover-color: $primary-hover-color;
+$theme-black-primary-selected-color: $primary-selected-color;
 $theme-black-primary-text-color: $color-smog;
-$theme-black-primary-text-on-secondary-color: $color-smog;
+
+$theme-black-text-color-on-primary: $text-color-on-primary;
+$theme-black-text-color-on-inverted: $color-vanta;
 
 $theme-black-primary-background-color: $color-vanta;
 $theme-black-primary-background-color-rgb: extract-rgb($color-vanta);
@@ -27,17 +25,17 @@ $theme-black-primary-background-hover-on-secondary-color: $color-dust;
 $theme-black-grey-background-color: $color-vanta;
 
 $theme-black-inverted-color-background: $color-smog;
-$theme-black-text-color-on-inverted: $color-vanta;
+
 
 // states
-$theme-black-positive-color: var(--color-success);
-$theme-black-positive-color-hover: var(--color-success-hover);
-$theme-black-positive-color-selected: var(--color-success-highlight);
-$theme-black-negative-color: var(--color-error);
-$theme-black-negative-color-hover: var(--color-error-hover);
-$theme-black-negative-color-selected: var(--color-error-highlight);
-$theme-black-private-color: var(--private-color);
-$theme-black-shareable-color: var(--shareable-color);
+$theme-black-positive-color: $positive-color;
+$theme-black-positive-color-hover: $positive-color-hover;
+$theme-black-positive-color-selected: $color-forest_green;
+$theme-black-negative-color: $negative-color;
+$theme-black-negative-color-hover: $negative-color-hover;
+$theme-black-negative-color-selected: $color-maroon_red;
+$theme-black-private-color: $private-color;
+$theme-black-shareable-color: $shareable-color;
 
 // borders
 $theme-black-ui-border-color: $color-smoke;
@@ -83,3 +81,12 @@ $theme-black-box-shadow-large: $shadow-size-large $theme-black-box-shadow-color;
 
 // legacy
 $theme-black-box-shadow-mediun: var(--box-shadow-medium);
+
+
+
+
+$theme-black-primary-on-secondary-color: $primary-on-secondary-color;
+$theme-black-primary-hover-on-secondary-color: $primary-hover-on-secondary-color;
+$theme-black-primary-selected-color-rgb: $primary-selected-color-rgb;
+$theme-black-primary-selected-on-secondary-color: $primary-selected-on-secondary-color;
+$theme-black-primary-text-on-secondary-color: $color-smog;

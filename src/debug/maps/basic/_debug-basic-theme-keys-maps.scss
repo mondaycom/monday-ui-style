@@ -1,0 +1,51 @@
+
+// Values from last prod before change
+$debug-basic-theme-keys-map: (
+        primary-color: var(--color-basic_blue),
+        primary-hover-color: var(--color-dark_blue),
+        primary-selected-color: var(--color-highlight_blue),
+        primary-text-color: var(--color-mud_black),
+        text-color-on-primary: var(--color-snow_white),
+        text-color-on-inverted: var(--color-snow_white),
+        secondary-text-color: var(--color-asphalt),
+        placeholder-color: var(--color-asphalt),
+        icon-color: var(--color-asphalt),
+        link-color: var(--color-link_color),
+        primary-background-color: var(--color-snow_white),
+        primary-background-hover-color: var(--color-ui_grey),
+        secondary-background-color: var(--color-snow_white),
+        grey-background-color: var(--color-riverstone_gray),
+        inverted-color-background: var(--color-mud_black),
+        disabled-text-color: var(--color-asphalt-muted),
+        disabled-background-color: var(--color-ui_grey-muted),
+        positive-color-selected: var(--color-success-highlight),
+        positive-color: var(--color-success),
+        positive-color-hover: var(--color-success-hover),
+        negative-color: var(--color-error),
+        negative-color-hover: var(--color-error-hover),
+        negative-color-selected: var(--color-error-highlight),
+        private-color: var(--color-private),
+        shareable-color: var(--color-purple),
+        ui-border-color: var(--color-wolf_gray),
+        layout-border-color: #d0d4e4,
+);
+
+// Value from current code
+$debug-output-basic-theme-keys: $theme-basic-keys;
+
+// Custom properties values the equal hard coded values
+$debug-basic-theme-custom-props-reference: (
+        color-public:$color-live_blue,
+        color-private:$color-bazooka,
+        color-red-shadow:$color-red_shadow,
+        color-green-shadow: $color-green-shadow,
+        color-blue-links:$color-blue_links,
+);
+
+// White list approved changes
+$debug-basic-theme-white-list: (
+        private-color:"var(--color-bazooka)",
+  // SHOULD BE CORRECTED
+        disabled-background-color: $disabled-background-color,
+        disabled-text-color: $disabled-text-color,
+);

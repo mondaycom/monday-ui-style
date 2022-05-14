@@ -1,0 +1,44 @@
+// Values from last prod before change
+$debug-dark-theme-keys-map: (
+        primary-color: var(--color-basic_blue),
+        primary-on-secondary-color: var(--color-basic_blue),
+        primary-hover-color: #0060b9,
+        primary-selected-color: #133774,
+        primary-text-color: #d5d8df,
+        text-color-on-inverted: var(--color-mud_black),
+        secondary-text-color: var(--color-jaco_gray),
+        icon-color: var(--color-wolf_gray),
+        link-color: #69a7ef,
+        primary-background-color: #181b34,
+        primary-background-hover-color: #4b4e69,
+        secondary-background-color: #30324e,
+        grey-background-color: #181b34,
+        inverted-color-background: #ffffff,
+        disabled-text-color: #5d6072,
+        disabled-background-color: #3c3f59,
+        positive-color: var(--color-success),
+        positive-color-hover: var(--color-success-hover),
+        positive-color-selected: #26503e,
+        negative-color: var(--color-error),
+        negative-color-hover: var(--color-error-hover),
+        negative-color-selected: #642830,
+        private-color: var(--color-private),
+        shareable-color: #a358df,
+        ui-border-color: #797e93,
+        layout-border-color: #4b4e69,
+);
+
+// Value from current code
+$debug-output-dark-theme-keys: $theme-dark-keys;
+
+// Custom properties values the equal hard coded values
+$debug-dark-theme-keys-white-list: (
+        //primary-hover-color:$color-dark_blue,
+        //shareable-color:$color-purple,
+);
+
+$debug-dark-theme-keys-custom-props-reference: (
+);
+
+// White list
+$debug-dark-theme-keys-white-list: ();

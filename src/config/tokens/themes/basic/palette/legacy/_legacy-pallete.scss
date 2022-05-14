@@ -55,6 +55,8 @@ $color-dark-purple: #784bd1;
 
 $color-blue_links: #0086c0;
 $color-blue-links-alias: var(--color-blue_links);
+$color-public: var(--color-live_blue);
+$color-private: var(--color-bazooka);
 $color-board_views_grey: #6e6f8f;
 $color-board_views_grey_hover: #b2b3d0;
 $color-board_views_blue: #1c1f3b;
@@ -70,17 +72,17 @@ $color-brand-malachite: #00cd6f;
 $color-brand-purple: #a358d0;
 $color-brand-red: #f74875;
 $color-deadline_upcoming_indication: #5d6387;
-$color-default_group_color: var(--color-bright-blue);
+$color-default_group_color: #579bfc;
 $color-form_btn_hover: #0083d9;
 $color-form_purple: #575c96;
 $color-highlight: #dff0ff;
 $color-green_shadow: #00c875;
-$color-green-shadow-alias: var(--color-green-shadow);
+$color-green-shadow-alias: var(--color-green_shadow);
 $color-red_shadow: #e2445c;
 $color-red-shadow-alias: var(--color-red_shadow);
 $color-like_red: #fb275d;
 $color-pulse_bg: #f0f0f0;
-$color-pulse_text_color: var(--color-blackish);
+$color-pulse_text_color: #333333;
 $color-placholder_gray: #d8d8d8;
 $color-placeholder_light_gray: #efefef;
 $color-excel-green: #207245;
@@ -92,17 +94,6 @@ $color-zip-orange: #e4901c;
 $color-scrollbar_gray: #b2b2b2;
 $color-timeline_grid_blue: #454662;
 $color-timeline_blue: #1c1f3b;
-
-// Semantics old aliases,that are not needed
-// - Success, used as positive key alias
-$color-success: $color-basic_green;
-$color-success-hover: $color-dark_green;
-$color-success-highlight: $color-pastel_green;
-
-// - Error, used as negative key alias
-$color-error: $color-basic_red;
-$color-error-hover: $color-blood_red;
-$color-error-highlight: $color-pastel_red;
 
 // Base Layer non UI Vibe values
 $color-snow_white-rgb: extract-rgb($color-snow_white);

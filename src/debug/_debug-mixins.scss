@@ -10,26 +10,57 @@
 // --- else if prompt ❌ fail with $key name and values
 // -- if $prod has key, prompt missing output message
 //
-@mixin debug-compare-values($prod, $dev,$white-list,$scope:basic) {
-  @debug "⚪ ⚪ ⚪  #{to-upper-case($scope)} THEME ⚪ ⚪ ⚪  ";
+@mixin debug-compare-values(
+  $prod,
+  $dev,
+  $custom-props-values,
+  $white-list,
+  $reference-key-map,
+  $title:null,
+  $scope:basic
+) {
+  @debug "\a ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪  \a #{to-upper-case($scope)} THEME: #{to-upper-case($title)}; \a ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪  ";
   $i: 0;
-  $fail: 0;
-  @each $key, $value in $prod {
-    $i: $i+1;
+  $num-pass: 0;
+  $num-custom-properties: 0;
+  $num-white-list: 0;
+  $num-fail: 0;
+  $num-reference-missing:0;
+  $num-missing: 0;
 
-    @if map-has-key($prod, $key) and map-has-key($dev,$key) {
-      @if #{$value} == #{map-get($dev,$key)} {
-        @debug "[#{$i}] ✅ PASS --#{$key} ";
-      } @else if map-has-key($white-list, $key) {
-        @debug "❕❕ WHITE LIST: --#{$key} #{map-get($white-list,$key)} ❕❕";
-      } @else {
-        @debug "[#{$i}] ❌ FAIL, --#{$key},#{map-get($prod,$key)} , ⭕ #{map-get($dev,$key)} ";
-        $fail:$fail + 1;
-      }
-    }
-    @if map-has-key($prod, $key) and not map-has-key($dev,$key) {
-      @debug "[#{$i}] fix me, --#{$key} missing from new output";
+  @debug "🔷 Validating keys ... 🔷";
+  @each $key, $value in $reference-key-map {
+    @if map-has-key($reference-key-map, $key) and not map-has-key($prod,$key) {
+      $num-reference-missing: $num-reference-missing +1;
+      @debug "[#{$i}] 🔶 --#{$key} missing from new output when checked prod against boilerplate";
     }
   }
-  @debug "❌ ❌ ❌ FAILED TESTS FOR #{to-upper-case($scope) THEME} ARE:#{$fail}";
+
+  @debug "🔷 Validating values ... 🔷";
+  @each $key, $value in $prod {
+    $i: $i+1;
+    @if map-has-key($prod, $key) and map-has-key($dev,$key) {
+      @if #{$value} == #{map-get($dev,$key)} {
+        $num-pass: $num-pass+1;
+        @if $debug-show-pass {
+          @debug "[#{$i}] ✅ PASS --#{$key} ";
+        }
+      } @else if map-has-key($custom-props-values, $key) {
+        @debug "[#{$i}] 🟩 FALSE FAIL ❕❕ CUSTOM PROPERTY REFERANCE: \a --#{$key}: #{$value } == #{map-get($custom-props-values,$key)} ==> #{map-get($dev,$key)} Referance value ==  #{map-get($dev,$key)} ";
+        $num-custom-properties: $num-custom-properties+1;
+      } @else if map-has-key($white-list, $key) {
+        @debug "[#{$i}] ⬜ FALSE FAIL ,[WHITE LISTED] --#{$key} #{$value} changed to  #{map-get($white-list,$key)}";
+        $num-white-list: $num-white-list +1;
+      } @else {
+        @debug "[#{$i}] ❌ FAIL, --#{$key},#{map-get($prod,$key)} , ⭕ #{map-get($dev,$key)} ";
+        $num-fail: $num-fail + 1;
+      }
+    }
+
+    @if map-has-key($prod, $key) and not map-has-key($dev,$key) {
+      $num-missing: $num-missing +1;
+      @debug "[#{$i}] 🔶 fix me, --#{$key} missing from new output when checked prod against dev";
+    }
+  }
+  @debug "\a 🟦 TESTS RESULTS FOR #{to-upper-case($scope) THEME}  #{to-upper-case($title)} ARE:\a Total: #{$i} ✅ Pass #{$num-pass} 🟩 Custom properties #{$num-custom-properties}  🟨️️️ White list #{$num-white-list} 🔶 Missing Aginast boilerplate #{$num-reference-missing}  🔶 Missing #{$num-missing}  ❌ Fails #{$num-fail}";
 }

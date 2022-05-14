@@ -9,17 +9,17 @@
 // - We either use $theme-dark token or var(--token) depending on connection logic and value type.
 
 // Text colors
-$theme-dark-primary-color: var(--primary-color);
-$theme-dark-primary-hover-color: var(--primary-hover-color);
+$theme-dark-primary-color: $primary-color;
+$theme-dark-primary-hover-color: $primary-hover-color;
 $theme-dark-primary-selected-color: $color-ocean_blue;
 $theme-dark-primary-text-color: $color-snow;
 
-$theme-dark-text-color-on-primary: var(--color-mud_black); // todo: fix, value from basic theme
-$theme-dark-text-color-on-inverted:  var(--color-mud_black); // todo: fix, value from basic theme
+$theme-dark-text-color-on-primary: $text-color-on-primary; // todo: fix, value from basic theme
+$theme-dark-text-color-on-inverted:  $color-mud_black; // todo: fix, value from basic theme
 
-$theme-dark-secondary-text-color: var(--color-jaco_gray); // todo: fix, value from basic legacy palette
-$theme-dark-placeholder-color: var(--color-wolf_gray); // todo: fix, value from basic theme
-$theme-dark-icon-color: var(--color-wolf_gray); // todo: fix, value from basic theme
+$theme-dark-secondary-text-color: $color-jaco_gray; // todo: fix, value from basic legacy palette
+$theme-dark-placeholder-color: $color-wolf_gray; // todo: fix, value from basic theme
+$theme-dark-icon-color: $color-wolf_gray; // todo: fix, value from basic theme
 
 $theme-dark-link-color: $color-arctic_blue;
 
@@ -35,14 +35,14 @@ $theme-dark-inverted-color-background: $color-snow_white; // todo: fix, value fr
 $theme-dark-disabled-text-color: $color-spacegrey_muted;
 $theme-dark-disabled-background-color: $color-silver_muted;
 
-$theme-dark-positive-color: var(--positive-color);
-$theme-dark-positive-color-hover: var(--positive-color-hover);
+$theme-dark-positive-color: $positive-color;
+$theme-dark-positive-color-hover: $positive-color-hover;
 $theme-dark-positive-color-selected: $color-forest_green;
-$theme-dark-negative-color: var(--negative-color);
-$theme-dark-negative-color-hover: var(--negative-color-hover);
+$theme-dark-negative-color: $negative-color;
+$theme-dark-negative-color-hover: $negative-color-hover;
 $theme-dark-negative-color-selected: $color-maroon_red;
-$theme-dark-private-color: var(--private);
-$theme-dark-shareable-color: var(--shareable-color);
+$theme-dark-private-color: $private-color;
+$theme-dark-shareable-color: $shareable-color;
 
 // UI elements
 // - Borders

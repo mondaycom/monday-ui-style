@@ -6,8 +6,6 @@
 // - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
 $theme-basic-legacy-keys: (
-        color-private: $color-private,
-        color-public: $color-public,
         primary-hover-on-secondary-color:$primary-hover-on-secondary-color,
         primary-selected-color-rgb: $primary-selected-color-rgb,
         primary-selected-on-secondary-color: $primary-selected-on-secondary-color,

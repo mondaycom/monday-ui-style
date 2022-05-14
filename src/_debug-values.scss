@@ -1,22 +1,93 @@
 // DEBUG
 
+@import "debug/debug-flags";
 @import "debug/debug-value-maps";
 @import "debug/debug-mixins";
 
 @if $debug-values {
-  @include debug-compare-values(
-          $prod: $debug-basic-theme-values-map,
-          $dev: $debug-output-basic-theme,
-          $white-list: $debug-basic-theme-white-list
-  );
-  @include debug-compare-values(
-          $prod: $debug-dark-theme-values-map,
-          $dev: $debug-output-dark-theme,
-          $white-list: $debug-dark-theme-white-list,
-          $scope: "dark");
-  @include debug-compare-values(
-          $prod: $debug-black-theme-values-map,
-          $dev: $debug-output-black-theme,
-          $white-list: $debug-black-theme-white-list,
-          $scope: "black");
+  @if $debug-basic-theme {
+    // BASIC THEME
+    // - palette
+    @include debug-compare-values(
+            $prod: $debug-basic-theme-palette-map,
+            $dev: $debug-output-basic-theme-palette,
+            $custom-props-values: $debug-basic-theme-palette-custom-props-reference,
+            $white-list: $debug-basic-theme-palette-white-list,
+            $reference-key-map: $debug-basic-theme-palette-map,
+            $title: "🖌️ 🎨 palette values",
+    );
+    // - legacy palette
+    @include debug-compare-values(
+            $prod: $debug-basic-theme-legacy-palette-map,
+            $dev: $debug-output-basic-theme-legacy-palette,
+            $custom-props-values: $debug-basic-theme-legacy-palette-custom-props-reference,
+            $white-list: $debug-basic-theme-legacy-palette-white-list,
+            $reference-key-map: $debug-basic-theme-legacy-palette-map,
+            $title: "🖌️ legacy palette values",
+    );
+    // - Theme keys
+    @include debug-compare-values(
+            $prod: $debug-basic-theme-keys-map,
+            $dev: $debug-output-basic-theme-keys,
+            $custom-props-values: $debug-basic-theme-custom-props-reference,
+            $white-list: $debug-basic-theme-white-list,
+            $reference-key-map: $debug-basic-theme-keys-map,
+            $title: "🔑 theme key values",
+    );
+    // - Theme legacy keys
+    @include debug-compare-values(
+            $prod: $debug-basic-theme-legacy-keys-map,
+            $dev: $debug-output-basic-theme-legacy-keys,
+            $custom-props-values: $debug-basic-theme-legacy-keys-custom-props-reference,
+            $white-list: $debug-basic-theme-legacy-keys-white-list,
+            $reference-key-map: $debug-basic-theme-legacy-keys-map,
+            $title: "🗝️ legacy key values",
+    );
+  }
+  @if $debug-dark-theme {
+    // DARK THEME
+    // - Theme keys
+    @include debug-compare-values(
+            $prod: $debug-dark-theme-keys-map,
+            $dev: $debug-output-dark-theme-keys,
+            $custom-props-values: $debug-dark-theme-keys-custom-props-reference,
+            $white-list:$debug-dark-theme-keys-white-list,
+            $reference-key-map: $debug-basic-theme-keys-map,
+            $title: "🔑 theme key values",
+            $scope: "dark",
+    );
+    // - Theme legacy keys
+    @include debug-compare-values(
+            $prod: $debug-dark-theme-legacy-keys-map,
+            $dev: $debug-output-dark-theme-legacy-keys,
+            $custom-props-values: $debug-dark-theme-legacy-custom-props-reference,
+            $white-list: $debug-dark-theme-legacy-white-list,
+            $reference-key-map: $debug-basic-theme-legacy-keys-map,
+            $title: "🗝️ legacy key values",
+            $scope: "dark",
+    );
+  }
+  @if $debug-black-theme {
+    //BLACK THEME
+    // - Theme keys
+    @include debug-compare-values(
+            $prod: $debug-black-theme-keys-map,
+            $dev: $debug-output-black-theme-keys,
+            $custom-props-values: $debug-black-theme-keys-custom-props-reference,
+            $white-list: $debug-dark-theme-keys-white-list,
+            $reference-key-map: $debug-basic-theme-keys-map,
+            $title: "🔑 theme key values",
+            $scope: "black",
+    );
+    // - Theme legacy keys
+    @include debug-compare-values(
+            $prod: $debug-black-theme-legacy-keys-map,
+            $dev: $debug-output-black-theme-legacy-keys,
+            $custom-props-values: $debug-black-theme-legacy-custom-props-reference,
+            $white-list: $debug-black-theme-legacy-white-list,
+            $reference-key-map: $debug-basic-theme-legacy-keys-map,
+            $title: "🗝️ legacy key values",
+            $scope: "black",
+    );
+  }
 }
