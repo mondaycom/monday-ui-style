@@ -32,8 +32,18 @@ $debug-output-dark-theme-legacy-keys: $theme-dark-legacy-keys;
 
 // Custom properties values the equal hard coded values
 $debug-dark-theme-legacy-custom-props-reference: (
-        primary-hover-on-secondary-color:$color-dark_blue,
+);
+
+$debug-dark-theme-legacy-keys-custom-props-converted:(
+        primary-on-secondary-color:$theme-dark-primary-on-secondary-color,
+        secondary-text-on-secondary-color: $theme-dark-secondary-text-on-secondary-color,
+        icon-on-secondary-color: $theme-dark-icon-on-secondary-color,
+        placeholder-color-with-opacity: $theme-dark-placeholder-color-with-opacity,
+        placeholder-on-secondary-color: $theme-dark-placeholder-on-secondary-color,
 );
 
 // White list
-$debug-dark-theme-legacy-white-list: ();
+$debug-dark-theme-legacy-white-list: (
+        disabled-background-on-secondary-color:$theme-dark-disabled-background-on-secondary-color,
+        disabled-text-on-secondary-color:$theme-dark-disabled-text-on-secondary-color,
+);

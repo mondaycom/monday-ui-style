@@ -27,17 +27,14 @@ $debug-output-black-theme-legacy-keys: $theme-black-legacy-keys;
 
 // Custom properties values the equal hard coded values
 $debug-black-theme-legacy-custom-props-reference: (
-        primary-hover-color:$color-dark_blue,
-        primary-hover-on-secondary-color:$color-dark_blue,
-        primary-selected-color:$color-highlight_blue,
-        primary-selected-color-rgb:$color-highlight_blue-rgb,
-        primary-selected-on-secondary-color:$color-highlight_blue,
-        primary-text-on-secondary-color:$color-highlight_blue,
-        private-color:$color-bazooka,
-        shareable-color:$color-purple,
-        link-color:$color-link_color,
-        link-on-secondary-color:$color-link_color,
+);
+
+$debug-black-theme-legacy-keys-custom-props-converted: (
+        secondary-text-on-secondary-color:$theme-black-secondary-text-on-secondary-color
 );
 
 // White list
-$debug-black-theme-legacy-white-list: ();
+$debug-black-theme-legacy-keys-white-list: (
+        disabled-background-on-secondary-color: $theme-black-disabled-background-on-secondary-color,
+        disabled-text-on-secondary-color: $theme-black-disabled-text-on-secondary-color,
+);

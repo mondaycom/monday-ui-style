@@ -1,4 +1,3 @@
-
 // Values from last prod before change
 $debug-basic-theme-keys-map: (
         primary-color: var(--color-basic_blue),
@@ -35,17 +34,37 @@ $debug-output-basic-theme-keys: $theme-basic-keys;
 
 // Custom properties values the equal hard coded values
 $debug-basic-theme-custom-props-reference: (
-        color-public:$color-live_blue,
-        color-private:$color-bazooka,
-        color-red-shadow:$color-red_shadow,
-        color-green-shadow: $color-green-shadow,
-        color-blue-links:$color-blue_links,
+);
+
+$debug-basic-theme-keys-custom-props-converted: (
+        primary-color: $primary-color,
+        primary-hover-color: $primary-hover-color,
+        primary-selected-color: $primary-selected-color,
+        primary-text-color: $primary-text-color,
+        text-color-on-primary: $text-color-on-primary,
+        text-color-on-inverted: $text-color-on-inverted,
+        secondary-text-color: $secondary-text-color,
+        placeholder-color: $placeholder-color,
+        icon-color: $icon-color,
+        link-color: $link-color,
+        primary-background-color: $primary-background-color,
+        primary-background-hover-color: $primary-background-hover-color,
+        secondary-background-color:$secondary-background-color,
+        grey-background-color: $grey-background-color,
+        inverted-color-background: $inverted-color-background,
+        positive-color-selected: $positive-color-selected,
+        positive-color: $positive-color,
+        positive-color-hover: $positive-color-hover,
+        negative-color: $negative-color,
+        negative-color-hover: $negative-color-hover,
+        negative-color-selected: $negative-color-selected,
+        shareable-color:$shareable-color,
+        private-color:$private-color,
+        ui-border-color:$ui-border-color,
 );
 
 // White list approved changes
 $debug-basic-theme-white-list: (
-        private-color:"var(--color-bazooka)",
-  // SHOULD BE CORRECTED
         disabled-background-color: $disabled-background-color,
         disabled-text-color: $disabled-text-color,
 );

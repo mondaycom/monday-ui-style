@@ -18,36 +18,37 @@ $theme-black-primary-on-secondary-color: $color-basic_blue;
 $theme-black-primary-hover-on-secondary-color: $color-dark_blue;
 $theme-black-primary-selected-color-rgb: extract-rgb($color-ocean_blue);
 $theme-black-primary-selected-on-secondary-color: $color-ocean_blue;
-$theme-black-primary-text-on-secondary-color: $color-snow;
+$theme-black-primary-text-on-secondary-color: $color-smog;
 
-$theme-black-primary-background-color-rgb: extract-rgb($color-midnight);
-$theme-black-primary-background-hover-on-secondary-color: $color-silver;
-$theme-black-secondary-background-color-rgb: extract-rgb($color-graphite);
+$theme-black-primary-background-color-rgb: extract-rgb($color-vanta);
+$theme-black-primary-background-hover-on-secondary-color: $color-dust;
+$theme-black-secondary-background-color-rgb: extract-rgb($color-night);
 
 $theme-black-secondary-text-on-secondary-color: $color-jaco_gray;
 $theme-black-link-on-secondary-color: $color-arctic_blue;
 
 $theme-black-modal-background-color: $color-midnight;
-$theme-black-dark-background-color: $color-carbon_blue; // todo: fix, not part of Vibe colors
+$theme-black-dark-background-color: $color-night;
 $theme-black-dark-background-on-secondary-color: $color-silver;
-$theme-black-dialog-background-color: $color-graphite;
+$theme-black-dialog-background-color: $color-night;
 
 $theme-black-label-background-color: $color-buster_blue; // todo: fix, not part of Vibe colors
 $theme-black-label-background-on-secondary-color: $color-buster_blue; // todo: fix, not part of Vibe colors
 
-$theme-black-icon-on-secondary-color: $color-wolf_gray;; // todo: fix, theme basic natural color
-$theme-black-placeholder-color-with-opacity: $color-wolf_gray-with-opacity; // todo: fix, theme basic natural color
-$theme-black-placeholder-on-secondary-color: $color-wolf_gray; // todo: fix, theme basic natural color
+$theme-black-icon-on-secondary-color: $color-mouse;
+$theme-black-placeholder-color-with-opacity: rgba($color-mouse, 0.1);
+$theme-black-placeholder-on-secondary-color: $color-mouse;
 
 // States
-$theme-black-ui-border-on-secondary-color: $color-fog;
-$theme-black-layout-border-on-secondary-color: $color-silver;
+$theme-black-disabled-background-on-secondary-color: $theme-black-disabled-background-color;
+$theme-black-disabled-text-on-secondary-color: $theme-black-disabled-text-color;
 
-$theme-black-disabled-background-on-secondary-color: $theme-black-disabled-text-color;
-$theme-dark-disabled-text-on-secondary-color: $theme-black-disabled-text-color;
+// borders
+$theme-black-ui-border-on-secondary-color: $color-smoke;
+$theme-black-layout-border-on-secondary-color: $color-dust;
 
 // legacy shadow
-$box-shadow-mediun: var(--box-shadow-medium);
+$theme-black-box-shadow-mediun: var(--box-shadow-medium);
 
 
 

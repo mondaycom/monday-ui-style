@@ -10,48 +10,47 @@
 // - We either use $token or var(--token) depending on connection logic and value type.
 
 // Text colors
-$primary-color: var(--color-basic_blue);
-$primary-hover-color: var(--color-dark_blue);
-$primary-selected-color: var(--color-highlight_blue);
-$primary-text-color: var(--color-mud_black);
+$primary-color: $color-basic_blue;
+$primary-hover-color: $color-dark_blue;
+$primary-selected-color: $color-highlight_blue;
+$primary-text-color: $color-mud_black;
 
-$text-color-on-primary: var(--color-snow_white);
-$text-color-on-inverted: var(--color-snow_white);
+$text-color-on-primary: $color-snow_white;
+$text-color-on-inverted: $color-snow_white;
 
-$secondary-text-color: var(--color-asphalt);
-$placeholder-color: var(--color-asphalt);
-$icon-color: var(--color-asphalt);
+$secondary-text-color: $color-asphalt;
+$placeholder-color: $color-asphalt;
+$icon-color: $color-asphalt;
 
-$link-color: var(--color-link_color);
+$link-color: $color-link_color;
 
 // Background colors
-$primary-background-color: var(--color-snow_white);
-$primary-background-hover-color: var(--color-ui_grey);
-$secondary-background-color: var(--color-snow_white);
-$grey-background-color: var(--color-riverstone_gray);
+$primary-background-color: $color-snow_white;
+$primary-background-hover-color: $color-ui_grey;
+$secondary-background-color: $color-snow_white;
+$grey-background-color: $color-riverstone_gray;
 // - contrast hook
-$inverted-color-background: var(--color-mud_black);
+$inverted-color-background: $color-mud_black;
 
 // System Semantics (state, status)
 $disabled-text-color: $color-ui_grey-muted;
 $disabled-background-color: $color-asphalt-muted;
 
-$positive-color: var(--color-success);
-$positive-color-hover: var(--color-success-hover);
-$positive-color-selected: var(--color-success-highlight);
-$negative-color: var(--color-error);
-$negative-color-hover: var(--color-error-hover);
-$negative-color-selected: var(--color-error-highlight);
-$private-color: var(--color-bazooka);
-$shareable-color: var(--color-purple);
+$positive-color: $color-success;
+$positive-color-hover: $color-success-hover;
+$positive-color-selected: $color-success-highlight;
+$negative-color: $color-error;
+$negative-color-hover: $color-error-hover;
+$negative-color-selected: $color-error-highlight;
+$private-color: $color-bazooka;
+$shareable-color: $color-purple;
 
 // UI elements
 // - Borders
-$ui-border-color: var(--color-wolf_gray);
+$ui-border-color: $color-wolf_gray;
 $layout-border-color: #d0d4e4; // Todo: TBD, should be - var(--color-ui_grey)
 
 // - Shadows
-
 $shadow-color: $color-black;
 
 $box-shadow-small: $shadow-size-small rgba($shadow-color, $shadow-small-opacity);

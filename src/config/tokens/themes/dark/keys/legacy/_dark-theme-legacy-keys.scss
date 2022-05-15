@@ -43,11 +43,11 @@ $theme-dark-placeholder-on-secondary-color: $color-wolf_gray; // todo: fix, them
 $theme-dark-ui-border-on-secondary-color: $color-fog;
 $theme-dark-layout-border-on-secondary-color: $color-silver;
 
-$theme-dark-disabled-background-on-secondary-color: $theme-dark-disabled-text-color;
+$theme-dark-disabled-background-on-secondary-color: $theme-dark-disabled-background-color;
 $theme-dark-disabled-text-on-secondary-color: $theme-dark-disabled-text-color;
 
 // legacy shadow
-$box-shadow-mediun: var(--box-shadow-medium);
+$theme-dark-box-shadow-mediun: var(--box-shadow-medium);
 
 
 

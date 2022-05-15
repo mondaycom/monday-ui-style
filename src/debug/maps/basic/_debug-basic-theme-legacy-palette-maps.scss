@@ -80,13 +80,9 @@ $debug-basic-theme-legacy-palette-map: (
 $debug-output-basic-theme-legacy-palette: $theme-basic-legacy-palette;
 
 // Custom properties values the equal hard coded values
-$debug-basic-theme-legacy-palette-custom-props-reference: (
-        color-public:$color-live_blue,
-        color-private:$color-bazooka,
-        color-red-shadow: $color-red_shadow,
-        color-green-shadow: $color-green_shadow,
-        color-blue-links:$color-blue_links,
-);
+$debug-basic-theme-legacy-palette-custom-props-reference: ();
+
+$debug-basic-theme-legacy-palette-custom-props-converted: ();
 
 // White list approved changes
 $debug-basic-theme-legacy-palette-white-list: (

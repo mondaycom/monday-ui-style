@@ -14,39 +14,39 @@
 // - This way we eliminate duplication for hard coded value declaration.
 
 // # Not in Vibe UI definitions
-$primary-on-secondary-color: var(--color-basic_blue);
-$primary-hover-on-secondary-color: var(--color-dark_blue);
-$primary-selected-color-rgb: var(--color-highlight_blue-rgb);
-$primary-selected-on-secondary-color: var(--color-highlight_blue);
-$primary-text-on-secondary-color: var(--color-mud_black);
-$text-color-on-primary-with-opacity: var(--color-snow_white-with-opacity);
+$primary-on-secondary-color: $color-basic_blue;
+$primary-hover-on-secondary-color: $color-dark_blue;
+$primary-selected-color-rgb: $color-highlight_blue-rgb;
+$primary-selected-on-secondary-color: $color-highlight_blue;
+$primary-text-on-secondary-color: $color-mud_black;
+$text-color-on-primary-with-opacity: $color-snow_white-with-opacity;
 
 $primary-background-color-rgb: $color-snow_white-rgb;
-$primary-background-hover-on-secondary-color: var(--color-ui_grey);
+$primary-background-hover-on-secondary-color: $color-ui_grey;
 $secondary-background-color-rgb: $color-snow_white-rgb;
 
-$secondary-text-on-secondary-color: var(--color-asphalt);
-$link-on-secondary-color: var(--color-link_color);
+$secondary-text-on-secondary-color: $color-asphalt;
+$link-on-secondary-color: $color-link_color;
 
-$modal-background-color: var(--color-snow_white);
-$dark-background-color: var(--color-riverstone_gray);
-$dark-background-on-secondary-color: var(--color-riverstone_gray);
-$dialog-background-color: var(--color-snow_white);
+$modal-background-color: $color-snow_white;
+$dark-background-color: $color-riverstone_gray;
+$dark-background-on-secondary-color: $color-riverstone_gray;
+$dialog-background-color: $color-snow_white;
 
-$label-background-color: var(--color-highlight_blue);
-$label-background-on-secondary-color: var(--color-highlight_blue);
+$label-background-color: $color-highlight_blue;
+$label-background-on-secondary-color: $color-highlight_blue;
 
-$icon-on-secondary-color: var(--color-asphalt);
-$placeholder-color-with-opacity: var(--color-asphalt-with-opacity);
-$placeholder-on-secondary-color: var(--color-asphalt);
+$icon-on-secondary-color: $color-asphalt;
+$placeholder-color-with-opacity: $color-asphalt-with-opacity;
+$placeholder-on-secondary-color: $color-asphalt;
 
 // States
 $disabled-background-on-secondary-color: $disabled-background-color;;
 $disabled-text-on-secondary-color: $disabled-text-color;
 
 // borders
-$ui-border-on-secondary-color: var(--color-wolf_gray);
+$ui-border-on-secondary-color: $color-wolf_gray;
 $layout-border-on-secondary-color: $layout-border-color;
 
 // legacy shadow
-$box-shadow-mediun: var(--box-shadow-medium);
+$box-shadow-mediun: $box-shadow-medium;

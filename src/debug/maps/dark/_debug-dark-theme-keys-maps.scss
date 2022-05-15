@@ -32,13 +32,23 @@ $debug-dark-theme-keys-map: (
 $debug-output-dark-theme-keys: $theme-dark-keys;
 
 // Custom properties values the equal hard coded values
-$debug-dark-theme-keys-white-list: (
-        //primary-hover-color:$color-dark_blue,
-        //shareable-color:$color-purple,
-);
-
 $debug-dark-theme-keys-custom-props-reference: (
 );
 
+$debug-dark-theme-keys-custom-props-converted: (
+        primary-color: $theme-dark-primary-color,
+        primary-on-secondary-color: $theme-dark-primary-on-secondary-color,
+        text-color-on-inverted: $theme-dark-text-color-on-inverted,
+        secondary-text-color: $theme-dark-secondary-text-color,
+        icon-color: $theme-dark-icon-color,
+        positive-color:$theme-dark-positive-color,
+        positive-color-hover: $theme-dark-positive-color-hover,
+        negative-color:$theme-dark-negative-color,
+        negative-color-hover: $theme-dark-negative-color-hover,
+        private-color: $theme-dark-private-color,
+);
+
 // White list
-$debug-dark-theme-keys-white-list: ();
+$debug-dark-theme-keys-white-list: (
+        shareable-color: $shareable-color,
+);

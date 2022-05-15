@@ -35,16 +35,22 @@ $debug-output-black-theme-keys: $theme-black-keys;
 
 // Custom properties values the equal hard coded values
 $debug-black-theme-keys-custom-props-reference: (
-        primary-hover-color:$color-dark_blue,
-        primary-hover-on-secondary-color:$color-dark_blue,
-        primary-selected-color:$color-highlight_blue,
-        primary-selected-on-secondary-color:$color-highlight_blue,
-        primary-text-on-secondary-color:$color-highlight_blue,
-        private-color:$color-bazooka,
-        shareable-color:$color-purple,
-        link-color:$color-link_color,
-        link-on-secondary-color:$color-link_color,
+);
+
+$debug-black-theme-keys-custom-props-converted: (
+        primary-color: $theme-black-primary-color,
+        primary-on-secondary-color: $theme-black-primary-on-secondary-color,
+        positive-color: $theme-black-positive-color,
+        positive-color-hover: $theme-black-positive-color-hover,
+        negative-color: $theme-black-negative-color,
+        negative-color-hover: $theme-black-negative-color-hover,
+        private-color: $theme-black-private-color,
 );
 
 // White list
-$debug-black-theme-white-list: ();
+$debug-black-theme-keys-white-list: (
+        disabled-background-color: $theme-black-disabled-background-color,
+        disabled-text-color: $theme-black-disabled-text-color,
+        shareable-color: $theme-black-shareable-color,
+)
+;

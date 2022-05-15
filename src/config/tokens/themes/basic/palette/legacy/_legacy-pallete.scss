@@ -54,9 +54,9 @@ $color-dark-purple: #784bd1;
 //   -  We use custom properties as the values assignment.
 
 $color-blue_links: #0086c0;
-$color-blue-links-alias: var(--color-blue_links);
-$color-public: var(--color-live_blue);
-$color-private: var(--color-bazooka);
+$color-blue-links-alias: $color-blue_links;
+$color-public: $color-live_blue;
+$color-private: $color-bazooka;
 $color-board_views_grey: #6e6f8f;
 $color-board_views_grey_hover: #b2b3d0;
 $color-board_views_blue: #1c1f3b;
@@ -77,9 +77,9 @@ $color-form_btn_hover: #0083d9;
 $color-form_purple: #575c96;
 $color-highlight: #dff0ff;
 $color-green_shadow: #00c875;
-$color-green-shadow-alias: var(--color-green_shadow);
+$color-green-shadow-alias: $color-green_shadow;
 $color-red_shadow: #e2445c;
-$color-red-shadow-alias: var(--color-red_shadow);
+$color-red-shadow-alias: $color-red_shadow;
 $color-like_red: #fb275d;
 $color-pulse_bg: #f0f0f0;
 $color-pulse_text_color: #333333;

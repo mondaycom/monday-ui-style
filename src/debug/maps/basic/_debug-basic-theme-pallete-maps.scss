@@ -27,20 +27,10 @@ $debug-basic-theme-palette-map: (
 $debug-output-basic-theme-palette: $theme-basic-palette;
 
 // Custom properties values the equal hard coded values
-$debug-basic-theme-palette-custom-props-reference: (
-        //color-public:$color-live_blue,
-        //color-private:$color-bazooka,
-        //color-red-shadow:$color-red_shadow,
-        //color-green-shadow: $color-green-shadow,
-        //color-blue-links:$color-blue_links,
-);
+$debug-basic-theme-palette-custom-props-reference: ();
+
+$debug-basic-theme-palette-custom-props-converted: ();
 
 // White list approved changes
 $debug-basic-theme-palette-white-list: (
-  //      private-color:"var(--color-bazooka)",
-  //// SHOULD BE CORRECTED
-  //      disabled-background-color: $disabled-background-color,
-  //      disabled-background-on-secondary-color: $disabled-background-color,
-  //      disabled-text-color: $disabled-text-color,
-  //      disabled-text-on-secondary-color: $disabled-text-color,
 );
