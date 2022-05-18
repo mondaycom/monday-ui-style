@@ -1,7 +1,6 @@
-$bg_color: #282a36;
-$primary_color: #fe78c6;
-
 .hacker_theme-app-theme {
+  $bg_color: #282a36;
+  $primary_color: #fe78c6;
   // primary coloring
   --primary-color: #{$primary_color};
   --primary-on-secondary-color: #{$primary_color};
@@ -19,6 +18,7 @@ $primary_color: #fe78c6;
   --primary-background-hover-color: #4b4e69;
   --primary-background-hover-on-secondary-color: #4b4e69;
   --grey-background-color: #{$bg_color};
+  --allgrey-background-color: #{$bg_color};
 
   --inverted-color-background: #ffffff;
   --text-color-on-inverted: var(--color-mud_black);
