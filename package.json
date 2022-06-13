@@ -16,7 +16,7 @@
     "build": "npm run compile-styles && npm run css-minify",
     "plop": "plop",
     "stylelint": "stylelint \"**/*.scss\"",
-    "stylelint-fix": "stylelint \"**/*.scss\" --fix"
+    "stylelint:fix": "stylelint \"**/*.scss\" --fix"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
