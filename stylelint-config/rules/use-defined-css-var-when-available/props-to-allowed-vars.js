@@ -8,7 +8,15 @@ const SPACINGS = [
   "--spacing-xxxl",
 ];
 
-const BORDER_RADIUSES = ["--border-radius-small", "--border-radius-medium", "--border-radius-big"];
+const BORDER_RADIUSES = [
+  "--border-radius-small",
+  "--border-radius-medium",
+  "--border-radius-big",
+];
+
+const BORDER_WIDTHS = ["--border-width"];
+
+const BORDER_STYLES = ["--border-style"];
 
 const FONT_SIZES = [
   // since "--font-size-10" and "--font-size-20" have the same value, we need to pick only one of them as "valid value", to allow autofix
@@ -28,7 +36,12 @@ const FONT_SIZES = [
   "--font-size-subtext",
 ];
 
-const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
+const FONT_WEIGHTS = [
+  "--font-weight-very-light",
+  "--font-weight-light",
+  "--font-weight-normal",
+  "--font-weight-bold",
+];
 
 const FONT_LINE_HEIGHTS = [
   "--font-line-height-10",
@@ -107,17 +120,41 @@ const BORDER_RADIUSES_PROPS = [
   "border-end-end-radius",
 ];
 
-const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "animation-timing-function"];
+const BORDER_WIDTHS_PROPS = ["border", "border-width"];
 
-const DURATION_FUNCTION_PROPS = ["transition", "transition-duration", "animation", "animation-duration"];
+const BORDER_STYLES_PROPS = ["border", "border-style"];
+
+const TIMING_FUNCTION_PROPS = [
+  "transition",
+  "transition-timing",
+  "animation",
+  "animation-timing-function",
+];
+
+const DURATION_FUNCTION_PROPS = [
+  "transition",
+  "transition-duration",
+  "animation",
+  "animation-duration",
+];
 
 const OPACITY_PROPS = ["opacity"];
 
-function mapPropsToAllowedVars(propNames, allowedVars, recommended = undefined) {
+function mapPropsToAllowedVars(
+  propNames,
+  allowedVars,
+  recommended = undefined
+) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
 
-  return propNames.reduce((result, propName) => ({ ...result, [propName]: { allowedVars, recommended } }), {});
+  return propNames.reduce(
+    (result, propName) => ({
+      ...result,
+      [propName]: { allowedVars, recommended },
+    }),
+    {}
+  );
 }
 
 // List the CSS props we want to lint, and map each one to the values we would prefer to use.
@@ -127,6 +164,8 @@ function mapPropsToAllowedVars(propNames, allowedVars, recommended = undefined) 
 const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars(SPACING_PROPS, SPACINGS),
   ...mapPropsToAllowedVars(BORDER_RADIUSES_PROPS, BORDER_RADIUSES),
+  ...mapPropsToAllowedVars(BORDER_WIDTHS_PROPS, BORDER_WIDTHS),
+  ...mapPropsToAllowedVars(BORDER_STYLES_PROPS, BORDER_STYLES),
   ...mapPropsToAllowedVars("line-height", FONT_LINE_HEIGHTS, [
     "--font-line-height-subtext",
     "--font-line-height-h1",
@@ -141,8 +180,12 @@ const PROPS_TO_ALLOWED_VARS = {
     "--font-size-h5",
     "--font-size-general-label",
   ]),
-  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
-  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
+  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, [
+    "--expand-animation-timing",
+  ]),
+  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, [
+    "--animation-expressive-short",
+  ]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
 
   "font-family": { allowedVars: ["--font-family"] },
