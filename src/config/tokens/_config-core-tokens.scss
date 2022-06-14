@@ -1,7 +1,8 @@
 // CONFIG: CORE TOKENS
 // This partial loads Core config tokens
-
+// - loading order is important
 @import "core/core-motion";
+@import "core/core-border";
 @import "core/core-opacity";
 @import "core/core-spacing";
 @import "core/core-radius";
