@@ -5,14 +5,10 @@ const SPACINGS = [
   "--spacing-large",
   "--spacing-xl",
   "--spacing-xxl",
-  "--spacing-xxxl",
+  "--spacing-xxxl"
 ];
 
-const BORDER_RADIUSES = [
-  "--border-radius-small",
-  "--border-radius-medium",
-  "--border-radius-big",
-];
+const BORDER_RADIUSES = ["--border-radius-small", "--border-radius-medium", "--border-radius-big"];
 
 const BORDER_WIDTHS = ["--border-width"];
 
@@ -33,15 +29,10 @@ const FONT_SIZES = [
   "--font-size-h5",
   "--font-size-general-label",
   "--font-size-paragraph",
-  "--font-size-subtext",
+  "--font-size-subtext"
 ];
 
-const FONT_WEIGHTS = [
-  "--font-weight-very-light",
-  "--font-weight-light",
-  "--font-weight-normal",
-  "--font-weight-bold",
-];
+const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
 
 const FONT_LINE_HEIGHTS = [
   "--font-line-height-10",
@@ -58,7 +49,7 @@ const FONT_LINE_HEIGHTS = [
   "--font-line-height-h5",
   "--font-line-height-general-label",
   "--font-line-height-paragraph",
-  "--font-line-height-subtext",
+  "--font-line-height-subtext"
 ];
 
 const ANIMATION_TIMING = [
@@ -66,7 +57,7 @@ const ANIMATION_TIMING = [
   "--animation-timing-exit",
   "--animation-timing-transition",
   "--animation-timing-emphasize",
-  "--expand-animation-timing",
+  "--expand-animation-timing"
 ];
 
 const ANIMATION_DURATION = [
@@ -75,7 +66,7 @@ const ANIMATION_DURATION = [
   "--animation-productive-long",
   "--animation-expressive-short",
   "--animation-expressive-medium",
-  "--animation-expressive-long",
+  "--animation-expressive-long"
 ];
 
 const SPACING_PROPS = [
@@ -105,7 +96,7 @@ const SPACING_PROPS = [
 
   "inset",
   "inset-end",
-  "inset-start",
+  "inset-start"
 ];
 
 const BORDER_RADIUSES_PROPS = [
@@ -117,41 +108,27 @@ const BORDER_RADIUSES_PROPS = [
   "border-start-start-radius",
   "border-start-end-radius",
   "border-end-start-radius",
-  "border-end-end-radius",
+  "border-end-end-radius"
 ];
 
 const BORDER_WIDTHS_PROPS = ["border", "border-width"];
 
 const BORDER_STYLES_PROPS = ["border", "border-style"];
 
-const TIMING_FUNCTION_PROPS = [
-  "transition",
-  "transition-timing",
-  "animation",
-  "animation-timing-function",
-];
+const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "animation-timing-function"];
 
-const DURATION_FUNCTION_PROPS = [
-  "transition",
-  "transition-duration",
-  "animation",
-  "animation-duration",
-];
+const DURATION_FUNCTION_PROPS = ["transition", "transition-duration", "animation", "animation-duration"];
 
 const OPACITY_PROPS = ["opacity"];
 
-function mapPropsToAllowedVars(
-  propNames,
-  allowedVars,
-  recommended = undefined
-) {
+function mapPropsToAllowedVars(propNames, allowedVars, recommended = undefined) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
   propNames = Array.isArray(propNames) ? propNames : [propNames];
 
   return propNames.reduce(
     (result, propName) => ({
       ...result,
-      [propName]: { allowedVars, recommended },
+      [propName]: { allowedVars, recommended }
     }),
     {}
   );
@@ -170,7 +147,7 @@ const PROPS_TO_ALLOWED_VARS = {
     "--font-line-height-subtext",
     "--font-line-height-h1",
     "--font-line-height-h2",
-    "--font-line-height-h4",
+    "--font-line-height-h4"
   ]),
   ...mapPropsToAllowedVars("font-weight", FONT_WEIGHTS),
   ...mapPropsToAllowedVars("font-size", FONT_SIZES, [
@@ -178,21 +155,17 @@ const PROPS_TO_ALLOWED_VARS = {
     "--font-size-h2",
     "--font-size-h4",
     "--font-size-h5",
-    "--font-size-general-label",
+    "--font-size-general-label"
   ]),
-  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, [
-    "--expand-animation-timing",
-  ]),
-  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, [
-    "--animation-expressive-short",
-  ]),
+  ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
+  ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
 
   "font-family": { allowedVars: ["--font-family"] },
   "-webkit-font-smoothing": { allowedVars: ["--font-smoothing-webkit"] },
-  "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] },
+  "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] }
 };
 
 module.exports = {
-  PROPS_TO_ALLOWED_VARS,
+  PROPS_TO_ALLOWED_VARS
 };
