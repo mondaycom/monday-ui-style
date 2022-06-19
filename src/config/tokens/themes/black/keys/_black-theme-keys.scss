@@ -52,6 +52,7 @@ $theme-black-layout-border-color: $color-dust;
 // - Shadows
 $theme-black-box-shadow-color: $color-black;
 
+$theme-black-box-shadow-xs: $shadow-size-xs $theme-black-box-shadow-color;
 $theme-black-box-shadow-small: $shadow-size-small $theme-black-box-shadow-color;
 $theme-black-box-shadow-medium: $shadow-size-medium $theme-black-box-shadow-color;
 $theme-black-box-shadow-large: $shadow-size-large $theme-black-box-shadow-color;

@@ -55,6 +55,7 @@ $theme-dark-layout-border-color: $color-silver;
 $theme-dark-shadow-color: $color-rift; // todo: fix, not part of Vibe colors
 $theme-dark-shadow-opacity: 0.5;
 
+$theme-dark-box-shadow-xs: $shadow-size-xs rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
 $theme-dark-box-shadow-small: $shadow-size-small rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
 $theme-dark-box-shadow-medium: $shadow-size-medium rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
 $theme-dark-box-shadow-large: $shadow-size-large rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);
