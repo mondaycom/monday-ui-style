@@ -5,31 +5,31 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
-      name: "LightbulbOn",
-      file: "LightbulbOn.svg",
-      description: "Lightbulb turned on",
-      tags: "light, bulb, lightbulb, idea"
+      name: "Lightbulb",
+      file: "Lightbulb.svg",
+      description: "Lighbulb that is on",
+      tags: "light,bulb,lightbulb,flash"
   },
 
   {
-      name: "GraduationCap",
-      file: "GraduationCap.svg",
-      description: "Graduation cap",
-      tags: "academy,learn,knowledge,graduation,graduate"
+      name: "Education",
+      file: "Education.svg",
+      description: "Open book with no words",
+      tags: "book,open,pages,page,learn"
   },
 
   {
-      name: "OpenBook",
-      file: "OpenBook.svg",
-      description: "Open book no text",
-      tags: "book,page,pages,learn"
+      name: "Community",
+      file: "Community.svg",
+      description: "Two square chat bubbles",
+      tags: "chat,messages,message,community,talk,bubble"
   },
 
   {
-      name: "Messages",
-      file: "Messages.svg",
-      description: "Double chat bubble in opposite directions",
-      tags: "chat, message, messages, conversation, community"
+      name: "Academy",
+      file: "Academy.svg",
+      description: "A graduation cap",
+      tags: "graduation,academy,cap,hat,college"
   },
 
   {
