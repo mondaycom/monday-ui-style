@@ -10,8 +10,8 @@
 // - We either use $theme-dark token or var(--token) depending on connection logic and value type.
 
 // Text colors
-$theme-dark-primary-color: $primary-color;
-$theme-dark-primary-hover-color: $primary-hover-color;
+$theme-dark-primary-color: $primary-color; // value from basic theme
+$theme-dark-primary-hover-color: $primary-hover-color; // value from basic theme
 $theme-dark-primary-selected-color: $color-ocean_blue;
 $theme-dark-primary-text-color: $color-snow;
 $theme-dark-text-color-on-primary: $text-color-on-primary; // value from basic theme

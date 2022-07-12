@@ -1,5 +1,6 @@
 //  BLACK THEME  TOKENS: SEMANTIC KEYS COLORS
 // - This partial defines Black Theme's Semantic Keys color tokens
+// FIGMA REFERENCE: COLOR KEYS
 
 // - Theme keys should hold registration values (colors, content colors, other keys)
 //   - In some case there are unique hex values assignments
@@ -9,18 +10,13 @@
 // - We either use $theme-dark token or var(--token) depending on connection logic and value type.
 
 // Text colors
-$theme-black-primary-color: $primary-color;
-$theme-black-primary-hover-color: $primary-hover-color;
+$theme-black-primary-color: $primary-color; // value from basic theme
+$theme-black-primary-hover-color: $primary-hover-color; // value from basic theme
 $theme-black-primary-selected-color: $color-ocean_blue;
 $theme-black-primary-text-color: $color-smog;
-
-$theme-black-text-color-on-primary: $text-color-on-primary;
+$theme-black-text-color-on-primary: $text-color-on-primary; // value from basic theme
 $theme-black-text-color-on-inverted: $color-vanta;
-
 $theme-black-secondary-text-color: $color-mouse;
-$theme-black-placeholder-color: $color-mouse;
-$theme-black-icon-color: $color-mouse;
-$theme-black-link-color: $color-arctic_blue;// color from dark palette
 
 // Background colors
 $theme-black-primary-background-color: $color-vanta;
@@ -31,27 +27,33 @@ $theme-black-allgrey-background-color: $color-night;
 // - contrast hook
 $theme-black-inverted-color-background: $color-smog;
 
-// System Semantics (state, status)
-$theme-black-disabled-text-color: $color-mouse;
-$theme-black-disabled-background-color: $color-dust-muted;
-
-$theme-black-positive-color: $positive-color;
-$theme-black-positive-color-hover: $positive-color-hover;
-$theme-black-positive-color-selected: $color-forest_green;// color from dark palette
-$theme-black-negative-color: $negative-color;
-$theme-black-negative-color-hover: $negative-color-hover;
-$theme-black-negative-color-selected: $color-maroon_red;// color from dark palette
-$theme-black-private-color: $private-color;
-$theme-black-shareable-color: $shareable-color;
+// Generic Elements
+$theme-black-placeholder-color: $color-mouse;
+$theme-black-icon-color: $color-mouse;
+$theme-black-link-color: $color-arctic_blue;// color from dark palette
 
 // UI elements
 // - Borders
 $theme-black-ui-border-color: $color-smoke;
 $theme-black-layout-border-color: $color-dust;
 
-// - Shadows
-$theme-black-box-shadow-color: $color-black;
+// System Semantics (state, status)
+// - State
+$theme-black-disabled-text-color: $color-mouse;
+$theme-black-disabled-background-color: $color-dust-muted;
+// - Status
+$theme-black-positive-color: $positive-color; // value from basic theme
+$theme-black-positive-color-hover: $positive-color-hover; // value from basic theme
+$theme-black-positive-color-selected: $color-forest_green;// color from dark palette
+$theme-black-negative-color: $negative-color; // value from basic theme
+$theme-black-negative-color-hover: $negative-color-hover; // value from basic theme
+$theme-black-negative-color-selected: $color-maroon_red;// color from dark palette
+$theme-black-private-color: $private-color; // value from basic theme
+$theme-black-shareable-color: $shareable-color; // value from basic theme
 
+// - Shadows
+$theme-black-box-shadow-color: $color-black; // value from basic theme legacy
+// - Shadows definitions
 $theme-black-box-shadow-xs: $shadow-size-xs $theme-black-box-shadow-color;
 $theme-black-box-shadow-small: $shadow-size-small $theme-black-box-shadow-color;
 $theme-black-box-shadow-medium: $shadow-size-medium $theme-black-box-shadow-color;

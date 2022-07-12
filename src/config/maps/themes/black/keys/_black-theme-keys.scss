@@ -4,22 +4,23 @@
 
 $theme-black-keys: (
         primary-color: $theme-black-primary-color,
-        primary-on-secondary-color: $theme-black-primary-on-secondary-color,
         primary-hover-color: $theme-black-primary-hover-color,
         primary-selected-color: $theme-black-primary-selected-color,
         primary-text-color: $theme-black-primary-text-color,
         text-color-on-primary: $theme-black-text-color-on-primary,
         text-color-on-inverted: $theme-black-text-color-on-inverted,
         secondary-text-color: $theme-black-secondary-text-color,
-        placeholder-color: $theme-black-placeholder-color,
-        icon-color: $theme-black-icon-color,
-        link-color: $theme-black-link-color,
         primary-background-color: $theme-black-primary-background-color,
         primary-background-hover-color: $theme-black-primary-background-hover-color,
         secondary-background-color: $theme-black-secondary-background-color,
         grey-background-color: $theme-black-grey-background-color,
         allgrey-background-color: $theme-black-allgrey-background-color,
         inverted-color-background: $theme-black-inverted-color-background,
+        placeholder-color: $theme-black-placeholder-color,
+        icon-color: $theme-black-icon-color,
+        link-color: $theme-black-link-color,
+        ui-border-color: $theme-black-ui-border-color,
+        layout-border-color: $theme-black-layout-border-color,
         disabled-text-color: $theme-black-disabled-text-color,
         disabled-background-color: $theme-black-disabled-background-color,
         positive-color: $theme-black-positive-color,
@@ -30,8 +31,6 @@ $theme-black-keys: (
         negative-color-selected: $theme-black-negative-color-selected,
         private-color: $theme-black-private-color,
         shareable-color: $theme-black-shareable-color,
-        ui-border-color: $theme-black-ui-border-color,
-        layout-border-color: $theme-black-layout-border-color,
 );
 
 // DARK THEME SHADOW MAP: dark theme's shadow color map.
