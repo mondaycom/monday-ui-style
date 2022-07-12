@@ -39,7 +39,7 @@ $layout-border-color: #d0d4e4; // Todo: TBD, should be - var(--color-ui_grey)
 
 // System Semantics (state, status)
 // - State
-$disabled-text-color: $color-asphalt;
+$disabled-text-color: $color-asphalt; // Todo: temp value,should be refactored
 $disabled-background-color: $color-ui_grey-muted;
 // - Status
 $positive-color: $color-basic_green;
@@ -51,7 +51,7 @@ $negative-color-selected: $color-pastel_red;
 $private-color: $color-bazooka;
 $shareable-color: $color-purple;
 
-// - Shadows
+// Shadows
 $shadow-xs-opacity: $opacity-10;
 $shadow-small-opacity: $opacity-20;
 $shadow-medium-opacity: $shadow-small-opacity;
