@@ -53,6 +53,18 @@ $color-dark-purple: #784bd1;
 //   we use the first one as an alias value and the other ones as aliases.
 //   -  We use custom properties as the values assignment.
 
+// Semantics old aliases,
+// - Success, used as positive key alias
+$color-success: $color-basic_green;
+$color-success-hover: $color-dark_green;
+$color-success-highlight: $color-pastel_green;
+
+// - Error, used as negative key alias
+$color-error: $color-basic_red;
+$color-error-hover: $color-blood_red;
+$color-error-highlight: $color-pastel_red;
+
+// Legacy
 $color-blue_links: #0086c0;
 $color-blue-links-alias: $color-blue_links;
 $color-public: $color-live_blue;
