@@ -16,7 +16,7 @@ $theme-dark-primary-selected-color: $color-ocean_blue;
 $theme-dark-primary-text-color: $color-snow;
 $theme-dark-text-color-on-primary: $text-color-on-primary; // value from basic theme
 $theme-dark-text-color-on-inverted: $color-mud_black; // value from basic theme
-$theme-dark-secondary-text-color: $color-jaco_gray; // todo:value from basic legacy palette, should be replaced
+$theme-dark-secondary-text-color: $color-jaco_gray; // TODO:value from basic legacy palette, should be replaced
 
 // Background colors
 $theme-dark-primary-background-color: $color-midnight;
@@ -52,7 +52,7 @@ $theme-dark-private-color: $private-color; // value from basic theme
 $theme-dark-shareable-color: $shareable-color; // value from basic theme
 
 // Shadows
-$theme-dark-shadow-color: $color-rift; // todo: fix, not part of Vibe colors
+$theme-dark-shadow-color: $color-rift; // TODO: fix, not part of Vibe colors
 $theme-dark-shadow-opacity: 0.5;
 // - Shadows definitions
 $theme-dark-box-shadow-xs: $shadow-size-xs rgba($theme-dark-shadow-color, $theme-dark-shadow-opacity);

@@ -35,7 +35,7 @@ $link-color: $color-link_color;
 // UI elements
 // - Borders
 $ui-border-color: $color-wolf_gray;
-$layout-border-color: #d0d4e4; // Todo: TBD, should be - var(--color-ui_grey)
+$layout-border-color: $color-ui_grey;
 
 // System Semantics (state, status)
 // - State
