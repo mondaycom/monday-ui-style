@@ -1,0 +1,17 @@
+// Deprecated tokens
+// - we changed the prefix to be "motion" instead of animation.
+
+$animation-productive-short: var(--motion-productive-short);
+$animation-productive-medium: var(--motion-productive-short);
+$animation-productive-long: var(--motion-productive-long);
+
+// - Expressive, Layout UI, Larger affect, elements with content, feedback.
+// -- Duration
+$animation-expressive-short: var(--motion-expressive-short);
+$animation-expressive-long: var(--motion-expressive-long);
+
+// -- Timing
+$animation-timing-enter: var(--motion-timing-enter);
+$animation-timing-exit: var(--motion-timing-exit);
+$animation-timing-transition: var(--animation-timing-transition);
+$animation-timing-emphasize: var(--motion-timing-emphasize);

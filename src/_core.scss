@@ -6,7 +6,19 @@
 // - Core properties are Global and Generic and goes under :root
 
 @import "core/core-settings";
+@import "core/core-legacy-settings";
 
 :root {
   @include generate-custom-properties($core-settings-map);
+
+  /*
+
+  LEGACY VALUES
+
+  These values are not within Vibe's UI definitions and are on a deprecation path.
+  Please stop using them and make efforts to replace theme with their Vibe corresponding keys.
+
+  */
+
+  @include generate-custom-properties($core-legacy-settings-map);
 }
