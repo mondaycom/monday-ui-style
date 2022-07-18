@@ -65,7 +65,6 @@ const ANIMATION_DURATION = [
   "--motion-productive-medium",
   "--motion-productive-long",
   "--motion-expressive-short",
-  "--motion-expressive-medium",
   "--motion-expressive-long"
 ];
 
