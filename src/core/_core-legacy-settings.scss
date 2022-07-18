@@ -1,7 +1,0 @@
-// CORE : SETTINGS
-// This partial Defines a Unified settings map for the Core Scope.
-// - Map collect function is used in order to merge multiple maps from Core config .
-
-$core-legacy-settings-map: map-collect(
-                $core-legacy-motion-map,
-);
