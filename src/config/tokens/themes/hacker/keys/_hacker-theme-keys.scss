@@ -34,7 +34,7 @@ $theme-hacker-allgrey-background-color: $color-night-sky; //todo: fix, grey and 
 $theme-hacker-inverted-color-background: $color-snow_white; // todo: fix, value from basic theme
 
 // System Semantics (state, status)
-$theme-hacker-disabled-text-color: rgba($theme-hacker-primary-text-color, var(--disabled-component-opacity));
+$theme-hacker-disabled-text-color: $theme-black-disabled-text-color;
 $theme-hacker-disabled-background-color: $color-dust-muted;
 
 $theme-hacker-positive-color: $color-green-grotesque;
