@@ -32,6 +32,12 @@ const FONT_SIZES = [
   "--font-size-subtext"
 ];
 
+const FONT_FAMILY =[
+  "--font-family",
+  "--title-font-family",
+  "--h1-font-family"
+];
+
 const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
 
 const FONT_LINE_HEIGHTS = [
@@ -156,11 +162,13 @@ const PROPS_TO_ALLOWED_VARS = {
     "--font-size-h5",
     "--font-size-general-label"
   ]),
+  ...mapPropsToAllowedVars("font-family", FONT_FAMILY, [
+    "--font-family",
+    "--title-font-family"
+  ]),
   ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
   ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
-
-  "font-family": { allowedVars: ["--font-family", "--title-font-family", "--h1-font-family"] },
   "-webkit-font-smoothing": { allowedVars: ["--font-smoothing-webkit"] },
   "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] }
 };
