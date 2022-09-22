@@ -164,7 +164,7 @@ const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
   ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
-  "-webkit-font-smoothing": { allowedVars: ["--font -smoothing-webkit"] },
+  "-webkit-font-smoothing": { allowedVars: ["--font-smoothing-webkit"] },
   "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] }
 };
 
