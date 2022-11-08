@@ -17,7 +17,7 @@
 $primary-on-secondary-color: $color-basic_blue;
 $primary-hover-on-secondary-color: $color-dark_blue;
 $primary-selected-color-rgb: $color-highlight_blue-rgb;
-$primary-selected-on-secondary-color: $color-highlight_blue;
+$primary-selected-on-secondary-color: $color-cloud_blue;
 $primary-text-on-secondary-color: $color-mud_black;
 $text-color-on-primary-with-opacity: $color-snow_white-with-opacity;
 
@@ -33,20 +33,20 @@ $dark-background-color: $color-riverstone_gray;
 $dark-background-on-secondary-color: $color-riverstone_gray;
 $dialog-background-color: $color-snow_white;
 
-$label-background-color: $color-highlight_blue;
-$label-background-on-secondary-color: $color-highlight_blue;
+$label-background-color: $color-cloud_blue;
+$label-background-on-secondary-color: $color-cloud_blue;
 
 $icon-on-secondary-color: $color-asphalt;
 $placeholder-color-with-opacity: $color-asphalt-with-opacity;
 $placeholder-on-secondary-color: $color-asphalt;
 
 // States
-$disabled-background-on-secondary-color: $disabled-background-color;
-$disabled-text-on-secondary-color: $disabled-text-color;
+$disabled-background-on-secondary-color: $light-theme-disabled-background-color;
+$disabled-text-on-secondary-color: $light-theme-disabled-text-color;
 
 // borders
 $ui-border-on-secondary-color: $color-wolf_gray;
-$layout-border-on-secondary-color: $layout-border-color;
+$layout-border-on-secondary-color: $light-theme-layout-border-color;
 
 // legacy shadow
-$box-shadow-mediun: $box-shadow-medium;
+$box-shadow-mediun: var(--box-shadow-medium);

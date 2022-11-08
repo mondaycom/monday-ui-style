@@ -2,8 +2,9 @@
 // This partial loads all project's related tokens and maps
 // - Loading order is important.
 
-// Tokens
-@import "config/tokens/config-core-tokens";
+// Tokens from "monday-ui-tokens"
+@import "../node_modules/monday-ui-tokens/dist/scss/variables";
+
 @import "config/tokens/config-basic-theme-tokens";
 @import "config/tokens/config-dark-theme-tokens";
 @import "config/tokens/config-black-theme-tokens";

@@ -10,10 +10,3 @@ $core-shadow-size-map: (
         large: $shadow-size-large,
         mediun: var(--box-shadow-medium)
 );
-
-$core-shadow-opacity-map: (
-        xs-opacity: $shadow-small-opacity,
-        small-opacity: $shadow-small-opacity,
-        medium-opacity: $shadow-medium-opacity,
-        large-opacity: $shadow-large-opacity,
-);

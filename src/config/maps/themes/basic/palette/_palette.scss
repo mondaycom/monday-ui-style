@@ -3,7 +3,7 @@
 // - Map is collected into the $theme-basic-settings map and is interpolated into custom properties.
 
 $theme-basic-palette: (
-        color-highlight_blue: $color-highlight_blue,
+        color-highlight_blue: $color-cloud_blue,
         color-basic_blue: $color-basic_blue,
         color-dark_blue: $color-dark_blue,
         color-bazooka: $color-bazooka,
@@ -14,12 +14,6 @@ $theme-basic-palette: (
         color-asphalt: $color-asphalt,
         color-mud_black: $color-mud_black,
         color-black: $color-black,
-        color-success: $color-success,
-        color-success-hover:$color-success-hover,
-        color-success-highlight:$color-success-highlight,
-        color-error: $color-error,
-        color-error-hover: $color-error-hover,
-        color-error-highlight: $color-error-highlight,
         color-link_color: $color-link_color,
         color-surface: $color-surface,
 );

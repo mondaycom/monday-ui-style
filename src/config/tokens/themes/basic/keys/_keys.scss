@@ -12,7 +12,7 @@
 // Text colors
 $primary-color: $color-basic_blue;
 $primary-hover-color: $color-dark_blue;
-$primary-selected-color: $color-highlight_blue;
+$primary-selected-color: $color-cloud_blue;
 $primary-text-color: $color-mud_black;
 
 $text-color-on-primary: $color-snow_white;
@@ -37,12 +37,12 @@ $inverted-color-background: $color-mud_black;
 $disabled-text-color: rgba($primary-text-color, var(--disabled-component-opacity));
 $disabled-background-color: $color-ui_grey-muted;
 
-$positive-color: $color-success;
-$positive-color-hover: $color-success-hover;
-$positive-color-selected: $color-success-highlight;
-$negative-color: $color-error;
-$negative-color-hover: $color-error-hover;
-$negative-color-selected: $color-error-highlight;
+$positive-color: $color-basic_green;
+$positive-color-hover: $color-dark_green;
+$positive-color-selected: $color-pastel_green;
+$negative-color: $color-basic_red;
+$negative-color-hover: $color-blood_red;
+$negative-color-selected: $color-pastel_red;
 $private-color: $color-bazooka;
 $shareable-color: $color-purple;
 

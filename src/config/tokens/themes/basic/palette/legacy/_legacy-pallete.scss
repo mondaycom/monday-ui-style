@@ -100,4 +100,15 @@ $color-snow_white-rgb: extract-rgb($color-snow_white);
 $color-snow_white-with-opacity: rgba($color-snow_white, 0.4);
 $color-wolf_gray-with-opacity: rgba($color-wolf_gray, 0.1);
 $color-asphalt-with-opacity: rgba($color-asphalt, 0.1);
-$color-highlight_blue-rgb: extract-rgb($color-highlight_blue);
+$color-highlight_blue-rgb: extract-rgb($color-cloud_blue);
+
+// Semantics old aliases,
+// - Success, used as positive key alias
+$color-success: $color-basic_green;
+$color-success-hover: $color-dark_green;
+$color-success-highlight: $color-pastel_green;
+
+// - Error, used as negative key alias
+$color-error: $color-basic_red;
+$color-error-hover: $color-blood_red;
+$color-error-highlight: $color-pastel_red;

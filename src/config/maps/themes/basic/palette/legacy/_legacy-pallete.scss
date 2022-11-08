@@ -5,6 +5,12 @@
 // - Keys sort order is according to legacy tokens sort order.
 
 $theme-basic-legacy-palette: (
+        color-success: $color-success,
+        color-success-hover:$color-success-hover,
+        color-success-highlight:$color-success-highlight,
+        color-error: $color-error,
+        color-error-hover: $color-error-hover,
+        color-error-highlight: $color-error-highlight,
         color-dark_marble: $color-dark_marble,
         color-marble: $color-marble,
         color-gainsboro: $color-gainsboro,
