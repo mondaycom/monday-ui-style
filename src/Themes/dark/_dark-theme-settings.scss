@@ -4,4 +4,5 @@
 $theme-dark-settings: map-collect(
                 $theme-dark-keys,
                 $theme-dark-shadow-keys,
+                $theme-dark-content-keys,
 );

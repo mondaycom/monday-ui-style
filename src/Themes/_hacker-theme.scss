@@ -4,11 +4,9 @@
 
 @import "hacker/hacker-theme-settings";
 @import "hacker/hacker-theme-legacy-settings";
-@import "hacker/hacker-theme-content-colors";
 
 .hacker_theme-app-theme {
   @include generate-custom-properties($theme-hacker-settings);
-  @include define-hacker-theme-content-colors();
 
   /*
 

@@ -4,11 +4,9 @@
 
 @import "dark/dark-theme-settings";
 @import "dark/dark-theme-legacy-settings";
-@import "dark/dark-theme-content-colors";
 
 .dark-app-theme {
   @include generate-custom-properties($theme-dark-settings);
-  @include define-dark-theme-content-colors();
 
   /*
 

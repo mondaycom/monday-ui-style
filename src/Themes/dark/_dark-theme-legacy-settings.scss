@@ -3,4 +3,5 @@
 
 $theme-dark-legacy-settings: map-collect(
                 $theme-dark-legacy-keys,
+                $theme-dark-legacy-content-keys
 );

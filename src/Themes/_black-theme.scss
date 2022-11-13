@@ -4,11 +4,9 @@
 
 @import "black/black-theme-settings";
 @import "black/black-theme-legacy-settings";
-@import "black/black-theme-content-colors";
 
 .black-app-theme {
   @include generate-custom-properties($theme-black-settings);
-  @include define-black-theme-content-colors();
 
   /*
 

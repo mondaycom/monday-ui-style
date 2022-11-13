@@ -3,4 +3,5 @@
 
 $theme-black-legacy-settings: map-collect(
                 $theme-black-legacy-keys,
+                $theme-black-legacy-content-keys
 );
