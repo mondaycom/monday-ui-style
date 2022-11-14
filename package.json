@@ -58,7 +58,7 @@
     "stylelint-config-standard-scss": "^3.0.0"
   },
   "dependencies": {
-    "monday-ui-tokens": "^1.0.15",
+    "monday-ui-tokens": "^1.0.17",
     "postcss": "8.4.4",
     "postcss-scss": "^4.0.3",
     "postcss-value-parser": "4.1.0"
