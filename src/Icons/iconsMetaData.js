@@ -12,6 +12,20 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Kanban",
+    file: "Kanban.svg",
+    description: "Kanban icon",
+    tags: "kanban"
+  },
+
+  {
+    name: "Cards",
+    file: "Cards.svg",
+    description: "Cards icon",
+    tags: "cards"
+  },
+
+  {
       name: "Launch",
       file: "Launch.svg",
       description: "Launch icon",
