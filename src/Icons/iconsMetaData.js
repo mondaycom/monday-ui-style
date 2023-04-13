@@ -5,6 +5,13 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "ContentDirectory",
+      file: "ContentDirectory.svg",
+      description: "Content Directory icon",
+      tags: ""
+  },
+  
+  {
       name: "Unlink",
       file: "Unlink.svg",
       description: "use to indicate unlink function between two elements",
