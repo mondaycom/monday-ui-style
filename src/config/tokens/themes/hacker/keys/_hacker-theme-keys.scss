@@ -12,7 +12,7 @@
 
 // Text colors
 $theme-hacker-primary-color: $color-pink-plastic;
-$theme-hacker-primary-hover-color:  #{color.adjust($color-pink-plastic, $lightness: -6%)};
+$theme-hacker-primary-hover-color: #{color.adjust($color-pink-plastic, $lightness: -6%)};
 $theme-hacker-primary-selected-color: $color-viola-vivid;
 $theme-hacker-primary-selected-hover-color: $color-deep_blue;
 $theme-hacker-primary-text-color: $color-snow;
@@ -48,6 +48,10 @@ $theme-hacker-negative-color-selected: $color-maroon_red;
 $theme-hacker-negative-color-selected-hover: $color-amber_red;
 $theme-hacker-private-color: $private-color;
 $theme-hacker-shareable-color: $shareable-color;
+$theme-hacker-warning-color: $color-egg_yolk; // warning-colors
+$theme-hacker-warning-color-hover: $color-desert;
+$theme-hacker-warning-color-select: $color-brass;
+$theme-hacker-warning-color-select-hover: $color-aztec_gold;
 
 // UI elements
 // - Borders
