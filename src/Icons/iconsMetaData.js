@@ -5,6 +5,20 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "Erase",
+      file: "Erase.svg",
+      description: "Erase",
+      tags: "erase, clear"
+  },
+
+  {
+      name: "Workflow",
+      file: "Workflow.svg",
+      description: "worfkflow builder icon",
+      tags: "autopilot, automations, workflow, workflows"
+  },
+
+  {
     name: "ContentDirectory",
     file: "ContentDirectory.svg",
     description: "Content Directory icon",
