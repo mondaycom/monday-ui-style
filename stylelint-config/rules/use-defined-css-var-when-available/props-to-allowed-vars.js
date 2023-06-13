@@ -14,46 +14,6 @@ const BORDER_WIDTHS = ["--border-width"];
 
 const BORDER_STYLES = ["--border-style"];
 
-const FONT_SIZES = [
-  // since "--font-size-10" and "--font-size-20" have the same value, we need to pick only one of them as "valid value", to allow autofix
-  // "--font-size-10",
-  "--font-size-20",
-  "--font-size-30",
-  "--font-size-40",
-  "--font-size-50",
-  "--font-size-60",
-  "--font-size-h1",
-  "--font-size-h2",
-  "--font-size-h3",
-  "--font-size-h4",
-  "--font-size-h5",
-  "--font-size-general-label",
-  "--font-size-paragraph",
-  "--font-size-subtext"
-];
-
-const FONT_FAMILIES = ["--font-family", "--title-font-family", "--h1-font-family"];
-
-const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
-
-const FONT_LINE_HEIGHTS = [
-  "--font-line-height-10",
-  // since "--font-line-height-20", "--font-line-height-30" and "--font-line-height-40" have the same value, we need to pick only one of them as "valid value", to allow autofix
-  // "--font-line-height-20",
-  // "--font-line-height-30",
-  "--font-line-height-40",
-  "--font-line-height-50",
-  "--font-line-height-60",
-  "--font-line-height-h1",
-  "--font-line-height-h2",
-  "--font-line-height-h3",
-  "--font-line-height-h4",
-  "--font-line-height-h5",
-  "--font-line-height-general-label",
-  "--font-line-height-paragraph",
-  "--font-line-height-subtext"
-];
-
 const ANIMATION_TIMING = [
   "--motion-timing-enter",
   "--motion-timing-exit",
@@ -112,8 +72,6 @@ const BORDER_RADIUSES_PROPS = [
   "border-end-end-radius"
 ];
 
-const FONT_FAMILIES_PROPS = ["font", "font-family"];
-
 const BORDER_WIDTHS_PROPS = ["border", "border-width"];
 
 const BORDER_STYLES_PROPS = ["border", "border-style"];
@@ -123,6 +81,77 @@ const TIMING_FUNCTION_PROPS = ["transition", "transition-timing", "animation", "
 const DURATION_FUNCTION_PROPS = ["transition", "transition-duration", "animation", "animation-duration"];
 
 const OPACITY_PROPS = ["opacity"];
+
+const FONTS = [
+    "--font-h1-bold",
+  "--font-h1-normal",
+  "--font-h1-light",
+  "--font-h2-bold",
+  "--font-h2-normal",
+  "--font-h2-light",
+  "--font-h3-bold",
+  "--font-h3-normal",
+  "--font-h3-light",
+  "--font-text1-bold",
+  "--font-text1-normal",
+  "--font-text2-bold",
+  "--font-text2-normal",
+];
+
+const LETTER_SPACING = [
+  "--letter-spacing-h1-bold",
+  "--letter-spacing-h1-normal",
+  "--letter-spacing-h1-light",
+  "--letter-spacing-h2-bold",
+  "--letter-spacing-h2-normal",
+  "--letter-spacing-h2-light",
+  "--letter-spacing-h3-bold",
+  "--letter-spacing-h3-normal",
+  "--letter-spacing-h3-light",
+];
+
+// WILL BE DEPRECATED SOON
+const FONT_SIZES = [
+  // since "--font-size-10" and "--font-size-20" have the same value, we need to pick only one of them as "valid value", to allow autofix
+  // "--font-size-10",
+  "--font-size-20",
+  "--font-size-30",
+  "--font-size-40",
+  "--font-size-50",
+  "--font-size-60",
+  "--font-size-h1",
+  "--font-size-h2",
+  "--font-size-h3",
+  "--font-size-h4",
+  "--font-size-h5",
+  "--font-size-general-label",
+  "--font-size-paragraph",
+  "--font-size-subtext"
+];
+
+const FONT_FAMILIES = ["--font-family", "--title-font-family", "--h1-font-family"];
+
+const FONT_WEIGHTS = ["--font-weight-very-light", "--font-weight-light", "--font-weight-normal", "--font-weight-bold"];
+
+const FONT_LINE_HEIGHTS = [
+  "--font-line-height-10",
+  // since "--font-line-height-20", "--font-line-height-30" and "--font-line-height-40" have the same value, we need to pick only one of them as "valid value", to allow autofix
+  // "--font-line-height-20",
+  // "--font-line-height-30",
+  "--font-line-height-40",
+  "--font-line-height-50",
+  "--font-line-height-60",
+  "--font-line-height-h1",
+  "--font-line-height-h2",
+  "--font-line-height-h3",
+  "--font-line-height-h4",
+  "--font-line-height-h5",
+  "--font-line-height-general-label",
+  "--font-line-height-paragraph",
+  "--font-line-height-subtext"
+];
+
+const FONT_FAMILIES_PROPS = ["font-family"];
 
 function mapPropsToAllowedVars(propNames, allowedVars, recommended = undefined) {
   allowedVars = Array.isArray(allowedVars) ? allowedVars : [allowedVars];
@@ -164,6 +193,8 @@ const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
   ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
+  ...mapPropsToAllowedVars("font", FONTS),
+  ...mapPropsToAllowedVars("letter-spacing", LETTER_SPACING),
   "-webkit-font-smoothing": { allowedVars: ["--font-smoothing-webkit"] },
   "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] }
 };
