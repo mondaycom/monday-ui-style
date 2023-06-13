@@ -29,19 +29,19 @@ $text-font-family: $font-family-english-text, $font-family-other-languages;
 $title-font-family: $font-family-english-heading, $font-family-other-languages;
 
 // Font definition shorthands per semantics atom definitions
-$font-h1-bold: $font-weight-50 $font-size-50 / $font-line-height-30 $title-font-family;
-$font-h1-normal: $font-weight-30 $font-size-50 / $font-line-height-30 $title-font-family;
-$font-h1-light: $font-weight-10 $font-size-40 / $font-line-height-20 $title-font-family;
-$font-h2-bold: $font-weight-50 $font-size-40 / $font-line-height-20 $title-font-family;
-$font-h2-normal: $font-weight-30 $font-size-40 / $font-line-height-20 $title-font-family;
-$font-h2-light: $font-weight-10 $font-size-30 / $font-line-height-10 $title-font-family;
-$font-h3-bold: $font-weight-40 $font-size-40 / $font-line-height-20 $title-font-family;
-$font-h3-normal: $font-weight-30 $font-size-40 / $font-line-height-20 $title-font-family;
-$font-h3-light: $font-weight-10 $font-size-30 / $font-line-height-10 $title-font-family;
-$font-text1-bold: $font-weight-50 $font-size-40 / $font-line-height-30 $title-font-family;
-$font-text1-normal: $font-weight-30 $font-size-20 / $font-line-height-30 $title-font-family;
-$font-text2-bold: $font-weight-50 $font-size-40 / $font-line-height-20 $text-font-family;
-$font-text2-normal: $font-weight-30 $font-size-20 / $font-line-height-20 $text-font-family;
+$font-h1-bold: #{$font-weight-50} #{$font-size-50}/#{$font-line-height-30} #{$title-font-family};
+$font-h1-normal: #{$font-weight-30} #{$font-size-50}/#{$font-line-height-30} #{$title-font-family};
+$font-h1-light: #{$font-weight-10} #{$font-size-40}/#{$font-line-height-20} #{$title-font-family};
+$font-h2-bold: #{$font-weight-50} #{$font-size-40}/#{$font-line-height-20} #{$title-font-family};
+$font-h2-normal: #{$font-weight-30} #{$font-size-40}/#{$font-line-height-20} #{$title-font-family};
+$font-h2-light: #{$font-weight-10} #{$font-size-30}/#{$font-line-height-10} #{$title-font-family};
+$font-h3-bold: #{$font-weight-40} #{$font-size-30}/#{$font-line-height-20} #{$title-font-family};
+$font-h3-normal: #{$font-weight-30} #{$font-size-30}/#{$font-line-height-20} #{$title-font-family};
+$font-h3-light: #{$font-weight-10} #{$font-size-30}/#{$font-line-height-10} #{$title-font-family};
+$font-text1-bold: #{$font-weight-50} #{$font-size-20}/#{$font-line-height-30} #{$title-font-family};
+$font-text1-normal: #{$font-weight-30} #{$font-size-20}/#{$font-line-height-30} #{$title-font-family};
+$font-text2-bold: #{$font-weight-50} #{$font-size-10}/#{$font-line-height-20} #{$text-font-family};
+$font-text2-normal: #{$font-weight-30} #{$font-size-10}/#{$font-line-height-20} #{$text-font-family};
 
 // Letter spacing definition per semantics atom definitions
 $letter-spacing-h1-bold: -0.2%;

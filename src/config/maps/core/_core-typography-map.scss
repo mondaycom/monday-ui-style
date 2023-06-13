@@ -3,15 +3,15 @@
 // - Maps include Font scope tokens.
 // - Maps are collected into the $core-settings-map and are interpolated into custom properties.
 
-$core-typography-fonts-map: (
+$core-typography-fonts-new-map: (
   font-h1-bold: $font-h1-bold,
   font-h1-normal: $font-h1-normal,
-  font-h3: $font-h1-light,
-  font-h4: $font-h2-bold,
-  font-h5: $font-h2-normal,
-  font-general-label: $font-h2-light,
-  font-paragraph: $font-h3-bold,
-  font-subtext: $font-h3-normal,
+  font-h1-light: $font-h1-light,
+  font-h2-bold: $font-h2-bold,
+  font-h2-normal: $font-h2-normal,
+  font-h2-light: $font-h2-light,
+  font-h3-bold: $font-h3-bold,
+  font-h3-normal: $font-h3-normal,
   font-h3-light: $font-h3-light,
   font-text1-bold: $font-text1-bold,
   font-text1-normal: $font-text1-normal,
