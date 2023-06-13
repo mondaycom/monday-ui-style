@@ -193,8 +193,8 @@ const PROPS_TO_ALLOWED_VARS = {
   ...mapPropsToAllowedVars(TIMING_FUNCTION_PROPS, ANIMATION_TIMING, ["--expand-animation-timing"]),
   ...mapPropsToAllowedVars(DURATION_FUNCTION_PROPS, ANIMATION_DURATION, ["--animation-expressive-short"]),
   ...mapPropsToAllowedVars(OPACITY_PROPS, "--disabled-component-opacity"),
-  ...mapPropsToAllowedVars("font", FONTS),
-  ...mapPropsToAllowedVars("letter-spacing", LETTER_SPACING),
+  ...mapPropsToAllowedVars("font", FONTS, FONTS),
+  ...mapPropsToAllowedVars("letter-spacing", LETTER_SPACING, LETTER_SPACING),
   "-webkit-font-smoothing": { allowedVars: ["--font-smoothing-webkit"] },
   "-moz-osx-font-smoothing": { allowedVars: ["--font-smoothing-moz"] }
 };
