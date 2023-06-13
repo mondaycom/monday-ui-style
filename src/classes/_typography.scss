@@ -1,53 +1,25 @@
-// TYPOGRAPHY CLASSES LAYER
-.vibe-h1-bold {
-  font: var(--font-h1-bold);
-  letter-spacing: var(--letter-spacing-h1-bold);
+$typographyClasses: (
+    "h1": ("bold", "normal", "light"),
+    "h2": ("bold", "normal", "light"),
+    "h3": ("bold", "normal", "light"),
+    "text1": ("bold", "normal"),
+    "text2": ("bold", "normal")
+);
+
+@mixin vibe-typography-styles($class-prefix, $weight-type) {
+  .vibe-#{$class-prefix}-#{$weight-type} {
+    font: var(--font-#{$class-prefix}-#{$weight-type});
+
+    // if class is a heading class
+    @if str-slice($class-prefix, 1, 1) == "h" {
+      margin: 0;
+      letter-spacing: var(--letter-spacing-#{$class-prefix}-#{$weight-type});
+    }
+  }
 }
-.vibe-h1-normal {
-  font: var(--font-h1-normal);
-  letter-spacing: var(--letter-spacing-h1-normal);
-}
-.vibe-h1-light {
-  font: var(--font-h1-light);
-  letter-spacing: var(--letter-spacing-h1-light);
-}
-.vibe-h2-bold {
-  font: var(--font-h1-bold);
-  letter-spacing: var(--letter-spacing-h1-bold);
-}
-.vibe-h2-normal {
-  font: var(--font-h1-normal);
-  letter-spacing: var(--letter-spacing-h1-normal);
-}
-.vibe-h2-light {
-  font: var(--font-h1-light);
-  letter-spacing: var(--letter-spacing-h1-light);
-}
-.vibe-h3-bold {
-  font: var(--font-h1-bold);
-  letter-spacing: var(--letter-spacing-h1-bold);
-}
-.vibe-h3-normal {
-  font: var(--font-h1-normal);
-  letter-spacing: var(--letter-spacing-h1-normal);
-}
-.vibe-h3-light {
-  font: var(--font-h1-light);
-  letter-spacing: var(--letter-spacing-h1-light);
-}
-.vibe-text1-bold {
-  font: var(--font-h1-bold);
-  letter-spacing: var(--letter-spacing-h1-bold);
-}
-.vibe-text1-normal {
-  font: var(--font-h1-normal);
-  letter-spacing: var(--letter-spacing-h1-normal);
-}
-.vibe-text2-bold {
-  font: var(--font-h1-bold);
-  letter-spacing: var(--letter-spacing-h1-bold);
-}
-.vibe-text2-normal{
-  font: var(--font-h1-normal);
-  letter-spacing: var(--letter-spacing-h1-normal);
+
+@each $class-prefix, $weight-types in $typographyClasses {
+  @each $weight-type in $weight-types {
+    @include vibe-typography-styles($class-prefix, $weight-type);
+  }
 }
