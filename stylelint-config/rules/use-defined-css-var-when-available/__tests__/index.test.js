@@ -95,7 +95,8 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     expect(contentAfterFix).toEqual(expectedOutputAfterFix);
   });
 
-  it("warns for values that can be replaced with multiple CSS vars", async () => {
+  // We currently not supporting this use case after stop recommending use font size variables
+  it.skip("warns for values that can be replaced with multiple CSS vars", async () => {
     const {
       results: [{ warnings }]
     } = await lint({
@@ -107,17 +108,18 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const [firstWarning] = warnings;
 
     expect(firstWarning.text).toBe(
-      `Expected "Roboto" to be one of vars: 
-      --font-family
-      --title-font-family"
-      --h1-font-family
-      (monday-ui-style/use-defined-css-var-when-available)`
+      `Expected "14px" to be one of vars: 
+--font-size-20
+--font-size-general-label
+--font-size-subtext
+ (monday-ui-style/use-defined-css-var-when-available)`
     );
     expect(firstWarning.line).toBe(3);
     expect(firstWarning.column).toBe(14);
   });
 
-  it("perform fixes when there are multiple var replacements, when specifying the useRecommendedFixes flag", async () => {
+  // We currently not supporting this use case after stop recommending use font size variables
+  it.skip("perform fixes when there are multiple var replacements, when specifying the useRecommendedFixes flag", async () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
       config: configWithUseRecommendation,
@@ -127,7 +129,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const expectedOutputAfterFix = `
 .some-font-class {
   width: 16px;
-  font-family: var(--title-font-family);
+  font-size: var(--font-size-general-label);
 }`.trim();
 
     const contentAfterFix = fs.readFileSync(file).toString().trim();
