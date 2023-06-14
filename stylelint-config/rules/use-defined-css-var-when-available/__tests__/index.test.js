@@ -107,11 +107,11 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const [firstWarning] = warnings;
 
     expect(firstWarning.text).toBe(
-      `Expected "14px" to be one of vars: 
---font-size-20
---font-size-general-label
---font-size-subtext
- (monday-ui-style/use-defined-css-var-when-available)`
+      `Expected "Roboto" to be one of vars: 
+      --font-family
+      --title-font-family"
+      --h1-font-family
+      (monday-ui-style/use-defined-css-var-when-available)`
     );
     expect(firstWarning.line).toBe(3);
     expect(firstWarning.column).toBe(14);
@@ -127,7 +127,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const expectedOutputAfterFix = `
 .some-font-class {
   width: 16px;
-  font-size: var(--font-size-general-label);
+  font-family: var(--title-font-family);
 }`.trim();
 
     const contentAfterFix = fs.readFileSync(file).toString().trim();
