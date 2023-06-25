@@ -5,6 +5,14 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
+      name: "Blank",
+      file: "Blank.svg",
+      description: "Blank icon",
+      tags: "blank,empty,scratch",
+      category: [VIEW]
+  },
+
+  {
       name: "Erase",
       file: "Erase.svg",
       description: "Erase",
