@@ -205,7 +205,7 @@ export const iconsMetaData = [
     name: "Night",
     file: "Night.svg",
     description: "Night",
-    tags: "night, stars, dark"
+    tags: "night, stars, Night mode"
   },
 
   {
