@@ -163,7 +163,7 @@ export const iconsMetaData = [
     name: "Switcher",
     file: "Switcher.svg",
     description: "Switching between products",
-    tags: "Switcher,SidePanel,product,Platform"
+    tags: "Switcher,SidePanel,Product,Platform"
   },
 
   {
