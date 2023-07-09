@@ -1,0 +1,20 @@
+@mixin vibe-text($class-prefix, $weight-type) {
+  font: var(--font-#{$class-prefix}-#{$weight-type});
+
+  // if class is a heading class
+  @if str-slice($class-prefix, 1, 1) == "h" {
+    margin: 0;
+    letter-spacing: var(--letter-spacing-#{$class-prefix}-#{$weight-type});
+    -webkit-font-smoothing: var(--font-smoothing-webkit);
+    -moz-osx-font-smoothing: var(--font-smoothing-moz);
+  }
+}
+
+@mixin vibe-title($class-prefix, $weight-type) {
+  @include vibe-text($class-prefix, $weight-type);
+
+  margin: 0;
+  letter-spacing: var(--letter-spacing-#{$class-prefix}-#{$weight-type});
+  -webkit-font-smoothing: var(--font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--font-smoothing-moz);
+}

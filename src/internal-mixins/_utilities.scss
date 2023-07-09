@@ -6,7 +6,7 @@
 @use "sass:list";
 /*  stylelint-disable scss/at-if-no-null */
 
-// These mixins Create Utility class definitions from a utilities map.
+// These internal-mixins Create Utility class definitions from a utilities map.
 
 // Generate utilities
 // @arguments: $utility , $infix, $export
@@ -14,7 +14,7 @@
 // - $infix is defined by utility values
 // - $export enables Camelcase by capitalizing the $infix
 // -- This is achieved via flag using $export:"modules" (for css modules)
-// This mixin generates classes with definition per a utility scope
+// This mixin generates mixins with definition per a utility scope
 // - Utility scopes are nested within a utility map
 // - Map keys are fixed and defined within the mixin:
 // --  property, class,values,
