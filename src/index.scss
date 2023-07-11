@@ -9,11 +9,11 @@
 // - Currently we do not include themes within this refactor scope.
 
 // Dependencies
-@import "functions";
-@import "internal-mixins";
-@import "config";
+@import "dependencies/functions";
+@import "dependencies/internal-mixins";
+@import "dependencies/config";
 
 
 // Output
-@import "core";
-@import "themes";
+@import "output/tokens";
+@import "output/themes";
