@@ -3,7 +3,7 @@ import SpacingComponent from "./spacing-component/spacing-component";
 import "./spacing-sizes.scss";
 
 export const SpacingSizes = () => (
-  <Frame className="monday-storybook-spacing-sizes">
+  <Frame className="monday-ui-style-storybook-spacing-sizes">
     <SpacingComponent title="XS" sizeInPx="4px" spacingVariableName="spacing-xs" />
     <SpacingComponent title="S" sizeInPx="8px" spacingVariableName="spacing-small" />
     <SpacingComponent title="MD" sizeInPx="16px" spacingVariableName="spacing-medium" />

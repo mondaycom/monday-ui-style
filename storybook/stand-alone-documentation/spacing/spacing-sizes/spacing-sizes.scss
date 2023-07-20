@@ -6,7 +6,7 @@ $spacing-grid-row-gap: $spacing-xl;
 $spacing-cell-min-width: $grid-auto-fit-cell-width-small;
 $spacing-grid-cell-array-calc: calc(12.5% - #{$spacing-grid-column-gap});
 
-.monday-storybook-spacing-sizes {
+.monday-ui-style-storybook-spacing-sizes {
   margin: $spacing-between-section-items 0;
 
   > * {
