@@ -53,8 +53,7 @@
     "classnames": "^2.3.2",
     "postcss": "8.4.4",
     "postcss-scss": "^4.0.3",
-    "postcss-value-parser": "4.1.0",
-    "vibe-storybook-components": "file:../vibe-storybook-components/vibe-storybook-components-0.0.1.tgz"
+    "postcss-value-parser": "4.1.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
@@ -69,6 +68,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/jest": "^27.4.1",
     "clean-css-cli": "^4.3.0",
+    "vibe-storybook-components": "^0.0.1",
     "execa": "^5.1.1",
     "jest": "^27.5.1",
     "node-plop": "^0.26.2",
