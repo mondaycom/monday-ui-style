@@ -54,16 +54,7 @@ const preview: Preview = {
         UnstyledListItem
       }
     }
-  },
-  decorators: [
-    (Story, { className }) => {
-      return (
-        <MultipleStoryElementsWrapper className={className}>
-          <Story />
-        </MultipleStoryElementsWrapper>
-      );
-    }
-  ]
+  }
 };
 
 export default preview;
