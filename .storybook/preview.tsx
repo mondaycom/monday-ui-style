@@ -9,14 +9,13 @@ import {
   LinkComponent,
   Paragraph,
   RelatedComponent,
-  RelatedComponents,
   SectionName,
   Title,
   UnstyledList,
   UnstyledListItem,
   UsageGuidelines
 } from "vibe-storybook-components";
-import { ComponentNameDecorator } from "../storybook/components";
+import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "../src/index.scss";
 
@@ -47,7 +46,7 @@ const preview: Preview = {
         FunctionArguments,
         FunctionArgument,
         RelatedComponent,
-        RelatedComponents,
+        RelatedComponents: RelatedComponentsDecorator,
         Frame,
         UnstyledList,
         UnstyledListItem

@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import ColorUtils from "../../../utils/colors-utils";
+import ColorUtils from "../../../../utils/colors-utils";
 import { ContentColorCell } from "../content-color-cell/content-color-cell";
 
 export const ContentColorRow = ({ colorName }) => {

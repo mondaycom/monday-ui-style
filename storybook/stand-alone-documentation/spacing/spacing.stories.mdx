@@ -2,7 +2,7 @@ import { Meta } from "@storybook/blocks";
 import { SpacingSizes } from "./spacing-sizes/spacing-sizes";
 import { Frame, UsageGuidelines } from "vibe-storybook-components";
 import { menuExample, tipseenExample, toolbarExample } from "./assets";
-import { ComponentNameDecorator } from "../components";
+import { ComponentNameDecorator } from "../../components";
 import "./spacing.stories.scss";
 
 <Meta title="Foundations/Spacing" />
@@ -26,7 +26,8 @@ Using the right sizes will create consistency and hierarchy in user interface.
 
 <SpacingSizes />
 
-{/*
+{/\*
+
 <Tip title="Applying spacing">
   Elements with more spacing around them perceived as more important because they get more focus on the page, while
   small spacing makes components look stacked and not stand out.
@@ -52,5 +53,3 @@ Using the right sizes will create consistency and hierarchy in user interface.
 <Frame className="monday-storybook-spacing_image-container ">
   <img className="monday-storybook-spacing_image--tipseen" src={tipseenExample} alt="" />
 </Frame>
-
-## Up next

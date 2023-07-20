@@ -6,8 +6,9 @@ import { TextColors } from "./text-colors/text-colors";
 import { BorderColors } from "./border-colors/border-colors";
 import { ContentColors } from "./content-colors/content-colors";
 import { cardColorsExample, menuColorsExample } from "./assets";
-import { ComponentNameDecorator } from "../components";
+import { ComponentNameDecorator } from "../../components";
 import classes from "./colors.stories.module.scss";
+import { SPACING } from "../../components/related-components/component-description-map";
 
 <Meta title="Foundations/Colors" />
 
@@ -65,4 +66,9 @@ The board’s main strength is its simple and visual appearance. That’s why th
   <img className={classes["card-colors-example-img"]} src={cardColorsExample} alt="" />
 </Frame>
 
+{/*
+
 ## Up next
+
+<RelatedComponents componentsNames={[SPACING]} />
+*/}
