@@ -1,7 +1,7 @@
 import { StorybookConfig } from "@storybook/react-webpack5";
 
 const config: StorybookConfig = {
-  stories: ["../storybook/**/*.mdx"],
+  stories: ["../src/**/*.stories.mdx", "../storybook/**/*.stories.mdx"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -21,7 +21,10 @@ const config: StorybookConfig = {
     options: {}
   },
   docs: {
-    autodocs: "tag"
+    autodocs: true
+  },
+  core: {
+    disableTelemetry: true
   }
 };
 
