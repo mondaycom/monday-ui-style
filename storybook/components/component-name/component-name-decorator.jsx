@@ -5,8 +5,8 @@ import "./component-name-decorator.scss";
 export const ComponentNameDecorator = ({ children, className, withFoundationBackground = false }) => {
   return (
     <ComponentName
-      className={cx("vibe-storybook-component-name", className, {
-        "vibe-storybook-component-name--foundation": withFoundationBackground
+      className={cx("monday-ui-style-storybook-component-name", className, {
+        "monday-ui-style-storybook-component-name--foundation": withFoundationBackground
       })}
     >
       {children}
