@@ -21,7 +21,7 @@
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "fix-lint": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,scss}\"",
     "pre-release": "./scripts/prerelease.js",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 7006",
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
