@@ -1,6 +1,6 @@
 {
   "name": "monday-ui-style",
-  "version": "0.1.174",
+  "version": "0.1.175",
   "description": "Monday UI CSS Foundations",
   "main": "dist/index.css",
   "scripts": {
@@ -17,6 +17,7 @@
     "css-minify": "cleancss --level 1 --format breaksWith=lf --output dist/index.min.css dist/index.css",
     "build": "npm run compile-styles && npm run css-minify && npm run copy-files && npm run copy-public-mixins",
     "plop": "plop",
+    "changelog": "./scripts/changelog.js",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "fix-lint": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,scss}\"",
@@ -69,6 +70,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/theming": "^7.0.27",
     "@types/jest": "^27.4.1",
+    "changelog": "^1.4.2",
     "clean-css-cli": "^4.3.0",
     "execa": "^5.1.1",
     "jest": "^27.5.1",
