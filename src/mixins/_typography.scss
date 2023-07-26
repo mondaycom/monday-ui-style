@@ -1,5 +1,5 @@
-@mixin vibe-text($class-prefix, $weight-type) {
-  font: var(--font-text-#{$class-prefix}-#{$weight-type});
+@mixin vibe-text($type-prefix, $weight-type) {
+  font: var(--font-#{$type-prefix}-#{$weight-type});
 }
 
 @mixin vibe-heading($type-prefix, $weight-type) {
