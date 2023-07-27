@@ -1756,5 +1756,12 @@ export const iconsMetaData = [
     file: "UserStatus.svg",
     description: "User status",
     tags: "user, status"
+  },
+
+  {
+    name: "Execption",
+    file: "Execption.svg",
+    description: "Execption",
+    tags: "exception, vacation, non working day"
   }
 ];
