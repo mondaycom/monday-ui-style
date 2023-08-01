@@ -17,6 +17,7 @@ import {
 } from "vibe-storybook-components";
 import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
+import "vibe-storybook-components/index.css";
 import "../src/index.scss";
 
 const preview: Preview = {
