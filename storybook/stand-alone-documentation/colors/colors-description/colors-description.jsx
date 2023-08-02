@@ -22,7 +22,7 @@ export const ColorsDescription = ({ colorNames }) => {
       )),
     [colorNames]
   );
-  return <Frame>{descriptions}</Frame>;
+  return <>{descriptions}</>;
 };
 
 export default ColorsDescription;

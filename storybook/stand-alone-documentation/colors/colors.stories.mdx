@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/blocks";
+import { Canvas, Meta, Story } from "@storybook/blocks";
 import { Frame } from "vibe-storybook-components";
 import { SemanticColors } from "./semantic-colors/semantic-colors";
 import { BackgroundColors } from "./background-colors/background-colors";
@@ -8,7 +8,6 @@ import { ContentColors } from "./content-colors/content-colors";
 import { cardColorsExample, menuColorsExample } from "./assets";
 import { ComponentNameDecorator } from "../../components";
 import classes from "./colors.stories.module.scss";
-import { SPACING } from "../../components/related-components/component-description-map";
 
 <Meta title="Foundations/Colors" />
 
@@ -29,19 +28,35 @@ The colors are designed to be clear and accessible. They come in three color the
 
 ### Semantic colors
 
-<SemanticColors />
+<Canvas>
+  <Story name="Semantic Colors">
+    <SemanticColors />
+  </Story>
+</Canvas>
 
 ### Background colors
 
-<BackgroundColors />
+<Canvas>
+  <Story name="Background Colors">
+    <BackgroundColors />
+  </Story>
+</Canvas>
 
 ### Text colors
 
-<TextColors />
+<Canvas>
+  <Story name="Text Colors">
+    <TextColors />
+  </Story>
+</Canvas>
 
 ### Border colors
 
-<BorderColors />
+<Canvas>
+  <Story name="Border Colors">
+    <BorderColors />
+  </Story>
+</Canvas>
 
 ### Content colors
 
@@ -49,7 +64,11 @@ These colors are used only for color coding purposes like groups colors, statuse
 this gives understanding and indication of orientation and belonging.
 The board’s main strength is its simple and visual appearance. That’s why the status colors should appear on the board and nowhere else in the UI.
 
-<ContentColors />
+<Canvas>
+  <Story name="Content Colors">
+    <ContentColors />
+  </Story>
+</Canvas>
 
 ## Usage and examples
 
@@ -64,10 +83,3 @@ The board’s main strength is its simple and visual appearance. That’s why th
 <Frame className={classes["colors-example-frame"]}>
   <img className={classes["card-colors-example-img"]} src={cardColorsExample} alt="" />
 </Frame>
-
-{/*
-
-## Up next
-
-<RelatedComponents componentsNames={[SPACING]} />
-*/}
