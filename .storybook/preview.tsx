@@ -53,7 +53,7 @@ const preview: Preview = {
         UnstyledListItem
       }
     },
-    // TODO themes when https://storybook.js.org/addons/storybook-addon-themes version 7 will be released
+    // TODO implement theming
     // themes: {
     //   default: "Light",
     //   list: [
