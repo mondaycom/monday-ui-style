@@ -166,8 +166,6 @@ export const contentColors = [
   "pecan"
 ] as const;
 
-export type CONTENT_COLORS_VALUES = (typeof contentColors)[number];
-
 export enum ColorStyle {
   REGULAR = "regular",
   HOVER = "hover",
@@ -215,50 +213,4 @@ export enum ContentColorByName {
   STEEL = "steel",
   LILAC = "lilac",
   PECAN = "pecan"
-}
-
-export enum StateSelectedColor {
-  POSITIVE = "--positive-color-selected",
-  NEGATIVE = "--negative-color-selected",
-  PRIMARY = "--primary-selected-color"
-}
-export enum StateSelectedHoverColor {
-  POSITIVE = "--positive-color-selected-hover",
-  NEGATIVE = "--negative-color-selected-hover",
-  PRIMARY = "--primary-selected-hover-color"
-}
-
-export const ElementAllowedColor = {
-  ...ContentColorByName,
-  ...StateSelectedColor,
-  ...StateSelectedHoverColor
-};
-
-export type ElementColor = (typeof ElementAllowedColor)[keyof typeof ElementAllowedColor] | string;
-
-const getColorKeyByValue = (colorValue: string, colors: Record<string, string>) => {
-  return Object.keys(colors)[Object.values(colors).indexOf(colorValue)];
-};
-
-export function getElementColor(
-  colorValue: keyof typeof ElementAllowedColor | string,
-  isSelectedPalette = false,
-  isSelectedHoverPalette = false
-): string {
-  const colorKey = getColorKeyByValue(colorValue, ElementAllowedColor);
-  if (!colorKey) {
-    return colorValue;
-  }
-
-  if (ContentColorByName[colorKey as keyof typeof ContentColorByName]) {
-    return `var(--color-${ContentColorByName[colorKey as keyof typeof ContentColorByName]}${
-      isSelectedPalette ? "-selected" : ""
-    })`;
-  }
-  if (StateSelectedHoverColor[colorKey as keyof typeof StateSelectedHoverColor] && isSelectedHoverPalette) {
-    return `var(${StateSelectedHoverColor[colorKey as keyof typeof StateSelectedHoverColor]})`;
-  }
-  if (StateSelectedColor[colorKey as keyof typeof StateSelectedColor] && isSelectedPalette) {
-    return `var(${StateSelectedColor[colorKey as keyof typeof StateSelectedColor]})`;
-  }
 }
