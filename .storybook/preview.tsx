@@ -15,7 +15,7 @@ import {
   UnstyledListItem,
   UsageGuidelines
 } from "vibe-storybook-components";
-import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
+// import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components"; // TODO add storybook/components
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "vibe-storybook-components/index.css";
 import "../src/index.scss";
@@ -34,8 +34,8 @@ const preview: Preview = {
       ),
       page: DocsPage,
       components: {
-        h1: ComponentNameDecorator,
-        ComponentName: ComponentNameDecorator,
+        // h1: ComponentNameDecorator,
+        // ComponentName: ComponentNameDecorator,
         h2: SectionName,
         h3: Title,
         li: AnchorListItem,
@@ -47,7 +47,7 @@ const preview: Preview = {
         FunctionArguments,
         FunctionArgument,
         RelatedComponent,
-        RelatedComponents: RelatedComponentsDecorator,
+        // RelatedComponents: RelatedComponentsDecorator,
         Frame,
         UnstyledList,
         UnstyledListItem
