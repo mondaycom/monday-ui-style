@@ -49,11 +49,6 @@
     "url": "https://github.com/mondaycom/monday-ui-style/issues"
   },
   "homepage": "https://github.com/mondaycom/monday-ui-style#readme",
-  "dependencies": {
-    "postcss": "8.4.4",
-    "postcss-scss": "^4.0.3",
-    "postcss-value-parser": "4.1.0"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
@@ -88,6 +83,9 @@
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "vibe-storybook-components": "^0.1.0"
+    "vibe-storybook-components": "^0.1.0",
+    "postcss": "8.4.4",
+    "postcss-scss": "^4.0.3",
+    "postcss-value-parser": "4.1.0"
   }
 }
