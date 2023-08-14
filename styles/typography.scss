@@ -1,15 +1,9 @@
 @import "./global-css-settings";
-@import "./content-spacing";
-
-// font family
-$header-primary-font: var(--title-font-family);
-$text-primary-font: var(--font-family);
 
 // sizes
 $h1-font-size: 40px;
 $h2-font-size: 28px;
 $h3-font-size: 24px;
-$anchor-font-size: 18px;
 $text-font-size: 16px;
 $small-text-font-size: 14px;
 
@@ -21,7 +15,7 @@ $text-line-height: 24px;
 }
 
 @mixin content-text-without-color {
-  font-family: $text-primary-font;
+  font-family: var(--font-family);
   font-size: $text-font-size;
   line-height: $text-line-height;
   font-weight: 400;
@@ -44,18 +38,12 @@ $text-line-height: 24px;
 }
 
 @mixin title-appearance {
-  margin-bottom: $spacing-between-title-to-content;
-  font-family: $header-primary-font;
+  margin-bottom: var(--spacing-medium);
+  font-family: var(--title-font-family);
   @include basic-text;
   font-size: $h3-font-size;
   line-height: 28px;
   letter-spacing: -0.21px;
   text-align: left;
   font-weight: 300;
-}
-
-@mixin font-link {
-  font: var(--font-general-label);
-  text-decoration: none;
-  color: var(--link-color);
 }

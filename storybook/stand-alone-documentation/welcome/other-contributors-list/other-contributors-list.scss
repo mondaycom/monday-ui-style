@@ -1,8 +1,7 @@
 @import "../../../../styles/typography";
-@import "../../../../styles/content-spacing";
 
 .monday-other-contributors-list {
-  margin-top: $spacing-between-section-items;
+  margin-top: var(--spacing-xl);
   &_contributor:after {
     @include small-text;
     content: ","
