@@ -2,6 +2,6 @@
 
 @mixin frame() {
   border: var(--layout-border-color) 1px solid;
-  border-radius: $border-radius-medium;
+  border-radius: var(--border-radius-medium);
   border-color: var(--layout-border-color);
 }
