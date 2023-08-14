@@ -1,5 +1,10 @@
-@import "../.././../../styles/typography";
-
 .monday-storybook-intro {
-  @include title-appearance;
+  margin-bottom: var(--spacing-medium);
+  font-family: var(--title-font-family);
+  color: var(--primary-text-color);
+  font-size: var(--font-size-h2);
+  line-height: 28px;
+  letter-spacing: -0.21px;
+  text-align: left;
+  font-weight: 300;
 }

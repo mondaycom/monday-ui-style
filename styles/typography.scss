@@ -3,7 +3,6 @@
 // sizes
 $h1-font-size: 40px;
 $h2-font-size: 28px;
-$h3-font-size: 24px;
 $text-font-size: 16px;
 $small-text-font-size: 14px;
 
@@ -35,15 +34,4 @@ $text-line-height: 24px;
 @mixin small-text {
   @include basic-text;
   @include small-text-without-color;
-}
-
-@mixin title-appearance {
-  margin-bottom: var(--spacing-medium);
-  font-family: var(--title-font-family);
-  @include basic-text;
-  font-size: $h3-font-size;
-  line-height: 28px;
-  letter-spacing: -0.21px;
-  text-align: left;
-  font-weight: 300;
 }
