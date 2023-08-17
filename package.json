@@ -72,6 +72,9 @@
     "jest": "^27.5.1",
     "node-plop": "^0.26.2",
     "plop": "^2.7.4",
+    "postcss": "8.4.4",
+    "postcss-scss": "^4.0.3",
+    "postcss-value-parser": "4.1.0",
     "prettier": "^2.0.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -83,9 +86,6 @@
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "vibe-storybook-components": "^0.1.0",
-    "postcss": "8.4.4",
-    "postcss-scss": "^4.0.3",
-    "postcss-value-parser": "4.1.0"
+    "vibe-storybook-components": "file:../vibe-storybook-components/vibe-storybook-components-0.1.0.tgz"
   }
 }

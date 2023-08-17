@@ -18,7 +18,6 @@ import {
 import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "vibe-storybook-components/index.css";
-import "vibe-storybook-components/tokens";
 // import "../src/index.scss"; // TODO should be needed only for color story
 
 const preview: Preview = {
