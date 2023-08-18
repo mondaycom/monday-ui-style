@@ -27,7 +27,7 @@
 }
 
 .spacing-component-visualizer {
-  background-color: var(--negative-color-selected);
+  background-color: var(--sb-negative-color-selected);
   width: 75px;
 }
 
@@ -43,8 +43,8 @@
     display: flex;
     justify-content: center;
     padding: var(--sb-spacing-medium) var(--sb-spacing-xs) var(--sb-spacing-medium) var(--sb-spacing-xs);
-    color: var(--primary-text-color);
-    font-size: var(--sbsmall-text-font-size);
+    color: var(--sb-primary-text-color);
+    font-size: var(--sb-small-text-font-size);
   }
 
   &_description {
