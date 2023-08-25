@@ -18,9 +18,10 @@
     "build": "npm run compile-styles && npm run css-minify && npm run copy-files && npm run copy-public-mixins",
     "plop": "plop",
     "changelog": "./scripts/changelog.js",
-    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint": "stylelint \"**/*.scss\" && npm run lint:validate-icons-colors",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "fix-lint": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,scss}\"",
+    "lint:validate-icons-colors": "node ./scripts/validate-icons-colors.js",
     "pre-release": "./scripts/prerelease.js",
     "storybook": "storybook dev -p 7006",
     "build-storybook": "storybook build"
