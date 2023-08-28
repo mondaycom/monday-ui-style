@@ -10,7 +10,7 @@ source_folder="./src/$1"
 source_index="./src/_$1.scss"
 destination_folder="./dist/$1"
 destination_index="./dist/_$1.scss"
-# Copy the mixins folder and its contents
+# Copy the public folder and its contents
 cp -r "$source_folder" "$destination_folder"
 
 # Copy the mixins index as partial
