@@ -13,8 +13,7 @@
     "generate-meta": "node scripts/generate-meta.js",
     "compile-styles": "sass --style=expanded ./src/index.scss dist/index.css",
     "copy-public-mixins": "scripts/copy-public-folder.sh mixins",
-    "copy-public-functions": "scripts/copy-public-folder.sh functions",
-    "copy-files": "cp -r src/files/ dist/",
+    "copy-public-functions": "scripts/copy-public-folder.sh functions",    "copy-files": "cp -r src/files/ dist/",
     "css-minify": "cleancss --level 1 --format breaksWith=lf --output dist/index.min.css dist/index.css",
     "build": "npm run compile-styles && npm run css-minify && npm run copy-files && npm run copy-public-mixins && npm run copy-public-functions",
     "plop": "plop",
@@ -86,6 +85,8 @@
     "sass": "^1.63.6",
     "storybook": "^7.1.1",
     "stylelint-config-recommended-scss": "^6.0.0",
-    "vibe-storybook-components": "^0.1.0"
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "vibe-storybook-components": "^0.2.0"
   }
 }

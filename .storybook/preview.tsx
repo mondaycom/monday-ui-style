@@ -18,8 +18,8 @@ import {
 import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "vibe-storybook-components/index.css";
-import "../src/index.scss";
 
+// TODO add DocFooter feedbackFormLink
 const preview: Preview = {
   parameters: {
     docs: {
@@ -28,7 +28,7 @@ const preview: Preview = {
         <DocsContainer context={context}>
           <Unstyled>
             {children}
-            {<DocFooter feedbackFormLink="// TODO add feedbackFormLink" />}
+            {<DocFooter feedbackFormLink="" />}
           </Unstyled>
         </DocsContainer>
       ),
