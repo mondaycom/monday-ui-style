@@ -13,7 +13,7 @@ destination_index="./dist/_$1.scss"
 # Copy the public folder and its contents
 cp -r "$source_folder" "$destination_folder"
 
-# Copy the mixins index as partial
+# Copy the public folder index file as partial
 cp "$source_index" "$destination_index"
 
 # Display success message
