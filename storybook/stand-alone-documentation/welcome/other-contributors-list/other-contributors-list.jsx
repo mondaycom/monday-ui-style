@@ -1,9 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Paragraph } from "vibe-storybook-components";
 import { Contributors } from "./contributors";
-import "./other-contributors-list.scss";
-
-const BASE_CLASS = "monday-other-contributors-list";
+import styles from "./other-contributors-list.module.scss";
 
 const excludedDevelopers = new Set();
 excludedDevelopers.add(41898282); // github-actions[bot]
@@ -42,7 +40,7 @@ export const OtherContributorsList = () => {
 
   return (
     <>
-      <Paragraph className={BASE_CLASS}>
+      <Paragraph className={styles.otherContributorsList}>
         Special thanks to our founding designers: <Contributors contributorsData={STATIC_FOUNDING_DESIGNERS} /> <br />
         {contributors ? <>Thanks to all of our contributors: {contributors}</> : null}
       </Paragraph>

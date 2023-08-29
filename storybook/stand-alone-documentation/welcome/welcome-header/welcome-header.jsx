@@ -1,10 +1,9 @@
 import { ComponentNameDecorator } from "../../../components";
-import "./welcome-header.scss";
+import styles from "./welcome-header.module.scss";
 
-const BASE_CLASS = "monday-storybook-welcome-header";
 export const WelcomeHeader = () => (
-  <ComponentNameDecorator className={BASE_CLASS}>
-    <span className={`${BASE_CLASS}_text`}>
+  <ComponentNameDecorator className={styles.welcomeHeader}>
+    <span className={styles.welcomeHeaderText}>
       Vibe Design System
       <br /> by monday.com
     </span>
