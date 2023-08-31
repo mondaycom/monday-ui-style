@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import ColorUtils from "../../../../utils/colors-utils";
 import { ContentColorCell } from "../content-color-cell/content-color-cell";
+import ColorUtils from "../utils/colors-utils";
 
 export const ContentColorRow = ({ colorName }) => {
   const regularStyle = useMemo(

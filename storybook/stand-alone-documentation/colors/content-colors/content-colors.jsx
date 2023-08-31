@@ -1,8 +1,7 @@
 import { useMemo } from "react";
 import { ContentColorRow } from "../content-color-row/content-color-row";
-import { ContentColorByName } from "../../../../utils/colors-vars-map";
-import { Frame } from "vibe-storybook-components";
 import { ContentColorCell } from "../content-color-cell/content-color-cell";
+import { ContentColorByName } from "../utils/colors-vars-map";
 import classes from "./content-colors.module.scss";
 
 export const ContentColors = () => {
