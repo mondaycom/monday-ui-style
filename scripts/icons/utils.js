@@ -15,9 +15,9 @@ function validateColors(colors, svgFileName, allowedColors = ALLOWED_COLORS) {
 }
 
 function extractColorsFromSvg(content) {
-  const colorMatches = content.match(/(fill|stroke)="([\w#]+)"/g) || [];
+  const colorMatches = content.match(/(fill|stroke)=["']([\w#]+)["']/g) || [];
   return colorMatches.map(match => {
-    const [, attribute, color] = match.match(/(fill|stroke)="([\w#]+)"/) || [];
+    const [, attribute, color] = match.match(/(fill|stroke)=["']([\w#]+)["']/) || [];
     return { attribute, color };
   });
 }
