@@ -15,6 +15,7 @@ import {
   UnstyledListItem,
   UsageGuidelines
 } from "vibe-storybook-components";
+import { withThemeByClassName } from '@storybook/addon-themes';
 import { ComponentNameDecorator, RelatedComponentsDecorator } from "../storybook/components";
 import { DocsContainer, DocsPage, Unstyled } from "@storybook/blocks";
 import "vibe-storybook-components/index.css";
@@ -68,7 +69,18 @@ const preview: Preview = {
         order: ["Welcome", "*"]
       }
     }
-  }
+  },
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        Light: "light-app-theme",
+        Dark: "dark-app-theme",
+        Black: "black-app-theme",
+        Hacker: "hacker_theme-app-theme"
+      },
+      defaultTheme: "Light"
+    }) as any
+  ]
 };
 
 export default preview;
