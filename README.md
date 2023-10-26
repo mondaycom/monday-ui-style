@@ -97,18 +97,16 @@ The following SCSS functions are exported:
 
 The following SCSS mixins are exported:
 
-- `vibe-heading($type, $weight)`
-- `vibe-text($type, $weight)`
-- `line-clamp($lines)`
-- `ellipsis`
-- `disabled`
-- `focus-style($focus-radius)`
-- `scroller($width, $height, $color)`
-- `grid-auto-fit($grid-gap, $grid-column-gap, $grid-row-gap. $grid-cell-min-width, $grid-cell-array-calc, $important)`
-- `reset-button`
-- `hidden-element`
-- Box shadows:
-  - `box-shadow-xs`
-  - `box-shadow-small`
-  - `box-shadow-medium`
-  - `box-shadow-large`
+- Common:
+  - `hidden-element`
+  - `grid-auto-fit($grid-gap, $grid-column-gap, $grid-row-gap. $grid-cell-min-width, $grid-cell-array-calc, $important)`
+  - `scroller($width, $height, $color)`
+- States:
+  - `disabled`
+  - `reset-button`
+  - `focus-style($focus-radius)`
+- Typography:
+  - `vibe-text($type, $weight)`
+  - `vibe-heading($type, $weight)`
+  - `line-clamp($lines)`
+  - `ellipsis`
