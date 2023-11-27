@@ -40,6 +40,13 @@ export const iconsMetaData = [
   },
 
   {
+    name: "Ownership",
+    file: "Ownership.svg",
+    description: "worfkflow builder icon",
+    tags: "ownership, crown"
+  },
+
+  {
     name: "ContentDirectory",
     file: "ContentDirectory.svg",
     description: "Content Directory icon",
