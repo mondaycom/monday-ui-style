@@ -6,7 +6,7 @@ const colorsWithBorder = new Set([
   "text-color-on-inverted",
   "text-color-on-primary",
   "primary-background-color",
-  "secondary-background-color"
+  "secondary-background-color",
 ]);
 
 export const ColorsDescription = ({ colorNames }) => {
@@ -20,7 +20,7 @@ export const ColorsDescription = ({ colorNames }) => {
           withBorder={colorsWithBorder.has(color)}
         />
       )),
-    [colorNames]
+    [colorNames],
   );
   return <>{descriptions}</>;
 };

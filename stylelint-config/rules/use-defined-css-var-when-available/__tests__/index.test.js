@@ -6,8 +6,8 @@ const config = {
   plugins: [path.resolve(__dirname, "../index.js")],
   customSyntax: "postcss-scss",
   rules: {
-    "monday-ui-style/use-defined-css-var-when-available": true
-  }
+    "monday-ui-style/use-defined-css-var-when-available": true,
+  },
 };
 
 const configWithUseRecommendation = {
@@ -16,10 +16,10 @@ const configWithUseRecommendation = {
     "monday-ui-style/use-defined-css-var-when-available": [
       true,
       {
-        useRecommendedFixes: true
-      }
-    ]
-  }
+        useRecommendedFixes: true,
+      },
+    ],
+  },
 };
 
 describe("monday-ui-style/use-defined-css-var-when-available", () => {
@@ -42,7 +42,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
         fs.writeFileSync(filePath, content, { encoding: "utf-8" });
       } catch (e) {
         console.error(
-          `Failed resetting file content for file: ${filePath}. This may result in changes that should have been reverted automatically. You will need to manually revert this, sorry.`
+          `Failed resetting file content for file: ${filePath}. This may result in changes that should have been reverted automatically. You will need to manually revert this, sorry.`,
         );
         throw e;
       }
@@ -51,23 +51,23 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
 
   it("warns for values that can be replaced with single CSS vars", async () => {
     const {
-      results: [{ warnings }]
+      results: [{ warnings }],
     } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-single-replacement.scss"),
-      config
+      config,
     });
 
     expect(warnings).toHaveLength(2);
     const [firstWarning, secondWarning] = warnings;
 
     expect(firstWarning.text).toBe(
-      `Expected \"16px\" to be \"var(--spacing-medium)\" (monday-ui-style/use-defined-css-var-when-available)`
+      `Expected \"16px\" to be \"var(--spacing-medium)\" (monday-ui-style/use-defined-css-var-when-available)`,
     );
     expect(firstWarning.line).toBe(3);
     expect(firstWarning.column).toBe(15);
 
     expect(secondWarning.text).toBe(
-      `Expected \"16px\" to be \"var(--border-radius-big)\" (monday-ui-style/use-defined-css-var-when-available)`
+      `Expected \"16px\" to be \"var(--border-radius-big)\" (monday-ui-style/use-defined-css-var-when-available)`,
     );
     expect(secondWarning.line).toBe(7);
     expect(secondWarning.column).toBe(18);
@@ -77,7 +77,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-single-replacement.scss"),
       config,
-      fix: true
+      fix: true,
     });
     const file = results[0]._postcssResult.opts.from;
     const expectedOutputAfterFix = `
@@ -98,10 +98,10 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
   // We currently not supporting this use case after stop recommending use font size variables
   it.skip("warns for values that can be replaced with multiple CSS vars", async () => {
     const {
-      results: [{ warnings }]
+      results: [{ warnings }],
     } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
-      config
+      config,
     });
 
     expect(warnings).toHaveLength(1);
@@ -112,7 +112,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
 --font-size-20
 --font-size-general-label
 --font-size-subtext
- (monday-ui-style/use-defined-css-var-when-available)`
+ (monday-ui-style/use-defined-css-var-when-available)`,
     );
     expect(firstWarning.line).toBe(3);
     expect(firstWarning.column).toBe(14);
@@ -123,7 +123,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
       config: configWithUseRecommendation,
-      fix: true
+      fix: true,
     });
     const file = results[0]._postcssResult.opts.from;
     const expectedOutputAfterFix = `
@@ -141,7 +141,7 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
     const { results } = await lint({
       files: path.resolve(__dirname, "./fixtures/contains-values-with-multiple-replacements.scss"),
       config,
-      fix: true
+      fix: true,
     });
     const originalContent = results[0]._postcssResult.css;
     const file = results[0]._postcssResult.opts.from;
@@ -159,9 +159,9 @@ describe("monday-ui-style/use-defined-css-var-when-available", () => {
         config: {
           ...config,
           rules: {
-            "monday-ui-style/use-defined-css-var-when-available": ruleConfigValue
-          }
-        }
+            "monday-ui-style/use-defined-css-var-when-available": ruleConfigValue,
+          },
+        },
       });
       expect(results).toHaveLength(1);
       expect(results[0].warnings).toHaveLength(0); // the errors were ignored

@@ -10,18 +10,18 @@ $utility-spacing-vars: (
   large: var(--spacing-large),
   xl: var(--spacing-xl),
   xxl: var(--spacing-xxl),
-  xxxl: var(--spacing-xxxl)
+  xxxl: var(--spacing-xxxl),
 );
 
 $utility-border-colors-vars: (
   uiBorderColor: var(--ui-border-color),
-  layoutBorderColor: var(--layout-border-color)
+  layoutBorderColor: var(--layout-border-color),
 );
 
 $utility-colors-vars: (
   primaryTextColor: var(--primary-text-color),
   textColorOnInverted: var(--text-color-on-inverted),
-  secondaryTextColor: var(--secondary-text-color)
+  secondaryTextColor: var(--secondary-text-color),
 );
 
 $utility-background-colors-vars: (
@@ -29,5 +29,5 @@ $utility-background-colors-vars: (
   secondaryBackgroundColor: var(--secondary-background-color),
   greyBackgroundColor: var(--grey-background-color),
   allgreyBackgroundColor: var(--allgrey-background-color),
-  invertedColorBackground: var(--inverted-color-background)
+  invertedColorBackground: var(--inverted-color-background),
 );

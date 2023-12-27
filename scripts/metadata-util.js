@@ -27,5 +27,5 @@ function getFilesWithNoMetadata() {
 }
 
 module.exports = {
-  getFilesWithNoMetadata
+  getFilesWithNoMetadata,
 };

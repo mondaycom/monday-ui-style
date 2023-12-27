@@ -8,14 +8,14 @@ $core-fonts-map: (
   title-font-family: $title-font-family,
   h1-font-family: $h1-font-family,
   font-smoothing-webkit: $font-smoothing-webkit,
-  font-smoothing-moz: $font-smoothing-moz
+  font-smoothing-moz: $font-smoothing-moz,
 );
 
 $core-font-weight-map: (
   font-weight-very-light: $font-weight-very-light,
   font-weight-light: $font-weight-light,
   font-weight-normal: $font-weight-normal,
-  font-weight-bold: $font-weight-bold
+  font-weight-bold: $font-weight-bold,
 );
 
 $core-font-size-scale-map: (
@@ -24,7 +24,7 @@ $core-font-size-scale-map: (
   font-size-30: $font-size-30,
   font-size-40: $font-size-40,
   font-size-50: $font-size-50,
-  font-size-60: $font-size-60
+  font-size-60: $font-size-60,
 );
 
 $core-font-line-height-scale-map: (
@@ -33,5 +33,5 @@ $core-font-line-height-scale-map: (
   font-line-height-30: $font-line-height-30,
   font-line-height-40: $font-line-height-40,
   font-line-height-50: $font-line-height-50,
-  font-line-height-60: $font-line-height-60
+  font-line-height-60: $font-line-height-60,
 );

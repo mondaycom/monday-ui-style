@@ -13,7 +13,7 @@ const messages = ruleMessages(RULE_NAME, {
     const multipleValues = asArray.length > 1;
     const expectedMsg = multipleValues ? `one of vars: \n${asArray.join("\n")}\n` : `"var(${asArray[0]})"`;
     return `Expected "${original}" to be ${expectedMsg}`;
-  }
+  },
 });
 
 module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOptionObject, context) => {
@@ -26,13 +26,13 @@ module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOpti
       {
         actual: primaryOption,
         possible: [...CONFIGS_THAT_MEAN_IGNORE_FILE, true, "true"],
-        optional: true
+        optional: true,
       },
       {
         actual: secondaryOptionObject && secondaryOptionObject.useRecommendedFixes,
         possible: [true, "true", false, "false"],
-        optional: true
-      }
+        optional: true,
+      },
     );
 
     primaryOption = primaryOption || true;
@@ -93,7 +93,7 @@ module.exports = stylelint.createPlugin(RULE_NAME, (primaryOption, secondaryOpti
             result: postcssResult,
             message: messages.expected(node.value, varReplacementsForValue), // Build the reported message
             node: decl, // Specify the reported node
-            word: node.value // Which exact word caused the error? This positions the error properly
+            word: node.value, // Which exact word caused the error? This positions the error properly
           });
         }
       });

@@ -7,7 +7,7 @@ const fs = require("fs");
 const BumpTypes = {
   MAJOR: 0,
   MINOR: 1,
-  PATCH: 2
+  PATCH: 2,
 };
 
 function bumpVersion(bumpType) {
@@ -17,7 +17,7 @@ function bumpVersion(bumpType) {
   exec(
     `npm info ${packageJson.name} --json`,
     {
-      cwd: process.cwd()
+      cwd: process.cwd(),
     },
     (error, stdout) => {
       if (error) {
@@ -46,11 +46,11 @@ function bumpVersion(bumpType) {
       fs.writeFileSync("./package.json", JSON.stringify(packageJson, null, 2));
       console.log("New version saved in package.json file");
       process.exit(0);
-    }
+    },
   );
 }
 
 module.exports = {
   bumpVersion,
-  BumpTypes
+  BumpTypes,
 };

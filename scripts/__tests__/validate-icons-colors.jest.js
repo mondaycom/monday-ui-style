@@ -3,7 +3,7 @@ import {
   EXCEPTIONAL_ICONS,
   extractColorsFromSvg,
   isEligibleForValidation,
-  validateColors
+  validateColors,
 } from "../icons/utils";
 
 const mockRealSVGInvalid = `
@@ -56,7 +56,7 @@ describe("validate-icons-colors", () => {
       it(`should throw an error for disallowed color ${disallowedColors}`, () => {
         const colors = [
           { attribute: "fill", color: "currentColor" },
-          { attribute: "stroke", color }
+          { attribute: "stroke", color },
         ];
         const svgFileName = "valid-icon.svg";
         expect(() => validateColors(colors, svgFileName)).toThrow();
@@ -68,7 +68,7 @@ describe("validate-icons-colors", () => {
       it(`should not throw an error for allowed color ${color}`, () => {
         const colors = [
           { attribute: "fill", color },
-          { attribute: "stroke", color: "none" }
+          { attribute: "stroke", color: "none" },
         ];
         const svgFileName = "valid-icon.svg";
         expect(() => validateColors(colors, svgFileName)).not.toThrow();
@@ -93,7 +93,7 @@ describe("validate-icons-colors", () => {
         { attribute: "fill", color: "none" },
         { attribute: "stroke", color: "#123456" },
         { attribute: "fill", color: "green" },
-        { attribute: "stroke", color: "none" }
+        { attribute: "stroke", color: "none" },
       ];
       expect(colors).toEqual(expectedColors);
     });
@@ -107,7 +107,7 @@ describe("validate-icons-colors", () => {
         { attribute: "fill", color: "currentColor" },
         { attribute: "stroke", color: "currentColor" },
         { attribute: "fill", color: "none" },
-        { attribute: "stroke", color: "currentColor" }
+        { attribute: "stroke", color: "currentColor" },
       ];
       expect(colors).toEqual(expectedColors);
     });
@@ -116,7 +116,7 @@ describe("validate-icons-colors", () => {
       const colors = extractColorsFromSvg(mockRealSVGInvalid);
       const expectedColors = [
         { attribute: "fill", color: "none" },
-        { attribute: "fill", color: "#676879" }
+        { attribute: "fill", color: "#676879" },
       ];
       expect(colors).toEqual(expectedColors);
     });

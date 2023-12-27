@@ -11,7 +11,7 @@ export const ColorsDescription = () => {
         <div className="monday-ui-style-storybook-colors-description_color-block" />
       </div>
     ),
-    []
+    [],
   );
   return (
     <RelatedComponent

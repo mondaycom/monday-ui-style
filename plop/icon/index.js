@@ -5,31 +5,31 @@ module.exports = plop => {
       {
         type: "input",
         name: "iconName",
-        message: "What is the name of the icon"
+        message: "What is the name of the icon",
       },
       {
         type: "input",
         name: "fileName",
-        message: "FileName including the suffix (including '.svg') suffix"
+        message: "FileName including the suffix (including '.svg') suffix",
       },
       {
         type: "input",
         name: "description",
-        message: "Enter the icon description"
+        message: "Enter the icon description",
       },
       {
         type: "input",
         name: "tags",
-        message: "Enter tags for the icon (separate with ',')"
-      }
+        message: "Enter tags for the icon (separate with ',')",
+      },
     ],
     actions: [
       {
         type: "modify",
         path: "src/Icons/iconsMetaData.js",
         pattern: /(\/\/ plop_marker:icon_metadata)/g,
-        templateFile: "plop/icon/icon-metadata.txt"
-      }
-    ]
+        templateFile: "plop/icon/icon-metadata.txt",
+      },
+    ],
   });
 };

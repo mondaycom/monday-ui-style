@@ -97,7 +97,7 @@ function getPropsToAllowedCssVars() {
         return;
       }
       propsToReplacementConfig[prop][varCanonicalValue] = propsToReplacementConfig[prop][varCanonicalValue] || {
-        allowedVars: []
+        allowedVars: [],
       };
       propsToReplacementConfig[prop][varCanonicalValue].allowedVars.push(varName);
       if (recommended && recommended.includes(varName)) {
@@ -111,5 +111,5 @@ function getPropsToAllowedCssVars() {
 
 module.exports = {
   parseMondayUiCss,
-  getPropsToAllowedCssVars
+  getPropsToAllowedCssVars,
 };

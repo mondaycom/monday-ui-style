@@ -44,7 +44,7 @@ $theme-hacker-keys: (
   brand-color: $theme-hacker-primary-color,
   brand-hover-color: $theme-hacker-primary-hover-color,
   brand-selected-color: $theme-hacker-primary-selected-color,
-  brand-selected-hover-color: $theme-hacker-primary-selected-hover-color
+  brand-selected-hover-color: $theme-hacker-primary-selected-hover-color,
 );
 
 // DARK THEME SHADOW MAP: dark theme's shadow color map.
@@ -55,5 +55,5 @@ $theme-hacker-shadow-keys: (
   box-shadow-xs: $theme-hacker-box-shadow-xs,
   box-shadow-small: $theme-hacker-box-shadow-small,
   box-shadow-medium: $theme-hacker-box-shadow-medium,
-  box-shadow-large: $theme-hacker-box-shadow-large
+  box-shadow-large: $theme-hacker-box-shadow-large,
 );

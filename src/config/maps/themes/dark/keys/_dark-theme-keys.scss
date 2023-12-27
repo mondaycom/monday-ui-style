@@ -47,7 +47,7 @@ $theme-dark-keys: (
   brand-hover-color: $theme-dark-primary-hover-color,
   brand-selected-color: $theme-dark-primary-selected-color,
   brand-selected-hover-color: $theme-dark-primary-selected-hover-color,
-  text-color-on-brand: $theme-dark-text-color-on-primary
+  text-color-on-brand: $theme-dark-text-color-on-primary,
 );
 
 // DARK THEME SHADOW MAP: dark theme's shadow color map.
@@ -58,5 +58,5 @@ $theme-dark-shadow-keys: (
   box-shadow-xs: $theme-dark-box-shadow-xs,
   box-shadow-small: $theme-dark-box-shadow-small,
   box-shadow-medium: $theme-dark-box-shadow-medium,
-  box-shadow-large: $theme-dark-box-shadow-large
+  box-shadow-large: $theme-dark-box-shadow-large,
 );

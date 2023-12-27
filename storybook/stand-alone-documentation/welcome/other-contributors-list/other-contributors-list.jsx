@@ -10,12 +10,12 @@ excludedDevelopers.add(49699333); // dependabot[bot]
 const STATIC_FOUNDING_DESIGNERS = [
   {
     name: "Evgeniy Kazinec",
-    href: "https://www.linkedin.com/in/evgeniy-kazinec/"
+    href: "https://www.linkedin.com/in/evgeniy-kazinec/",
   },
   {
     name: "Rotem Dekel",
-    href: "https://www.linkedin.com/in/rotem-dekel-7a8b12133/"
-  }
+    href: "https://www.linkedin.com/in/rotem-dekel-7a8b12133/",
+  },
 ];
 const STATIC_CONTRIBUTERS = [];
 

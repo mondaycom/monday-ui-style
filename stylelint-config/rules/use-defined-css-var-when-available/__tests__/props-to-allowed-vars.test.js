@@ -10,7 +10,7 @@ const ALLOWED_CSS_VARS_PREFIX_WITHOUT_MAPPING = [
   "--font-weight",
   "--font-size",
   "--font-line-height",
-  "--letter-spacing"
+  "--letter-spacing",
 ];
 
 describe("props-to-allowed-vars", () => {
@@ -21,8 +21,11 @@ describe("props-to-allowed-vars", () => {
     const allRootCssVarsFromGeneratedCss = Object.keys(allVarsToCanonicalValue);
     const allMappedCssVars = [
       ...new Set(
-        Object.values(PROPS_TO_ALLOWED_VARS).reduce((acc, { allowedVars, recommended }) => [...acc, ...allowedVars], [])
-      )
+        Object.values(PROPS_TO_ALLOWED_VARS).reduce(
+          (acc, { allowedVars, recommended }) => [...acc, ...allowedVars],
+          [],
+        ),
+      ),
     ];
 
     allMappedCssVars.forEach(cssVarName => {
@@ -74,12 +77,12 @@ describe("props-to-allowed-vars", () => {
           }
           if (recommendationsToApply.length === 0) {
             fail(`Expected "${value}" to have a recommendation when being used in the CSS prop "${cssProp}", since it has multiple options: ${matchingVars.join(
-              ", "
+              ", ",
             )}
             Please choose a single variable which should be used as a recommendation.`);
           } else {
             fail(`Expected "${value}" to have a single recommendation when being used in the CSS prop "${cssProp}", since it has multiple options: ${matchingVars.join(
-              ", "
+              ", ",
             )}
             Instead, there were multiple recommendations with the same value: ${recommendationsToApply.join(", ")}. 
             Please choose a single variable which should be used as a recommendation.`);

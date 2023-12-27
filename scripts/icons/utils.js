@@ -37,5 +37,5 @@ module.exports = {
   ALLOWED_COLORS,
   isEligibleForValidation,
   validateColors,
-  extractColorsFromSvg
+  extractColorsFromSvg,
 };

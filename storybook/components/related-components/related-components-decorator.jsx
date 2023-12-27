@@ -7,11 +7,11 @@ export const RelatedComponentsDecorator = ({ componentsNames }) => {
 };
 
 RelatedComponentsDecorator.propTypes = {
-  componentsNames: PropTypes.arrayOf(PropTypes.string)
+  componentsNames: PropTypes.arrayOf(PropTypes.string),
 };
 
 RelatedComponentsDecorator.defaultProps = {
-  componentsNames: []
+  componentsNames: [],
 };
 
 export default RelatedComponentsDecorator;

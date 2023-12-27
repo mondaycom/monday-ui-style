@@ -6,7 +6,7 @@ export const ComponentNameDecorator = ({ children, className, withFoundationBack
   return (
     <ComponentName
       className={cx("monday-ui-style-storybook-component-name", className, {
-        "monday-ui-style-storybook-component-name--foundation": withFoundationBackground
+        "monday-ui-style-storybook-component-name--foundation": withFoundationBackground,
       })}
     >
       {children}
