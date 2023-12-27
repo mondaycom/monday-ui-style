@@ -21,7 +21,7 @@
     "changelog": "./scripts/changelog.js",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
-    "fix-lint": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,scss}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,scss}\"",
     "pre-release": "./scripts/prerelease.js",
     "storybook": "storybook dev -p 7006",
     "build-storybook": "storybook build"
