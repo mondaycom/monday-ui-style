@@ -115,7 +115,7 @@ export const colorsMap = [
   { color: "--secondary-background-color", description: "Secondary background color" },
   { color: "--grey-background-color", description: "Grey background color" },
   { color: "--allgrey-background-color", description: "Grey background color, stays grey in dark and black themes" },
-  { color: "--ui-background-color", description: "Background color for ui elements and components" }
+  { color: "--ui-background-color", description: "Background color for UI elements and components" }
 ];
 
 export const colorsHashMap = colorsMap.reduce((map, current) => {
