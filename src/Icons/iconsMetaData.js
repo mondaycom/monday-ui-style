@@ -5,24 +5,31 @@ export const iconsMetaData = [
   // DO NOT REMOVE THIS FOLLOWING LINE!
   // plop_marker:icon_metadata
   {
-      name: "Warning",
-      file: "Warning.svg",
-      description: "Warning",
-      tags: "warning, caution"
+    name: "Translation",
+    file: "Translation.svg",
+    description: "Translation",
+    tags: "Platform, Translation, Translate, Language, Localization"
   },
 
   {
-      name: "SortDescending",
-      file: "SortDescending.svg",
-      description: "Sort Descending",
-      tags: "sort,descending"
+    name: "Warning",
+    file: "Warning.svg",
+    description: "Warning",
+    tags: "warning, caution"
   },
 
   {
-      name: "SortAscending",
-      file: "SortAscending.svg",
-      description: "Sort Ascending",
-      tags: "sort,ascending"
+    name: "SortDescending",
+    file: "SortDescending.svg",
+    description: "Sort Descending",
+    tags: "sort,descending"
+  },
+
+  {
+    name: "SortAscending",
+    file: "SortAscending.svg",
+    description: "Sort Ascending",
+    tags: "sort,ascending"
   },
 
   {
