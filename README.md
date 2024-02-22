@@ -1,7 +1,10 @@
 # monday.com UI styles
 
-> This package includes all of the styling foundations of monday.com
-> Theme definition, colors, shadows, dimensions, icons, etc.
+
+> [!IMPORTANT]  
+> This repository is archived, `monday-ui-style` has been moved to the [`style` package](https://github.com/mondaycom/monday-ui-react-core/tree/master/packages/style) in Vibe's [monorepo](https://github.com/mondaycom/monday-ui-react-core)
+
+This package includes all of the styling foundations of monday.com: Theme definition, colors, shadows, dimensions, icons, etc.
 
 Although we use React in our product this library will try to stay framework agnostic, we expose here the foundations of our design system so they can be used regardless the framework/environment you are using.
 
